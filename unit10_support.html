@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week&nbsp;10 Support &amp; Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week&nbsp;10: Final Assessment &amp; Reflection</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>In the final week you demonstrate your work, complete any tests and reflect on what you have learned. Be proud of your achievements and think about how the skills gained apply to future projects.</p>
+
+    <form class="quiz" data-week="Week 10" id="support-week10-quiz">
+      <fieldset>
+        <legend><b>Week 10 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>Why is reflection important at the end of a project?</p>
+            <label><input data-correct="false" name="w10_q1" type="radio"> A. It isn’t important at all</label><br>
+            <label><input data-correct="false" name="w10_q1" type="radio"> B. To brag about your project</label><br>
+            <label><input data-correct="true"  name="w10_q1" type="radio"> C. To think about what you learned and how to apply it to future projects</label><br>
+            <label><input data-correct="false" name="w10_q1" type="radio"> D. To fill empty pages in your portfolio</label>
+          </li>
+          <li>
+            <p>What do you typically do during the final assessment?</p>
+            <label><input data-correct="false" name="w10_q2" type="radio"> A. Start a completely new project</label><br>
+            <label><input data-correct="true"  name="w10_q2" type="radio"> B. Demonstrate your project and complete any tests</label><br>
+            <label><input data-correct="false" name="w10_q2" type="radio"> C. Do nothing and relax</label><br>
+            <label><input data-correct="false" name="w10_q2" type="radio"> D. Only clean the workshop</label>
+          </li>
+          <li>
+            <p>How should you feel about your achievements after completing the project?</p>
+            <label><input data-correct="false" name="w10_q3" type="radio"> A. Embarrassed</label><br>
+            <label><input data-correct="true"  name="w10_q3" type="radio"> B. Proud of them</label><br>
+            <label><input data-correct="false" name="w10_q3" type="radio"> C. Uninterested</label><br>
+            <label><input data-correct="false" name="w10_q3" type="radio"> D. Angry</label>
+          </li>
+          <li>
+            <p>How can the skills from this project be useful in the future?</p>
+            <label><input data-correct="false" name="w10_q4" type="radio"> A. They are useless once this project is over</label><br>
+            <label><input data-correct="true"  name="w10_q4" type="radio"> B. They can be applied to future projects and tasks</label><br>
+            <label><input data-correct="false" name="w10_q4" type="radio"> C. They only apply to this exact project</label><br>
+            <label><input data-correct="false" name="w10_q4" type="radio"> D. They will make you famous</label>
+          </li>
+          <li>
+            <p>Why is it important to complete any tests when presenting your project?</p>
+            <label><input data-correct="false" name="w10_q5" type="radio"> A. It isn’t important; tests are optional</label><br>
+            <label><input data-correct="true"  name="w10_q5" type="radio"> B. It shows your project meets the requirements and functions properly</label><br>
+            <label><input data-correct="false" name="w10_q5" type="radio"> C. It’s just for fun and doesn’t matter</label><br>
+            <label><input data-correct="false" name="w10_q5" type="radio"> D. To delay finishing the project</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>

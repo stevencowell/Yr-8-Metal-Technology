@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario – Week 1 Introduction &amp; Safety</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Week 1 Scenario — Introduction &amp; Safety</h1>
+  <p>Apply safety knowledge to a real‑world workshop situation.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="interactive_scenarios.html">All Scenarios</a>
+</nav>
+<main>
+  <div class="card">
+    <h2>Scenario</h2>
+    <p>During the first lesson, a student rushes into the metal workshop without waiting for the teacher’s instructions. Excited to begin, they start using a hacksaw on a piece of mild steel without putting on safety glasses or ear protection and without clamping the metal. Midway through the cut the workpiece slides, nearly injuring their hand. Tools and offcuts are scattered around their bench, creating a trip hazard. The teacher stops the activity and reminds the class of the safety briefing they had just completed.</p>
+  </div>
+  <form class="scenario-form" data-unit="1">
+    <!-- Q1: Multiple‑choice -->
+    <div class="card">
+      <h3>1. Multiple‑choice</h3>
+      <p>Which of the following should the student do <em>before</em> starting any work?</p>
+      <label><input type="radio" name="q1" value="safety_briefing" required> Listen to the safety briefing and wait for instructions</label><br>
+      <label><input type="radio" name="q1" value="rush_to_start"> Start cutting immediately to save time</label><br>
+      <label><input type="radio" name="q1" value="ask_friend"> Ask a friend to watch while you cut</label><br>
+      <label><input type="radio" name="q1" value="ignore_ppe"> Skip PPE because you’re careful</label>
+    </div>
+    <!-- Q2: Drag‑match -->
+    <div class="card">
+      <h3>2. Match the hazard to the control</h3>
+      <p>Drag each hazard onto the appropriate control.</p>
+      <div class="drag-area">
+        <span class="drag-item pill" draggable="true" data-value="No eye protection">No eye protection</span>
+        <span class="drag-item pill" draggable="true" data-value="No ear protection">No ear protection</span>
+        <span class="drag-item pill" draggable="true" data-value="Unsecured workpiece">Unsecured workpiece</span>
+        <span class="drag-item pill" draggable="true" data-value="Scattered tools">Scattered tools</span>
+      </div>
+      <div class="match-area">
+        <div class="drop-target card-small">
+          <strong>Wear safety glasses:</strong> <span class="drop-label">Drop hazard here</span>
+          <input type="hidden" name="q2_glasses">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Use ear muffs:</strong> <span class="drop-label">Drop hazard here</span>
+          <input type="hidden" name="q2_ears">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Clamp the work:</strong> <span class="drop-label">Drop hazard here</span>
+          <input type="hidden" name="q2_clamp">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Tidy workspace:</strong> <span class="drop-label">Drop hazard here</span>
+          <input type="hidden" name="q2_tidy">
+        </div>
+      </div>
+    </div>
+    <!-- Q3: Fill in the blanks -->
+    <div class="card">
+      <h3>3. Fill in the blanks</h3>
+      <p>Before cutting, always 
+        <select name="q3a" required>
+          <option value="">--select--</option>
+          <option value="secure">secure</option>
+          <option value="paint">paint</option>
+          <option value="ignore">ignore</option>
+          <option value="polish">polish</option>
+        </select> 
+        the workpiece using a 
+        <select name="q3b" required>
+          <option value="">--select--</option>
+          <option value="vice">vice</option>
+          <option value="hammer">hammer</option>
+          <option value="paintbrush">paintbrush</option>
+          <option value="chisel">chisel</option>
+        </select>.
+      </p>
+    </div>
+    <!-- Q4: Rate the risk level -->
+    <div class="card">
+      <h3>4. Rate the risk level</h3>
+      <p>How risky was the student's behaviour in this scenario? (1 = Low risk, 5 = Extremely risky)</p>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+        <input type="hidden" name="q4">
+      </div>
+    </div>
+    <!-- Q5: Ordering (sortable list) -->
+    <div class="card">
+      <h3>5. Safe cutting sequence</h3>
+      <p>Drag the steps into the correct order:</p>
+      <ul class="sortable-list">
+        <!-- Intentionally scrambled order to encourage active sorting -->
+        <li data-value="Begin cutting">Begin cutting</li>
+        <li data-value="Check cutting path">Check cutting path</li>
+        <li data-value="Put on PPE">Put on PPE</li>
+        <li data-value="Clamp workpiece">Clamp workpiece</li>
+      </ul>
+      <input type="hidden" name="q5">
+    </div>
+    <button type="submit">Submit Responses</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<footer>&copy; 2025 Hose Reel Holder Project</footer>
+</body>
+</html>

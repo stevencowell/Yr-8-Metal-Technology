@@ -1,0 +1,327 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Use a modern sans-serif stack and a gentle background gradient for a more polished look */
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  /* Replace the plain grey background with a soft gradient to add visual interest without distraction */
+  background: linear-gradient(135deg, #f9fbfd 0%, #e9f1fa 100%);
+  color: #333;
+  line-height: 1.5;
+}
+
+header {
+  /* Swap the solid blue header for a vibrant gradient and increased padding */
+  background: linear-gradient(90deg, #0d47a1, #1976d2);
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  /* Give the nav bar a very light translucent background and subtle shadow */
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background: rgba(13, 71, 161, 0.1);
+  color: #083b71;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  /* Add a slightly deeper shadow for cards to stand out */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/*
+ * Responsive images used across the site.  The default images were spanning
+ * the full width of their cards which pushed important content (like the
+ * list of units) below the fold.  To make pages easier to navigate we
+ * reduce the maximum width of these images to half of their container and
+ * center them.  Auto height preserves the aspect ratio while border radius
+ * softens corners.  A small top/bottom margin separates the image from
+ * surrounding text.
+ */
+img.responsive {
+  display: block;
+  /*
+   * Reduce the default image footprint even further.  Even after
+   * reducing images to 25% of the container they still dominated
+   * the page.  To ensure the text content appears above the fold on
+   * most displays we halve the maximum width again.  The new
+   * maximum width is 12.5% of the container which keeps images
+   * purely decorative.  Height remains auto to preserve aspect
+   * ratio.
+   */
+  max-width: 12.5%;
+  height: auto;
+  margin: 0.5rem auto;
+  border-radius: 6px;
+}
+
+/*
+ * Styling for advanced content sections.  Inspired by the blueprint
+ * layout, each advanced section sits within a light-grey box with a
+ * subtle border.  A heading separates the section from the rest of
+ * the page.  Questions are bolded and text areas are full width
+ * with generous height and padding.  This improves readability and
+ * aligns with the second reference image provided by the user.
+ */
+.advanced-section {
+  background: #f5f7fa;
+  border: 1px solid #ccd6dd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.advanced-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ccd6dd;
+  padding-bottom: 0.5rem;
+}
+.advanced-item {
+  margin-bottom: 1.2rem;
+}
+.advanced-item p {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.advanced-item textarea {
+  width: 100%;
+  min-height: 140px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/*
+ * Local unit navigation links to switch between main, support and
+ * advanced pages for a particular week.  Placed near the top of
+ * each unit page to aid quick navigation without cluttering the
+ * global navigation bar.
+ */
+.unit-links {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 0.9rem;
+}
+.unit-links a {
+  color: #0e8ce7;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.unit-links a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Category menu styles for the home page.  The home page now
+ * presents three main categories instead of listing every week
+ * directly.  Each category card links to a page listing the
+ * appropriate units (main theory, support, or advanced).  Flexbox
+ * layout allows the cards to wrap on small screens while spacing
+ * them evenly on larger displays.  Cards have a subtle shadow and
+ * rounded corners to stand out as interactive elements.
+ */
+.category-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.category-card {
+  flex: 1 1 30%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.category-card a {
+  color: #0d47a1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.category-card a:hover {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: #083b71;
+/* Add a subtle hover lift effect to category cards */
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+}
+
+/*
+ * Local navigation row for unit pages.  This secondary nav sits
+ * beneath the global nav and provides quick links between the
+ * main, support and advanced pages for a given week.  It uses a
+ * light background to differentiate it from the main page content.
+ */
+.local-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background: #f0f5fa;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin: 0.5rem 0 1rem 0;
+}
+.local-nav a {
+  color: #0e8ce7;
+  text-decoration: none;
+  font-weight: bold;
+}
+.local-nav a:hover {
+  text-decoration: underline;
+}
+
+.quiz-form {
+  margin-top: 1rem;
+}
+
+.quiz-form p {
+  margin-bottom: 0.5rem;
+}
+
+.quiz-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.quiz-form button {
+  margin-top: 0.7rem;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(90deg, #1976d2, #0d47a1);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.quiz-form button:hover {
+  background: linear-gradient(90deg, #155fa0, #0b3c7f);
+  transform: translateY(-2px);
+/* Give advanced form buttons the same styling as quiz buttons */
+.advanced-form button, .scenario-form button {
+  margin-top: 0.7rem;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(90deg, #1976d2, #0d47a1);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+}
+.advanced-form button:hover, .scenario-form button:hover {
+  background: linear-gradient(90deg, #155fa0, #0b3c7f);
+  transform: translateY(-2px);
+}
+}
+
+.progress-container {
+  background: #e5e5e5;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #0e8ce7;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+/*
+ * Interactive components: star ratings and pill toggles
+ *
+ * These styles support the new question types added to the scenario pages.  A
+ * star rating displays a row of stars that fill with colour as the
+ * student selects a rating.  Pill toggles allow students to highlight
+ * multiple actions or hazards by clicking; selected pills invert their
+ * colours to stand out.  Spacing and font sizes are tuned to match the
+ * rest of the interface.  Transitions provide subtle feedback on
+ * selection.
+ */
+.star-rating {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.star-rating .star {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s;
+}
+.star-rating .star.on {
+  color: #ffb400;
+}
+.pill-toggle {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 3px;
+  border-radius: 999px;
+  background: #e0f7fa;
+  color: #00796b;
+  border: 1px solid #b2ebf2;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  user-select: none;
+}
+.pill-toggle.selected {
+  background: #00796b;
+  color: #ffffff;
+}

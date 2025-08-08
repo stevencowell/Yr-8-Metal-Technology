@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario – Week 6 Project Construction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Week 6 Scenario — Project Construction</h1>
+  <p>Consider the steps needed for accurate and safe assembly.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="interactive_scenarios.html">All Scenarios</a>
+</nav>
+<main>
+  <div class="card">
+    <h2>Scenario</h2>
+    <p>A student is eager to assemble the hose reel holder. They start attaching parts without checking that holes align or that the frame is square. They do not dry‑fit components first. Later, they discover the holder is crooked and parts don’t fit; they must dismantle and re‑drill holes.</p>
+  </div>
+  <form class="scenario-form" data-unit="6">
+    <!-- Q1: Multiple‑choice -->
+    <div class="card">
+      <h3>1. Multiple‑choice</h3>
+      <p>Before final assembly, what should you do?</p>
+      <label><input type="radio" name="q1" value="check_all" required> Dry‑fit parts, check alignment and squareness, mark and drill holes</label><br>
+      <label><input type="radio" name="q1" value="attach_direct"> Attach parts directly to save time</label><br>
+      <label><input type="radio" name="q1" value="leave_misaligned"> Leave misaligned parts until painting</label><br>
+      <label><input type="radio" name="q1" value="trust_eye"> Trust your eyesight for alignment</label>
+    </div>
+    <!-- Q2: Fill in the blanks -->
+    <div class="card">
+      <h3>2. Fill in the blanks</h3>
+      <p>Always 
+        <select name="q2a" required>
+          <option value="">--select--</option>
+          <option value="dry_fit">dry fit</option>
+          <option value="test">test assemble</option>
+          <option value="ignore">ignore</option>
+        </select> components and 
+        <select name="q2b" required>
+          <option value="">--select--</option>
+          <option value="mark">mark</option>
+          <option value="drill">drill</option>
+          <option value="cut">cut</option>
+        </select> holes before final assembly.
+      </p>
+    </div>
+    <!-- Q3: Drag‑match -->
+    <div class="card">
+      <h3>3. Match the tool to its function</h3>
+      <p>Drag each tool onto its correct function.</p>
+      <div class="drag-area">
+        <span class="drag-item pill" draggable="true" data-value="Square">Square</span>
+        <span class="drag-item pill" draggable="true" data-value="Ruler">Ruler</span>
+        <span class="drag-item pill" draggable="true" data-value="Centre punch">Centre punch</span>
+        <span class="drag-item pill" draggable="true" data-value="Clamp">Clamp</span>
+      </div>
+      <div class="match-area">
+        <div class="drop-target card-small">
+          <strong>Check squareness:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_square">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Measure length:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_measure">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Mark hole locations:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_punch">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Hold work securely:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_clamp">
+        </div>
+      </div>
+    </div>
+    <!-- Q4: Ordering (sortable list) -->
+    <div class="card">
+      <h3>4. Assembly sequence</h3>
+      <p>Arrange these steps into the correct order:</p>
+      <ul class="sortable-list">
+        <!-- Sequence intentionally scrambled -->
+        <li data-value="Perform final assembly">Perform final assembly</li>
+        <li data-value="Mark and drill holes">Mark and drill holes</li>
+        <li data-value="Check alignment and squareness">Check alignment and squareness</li>
+        <li data-value="Dry‑fit components">Dry‑fit components</li>
+      </ul>
+      <input type="hidden" name="q4">
+    </div>
+    <!-- Q5: Rate your assembly skills -->
+    <div class="card">
+      <h3>5. Rate your assembly skills</h3>
+      <p>How confident are you in aligning parts and drilling holes accurately before final assembly? (1 = Not confident, 5 = Very confident)</p>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+        <input type="hidden" name="q5">
+      </div>
+    </div>
+    <button type="submit">Submit Responses</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<footer>&copy; 2025 Hose Reel Holder Project</footer>
+</body>
+</html>

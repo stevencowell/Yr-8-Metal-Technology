@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario – Week 5 Joining Techniques</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Week 5 Scenario — Joining Techniques</h1>
+  <p>Reflect on proper preparation and methods for joining metal.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="interactive_scenarios.html">All Scenarios</a>
+</nav>
+<main>
+  <div class="card">
+    <h2>Scenario</h2>
+    <p>A student attempts to join two steel plates. They start welding without cleaning off oil and rust. They neglect to fit up the plates and set the welder current too low. The weld bead looks poor and doesn’t penetrate. Frustrated, they decide to switch to riveting but forget to drill pilot holes, bending the rivets.</p>
+  </div>
+  <form class="scenario-form" data-unit="5">
+    <!-- Q1: Multiple‑choice -->
+    <div class="card">
+      <h3>1. Multiple‑choice</h3>
+      <p>Which joining method melts the base metals together?</p>
+      <label><input type="radio" name="q1" value="welding" required> Welding</label><br>
+      <label><input type="radio" name="q1" value="riveting"> Riveting</label><br>
+      <label><input type="radio" name="q1" value="soldering"> Soft soldering</label><br>
+      <label><input type="radio" name="q1" value="threading"> Thread cutting</label>
+    </div>
+    <!-- Q2: Select all that apply -->
+    <div class="card">
+      <h3>2. Select all that apply</h3>
+      <p>Which steps should you take before performing a weld?</p>
+      <label><input type="checkbox" name="q2" value="clean"> Clean the joint surfaces</label><br>
+      <label><input type="checkbox" name="q2" value="fit_up"> Fit up and clamp the pieces</label><br>
+      <label><input type="checkbox" name="q2" value="set_current"> Set the correct welding current</label><br>
+      <label><input type="checkbox" name="q2" value="wear_ppe"> Wear appropriate PPE</label><br>
+      <label><input type="checkbox" name="q2" value="ignore_rust"> Ignore rust to save time</label><br>
+      <label><input type="checkbox" name="q2" value="check_gas"> Check gas supply and shielding</label>
+    </div>
+    <!-- Q3: Numeric input -->
+    <div class="card">
+      <h3>3. Numeric problem</h3>
+      <p>If you need to join three plates using two rivets between each adjacent pair, how many rivets do you need in total? (Enter a number)</p>
+      <input type="number" name="q3" min="0" placeholder="Number of rivets" required>
+    </div>
+    <!-- Q4: Drag‑match -->
+    <div class="card">
+      <h3>4. Match the joining method to its description</h3>
+      <p>Drag each method onto the correct description.</p>
+      <div class="drag-area">
+        <span class="drag-item pill" draggable="true" data-value="Welding">Welding</span>
+        <span class="drag-item pill" draggable="true" data-value="Brazing">Brazing</span>
+        <span class="drag-item pill" draggable="true" data-value="Soldering">Soldering</span>
+        <span class="drag-item pill" draggable="true" data-value="Riveting">Riveting</span>
+      </div>
+      <div class="match-area">
+        <div class="drop-target card-small">
+          <strong>Melts base metals:</strong> <span class="drop-label">Drop here</span>
+          <input type="hidden" name="q4_melt">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Uses a filler rod and flux:</strong> <span class="drop-label">Drop here</span>
+          <input type="hidden" name="q4_braze">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Joins with low‑melting alloy:</strong> <span class="drop-label">Drop here</span>
+          <input type="hidden" name="q4_solder">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Uses mechanical fasteners:</strong> <span class="drop-label">Drop here</span>
+          <input type="hidden" name="q4_rivet">
+        </div>
+      </div>
+    </div>
+    <!-- Q5: Rate your welding preparedness -->
+    <div class="card">
+      <h3>5. Rate your welding preparedness</h3>
+      <p>Before starting a weld, how confident are you that you've completed all necessary preparation steps? (1 = Not prepared, 5 = Fully prepared)</p>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+        <input type="hidden" name="q5">
+      </div>
+    </div>
+    <button type="submit">Submit Responses</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<footer>&copy; 2025 Hose Reel Holder Project</footer>
+</body>
+</html>

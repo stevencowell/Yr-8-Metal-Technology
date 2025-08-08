@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week&nbsp;6 Support &amp; Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week&nbsp;6: Project Construction</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>During assembly you put all your pieces together. Check that holes line up, tighten screws and nuts, and adjust parts if necessary. It’s normal to make small corrections. Keep referring to your plan and ask for help if something doesn’t fit.</p>
+
+    <form class="quiz" data-week="Week 6" id="support-week6-quiz">
+      <fieldset>
+        <legend><b>Week 6 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What is one of the first things you should do during assembly?</p>
+            <label><input data-correct="false" name="w6_q1" type="radio"> A. Start painting the parts</label><br>
+            <label><input data-correct="true"  name="w6_q1" type="radio"> B. Check that the holes line up</label><br>
+            <label><input data-correct="false" name="w6_q1" type="radio"> C. Throw away your plan</label><br>
+            <label><input data-correct="false" name="w6_q1" type="radio"> D. Cut new pieces</label>
+          </li>
+          <li>
+            <p>If a part doesn’t fit correctly, what should you do?</p>
+            <label><input data-correct="false" name="w6_q2" type="radio"> A. Force it into place</label><br>
+            <label><input data-correct="false" name="w6_q2" type="radio"> B. Ignore it and move on</label><br>
+            <label><input data-correct="true"  name="w6_q2" type="radio"> C. Adjust or rework the piece (for example, file or re‑drill)</label><br>
+            <label><input data-correct="false" name="w6_q2" type="radio"> D. Start the whole project again</label>
+          </li>
+          <li>
+            <p>What tool is typically used to tighten nuts and bolts during assembly?</p>
+            <label><input data-correct="false" name="w6_q3" type="radio"> A. A hammer</label><br>
+            <label><input data-correct="true"  name="w6_q3" type="radio"> B. A spanner or wrench</label><br>
+            <label><input data-correct="false" name="w6_q3" type="radio"> C. A paintbrush</label><br>
+            <label><input data-correct="false" name="w6_q3" type="radio"> D. A pencil</label>
+          </li>
+          <li>
+            <p>Why is it important to refer back to your plan during construction?</p>
+            <label><input data-correct="true"  name="w6_q4" type="radio"> A. Because it guides your steps and helps you avoid mistakes</label><br>
+            <label><input data-correct="false" name="w6_q4" type="radio"> B. So you can doodle on it</label><br>
+            <label><input data-correct="false" name="w6_q4" type="radio"> C. To impress your classmates</label><br>
+            <label><input data-correct="false" name="w6_q4" type="radio"> D. It isn’t important at all</label>
+          </li>
+          <li>
+            <p>If your project is wobbly or uneven after assembly, what should you do?</p>
+            <label><input data-correct="false" name="w6_q5" type="radio"> A. Leave it as it is</label><br>
+            <label><input data-correct="false" name="w6_q5" type="radio"> B. Throw it away</label><br>
+            <label><input data-correct="true"  name="w6_q5" type="radio"> C. Adjust and tighten screws or make corrections until it’s stable</label><br>
+            <label><input data-correct="false" name="w6_q5" type="radio"> D. Paint over it to hide the problem</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>

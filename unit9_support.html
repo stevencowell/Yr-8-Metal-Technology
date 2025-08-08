@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week&nbsp;9 Support &amp; Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week&nbsp;9: Portfolio Completion</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>Your portfolio tells the story of your project from start to finish. Include your design ideas, drawings, notes about how you made the project, test results and what you learned. Keep it neat and organised so someone else can understand it.</p>
+
+    <form class="quiz" data-week="Week 9" id="support-week9-quiz">
+      <fieldset>
+        <legend><b>Week 9 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What is the main purpose of your portfolio?</p>
+            <label><input data-correct="false" name="w9_q1" type="radio"> A. To show off your art skills</label><br>
+            <label><input data-correct="true"  name="w9_q1" type="radio"> B. To tell the story of your project from start to finish</label><br>
+            <label><input data-correct="false" name="w9_q1" type="radio"> C. To fill time with unrelated content</label><br>
+            <label><input data-correct="false" name="w9_q1" type="radio"> D. To practise handwriting only</label>
+          </li>
+          <li>
+            <p>Which of the following should be included in your portfolio?</p>
+            <label><input data-correct="false" name="w9_q2" type="radio"> A. Only a photo of the final project</label><br>
+            <label><input data-correct="true"  name="w9_q2" type="radio"> B. Your design ideas, drawings, notes, test results and reflections</label><br>
+            <label><input data-correct="false" name="w9_q2" type="radio"> C. Irrelevant pictures and jokes</label><br>
+            <label><input data-correct="false" name="w9_q2" type="radio"> D. Nothing at all</label>
+          </li>
+          <li>
+            <p>Why is neatness and organisation important in your portfolio?</p>
+            <label><input data-correct="false" name="w9_q3" type="radio"> A. It isn’t important</label><br>
+            <label><input data-correct="true"  name="w9_q3" type="radio"> B. So someone else can understand your project clearly</label><br>
+            <label><input data-correct="false" name="w9_q3" type="radio"> C. Because the teacher is strict</label><br>
+            <label><input data-correct="false" name="w9_q3" type="radio"> D. To impress your friends</label>
+          </li>
+          <li>
+            <p>If you don’t have a photo of the final product, what is a good solution?</p>
+            <label><input data-correct="false" name="w9_q4" type="radio"> A. Leave that section blank</label><br>
+            <label><input data-correct="false" name="w9_q4" type="radio"> B. Use a random picture you found online</label><br>
+            <label><input data-correct="true"  name="w9_q4" type="radio"> C. Make a sketch or take a new photo</label><br>
+            <label><input data-correct="false" name="w9_q4" type="radio"> D. Skip that page entirely</label>
+          </li>
+          <li>
+            <p>How can your portfolio help you in the future?</p>
+            <label><input data-correct="false" name="w9_q5" type="radio"> A. It can’t help; it’s just for marks</label><br>
+            <label><input data-correct="false" name="w9_q5" type="radio"> B. It will collect dust and be forgotten</label><br>
+            <label><input data-correct="true"  name="w9_q5" type="radio"> C. It helps you remember what you learned and improve future projects</label><br>
+            <label><input data-correct="false" name="w9_q5" type="radio"> D. It makes you a famous engineer</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>

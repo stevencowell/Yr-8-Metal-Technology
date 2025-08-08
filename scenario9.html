@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario – Week 9 Portfolio Completion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Week 9 Scenario — Portfolio Completion</h1>
+  <p>Consider how to document your design process effectively.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="interactive_scenarios.html">All Scenarios</a>
+</nav>
+<main>
+  <div class="card">
+    <h2>Scenario</h2>
+    <p>As the deadline approaches, a student realises they have not kept a record of their design process. Their portfolio contains only a photo of the finished project. They scramble to put together documents, but important details and reflections are missing.</p>
+  </div>
+  <form class="scenario-form" data-unit="9">
+    <!-- Q1: Multiple‑choice -->
+    <div class="card">
+      <h3>1. Multiple‑choice</h3>
+      <p>Which of the following is an essential element of a design portfolio?</p>
+      <label><input type="radio" name="q1" value="documentation" required> Detailed documentation of your process</label><br>
+      <label><input type="radio" name="q1" value="just_photo"> Only a photo of the final product</label><br>
+      <label><input type="radio" name="q1" value="grade_sheet"> A copy of your report card</label><br>
+      <label><input type="radio" name="q1" value="tv_schedule"> Your TV show schedule</label>
+    </div>
+    <!-- Q2: Select all that apply -->
+    <div class="card">
+      <h3>2. Select all that apply</h3>
+      <p>What should you include in your project portfolio?</p>
+      <label><input type="checkbox" name="q2" value="drawings"> Design drawings and sketches</label><br>
+      <label><input type="checkbox" name="q2" value="photos"> Photos of your work at different stages</label><br>
+      <label><input type="checkbox" name="q2" value="reflections"> Reflections on what you learned</label><br>
+      <label><input type="checkbox" name="q2" value="materials"> Materials and parts lists</label><br>
+      <label><input type="checkbox" name="q2" value="tv"> Your favourite TV show schedule</label><br>
+      <label><input type="checkbox" name="q2" value="feedback"> Feedback from your teacher</label>
+    </div>
+    <!-- Q3: Fill in the blanks -->
+    <div class="card">
+      <h3>3. Fill in the blanks</h3>
+      <p>Document your 
+        <select name="q3a" required>
+          <option value="">--select--</option>
+          <option value="process">process</option>
+          <option value="artwork">artwork</option>
+          <option value="games">games</option>
+        </select>
+        and include 
+        <select name="q3b" required>
+          <option value="">--select--</option>
+          <option value="reflections">reflections</option>
+          <option value="jokes">jokes</option>
+          <option value="scores">scores</option>
+        </select>
+        to capture your learning.
+      </p>
+    </div>
+    <!-- Q4: Rate your portfolio completeness -->
+    <div class="card">
+      <h3>4. Rate your portfolio completeness</h3>
+      <p>On a scale of 1 to 5, how complete and detailed is your project portfolio? (1 = Very incomplete, 5 = Comprehensive)</p>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+        <input type="hidden" name="q4">
+      </div>
+    </div>
+    <!-- Q5: Drag‑match -->
+    <div class="card">
+      <h3>5. Match the portfolio section to its description</h3>
+      <p>Drag each section onto the appropriate description.</p>
+      <div class="drag-area">
+        <span class="drag-item pill" draggable="true" data-value="Introduction">Introduction</span>
+        <span class="drag-item pill" draggable="true" data-value="Design Development">Design Development</span>
+        <span class="drag-item pill" draggable="true" data-value="Construction">Construction</span>
+        <span class="drag-item pill" draggable="true" data-value="Evaluation">Evaluation</span>
+      </div>
+      <div class="match-area">
+        <div class="drop-target card-small">
+          <strong>Overview of project goals:</strong> <span class="drop-label">Drop here</span>
+          <input type="hidden" name="q5_intro">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Sketches and planning documents:</strong> <span class="drop-label">Drop here</span>
+          <input type="hidden" name="q5_design">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Photos and notes during building:</strong> <span class="drop-label">Drop here</span>
+          <input type="hidden" name="q5_construction">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Analysis of final product and improvements:</strong> <span class="drop-label">Drop here</span>
+          <input type="hidden" name="q5_evaluation">
+        </div>
+      </div>
+    </div>
+    <button type="submit">Submit Responses</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<footer>&copy; 2025 Hose Reel Holder Project</footer>
+</body>
+</html>

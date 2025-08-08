@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week&nbsp;2 Support &amp; Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week&nbsp;2: Design &amp; Planning</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>In simple terms, this week you learn to think of several designs, pick the best one and plan how to make it. You should draw sketches, decide on sizes, list materials and write down steps. Planning saves mistakes later.</p>
+
+    <form class="quiz" data-week="Week 2" id="support-week2-quiz">
+      <fieldset>
+        <legend><b>Week 2 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What does the design process involve?</p>
+            <label><input data-correct="false" name="w2_q1" type="radio"> A. Guessing and starting to build</label><br>
+            <label><input data-correct="true"  name="w2_q1" type="radio"> B. Thinking of ideas, choosing the best and planning how to make it</label><br>
+            <label><input data-correct="false" name="w2_q1" type="radio"> C. Copying a friend’s project</label><br>
+            <label><input data-correct="false" name="w2_q1" type="radio"> D. Waiting for someone else to decide</label>
+          </li>
+          <li>
+            <p>Which of the following should you do before starting to build your hose holder?</p>
+            <label><input data-correct="false" name="w2_q2" type="radio"> A. Start cutting immediately</label><br>
+            <label><input data-correct="true"  name="w2_q2" type="radio"> B. Decide on sizes, list materials and plan the steps</label><br>
+            <label><input data-correct="false" name="w2_q2" type="radio"> C. Ask your friend to build it for you</label><br>
+            <label><input data-correct="false" name="w2_q2" type="radio"> D. Paint it first</label>
+          </li>
+          <li>
+            <p>Why are sketches important during the design phase?</p>
+            <label><input data-correct="false" name="w2_q3" type="radio"> A. They are not important</label><br>
+            <label><input data-correct="true"  name="w2_q3" type="radio"> B. They help you visualise and develop your ideas</label><br>
+            <label><input data-correct="false" name="w2_q3" type="radio"> C. They make your notebook look fuller</label><br>
+            <label><input data-correct="false" name="w2_q3" type="radio"> D. They take up time you could be building</label>
+          </li>
+          <li>
+            <p>What do we call a list of steps for making your project?</p>
+            <label><input data-correct="false" name="w2_q4" type="radio"> A. A guess</label><br>
+            <label><input data-correct="true"  name="w2_q4" type="radio"> B. A plan or procedure</label><br>
+            <label><input data-correct="false" name="w2_q4" type="radio"> C. A shopping list</label><br>
+            <label><input data-correct="false" name="w2_q4" type="radio"> D. A doodle</label>
+          </li>
+          <li>
+            <p>How does planning help later in the project?</p>
+            <label><input data-correct="false" name="w2_q5" type="radio"> A. It wastes time</label><br>
+            <label><input data-correct="true"  name="w2_q5" type="radio"> B. It helps prevent mistakes and saves time later</label><br>
+            <label><input data-correct="false" name="w2_q5" type="radio"> C. It removes the need to follow instructions</label><br>
+            <label><input data-correct="false" name="w2_q5" type="radio"> D. It reduces your creativity</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>

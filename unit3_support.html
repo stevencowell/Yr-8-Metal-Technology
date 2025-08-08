@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week&nbsp;3 Support &amp; Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week&nbsp;3: Tools &amp; Marking Out</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>This week you learn to measure and mark metal accurately. Use a ruler and try square to draw straight lines, mark hole positions with a centre punch, and always clamp your work before cutting or drilling. Practise on scrap to build confidence.</p>
+
+    <form class="quiz" data-week="Week 3" id="support-week3-quiz">
+      <fieldset>
+        <legend><b>Week 3 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>Which tools help you draw accurate, straight lines on metal?</p>
+            <label><input data-correct="true"  name="w3_q1" type="radio"> A. A ruler and try square</label><br>
+            <label><input data-correct="false" name="w3_q1" type="radio"> B. A hammer and nails</label><br>
+            <label><input data-correct="false" name="w3_q1" type="radio"> C. A paintbrush</label><br>
+            <label><input data-correct="false" name="w3_q1" type="radio"> D. A file</label>
+          </li>
+          <li>
+            <p>Why do we use a centre punch before drilling a hole?</p>
+            <label><input data-correct="false" name="w3_q2" type="radio"> A. To decorate the metal</label><br>
+            <label><input data-correct="true"  name="w3_q2" type="radio"> B. To mark the hole position so the drill doesn’t wander</label><br>
+            <label><input data-correct="false" name="w3_q2" type="radio"> C. To cut through the metal</label><br>
+            <label><input data-correct="false" name="w3_q2" type="radio"> D. To hold pieces together</label>
+          </li>
+          <li>
+            <p>What should you always do with your workpiece before cutting or drilling?</p>
+            <label><input data-correct="false" name="w3_q3" type="radio"> A. Hold it with one hand</label><br>
+            <label><input data-correct="true"  name="w3_q3" type="radio"> B. Clamp it securely to the bench</label><br>
+            <label><input data-correct="false" name="w3_q3" type="radio"> C. Balance it on your knee</label><br>
+            <label><input data-correct="false" name="w3_q3" type="radio"> D. Let it move freely</label>
+          </li>
+          <li>
+            <p>What is a good way to build confidence when using tools?</p>
+            <label><input data-correct="false" name="w3_q4" type="radio"> A. Avoid practising and hope for the best</label><br>
+            <label><input data-correct="true"  name="w3_q4" type="radio"> B. Practise on scrap material before working on your project</label><br>
+            <label><input data-correct="false" name="w3_q4" type="radio"> C. Watch videos instead of trying</label><br>
+            <label><input data-correct="false" name="w3_q4" type="radio"> D. Start directly on the final piece</label>
+          </li>
+          <li>
+            <p>Why is accurate measuring important before cutting metal?</p>
+            <label><input data-correct="false" name="w3_q5" type="radio"> A. It isn’t important at all</label><br>
+            <label><input data-correct="true"  name="w3_q5" type="radio"> B. It ensures pieces fit together and reduces mistakes</label><br>
+            <label><input data-correct="false" name="w3_q5" type="radio"> C. It makes the tools look clean</label><br>
+            <label><input data-correct="false" name="w3_q5" type="radio"> D. It takes longer but has no benefit</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>

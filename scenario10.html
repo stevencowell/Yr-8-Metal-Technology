@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario – Week 10 Final Assessment &amp; Reflection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Week 10 Scenario — Final Assessment &amp; Reflection</h1>
+  <p>Think about how to consolidate your learning and improve your project.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="interactive_scenarios.html">All Scenarios</a>
+</nav>
+<main>
+  <div class="card">
+    <h2>Scenario</h2>
+    <p>In the final week, a student rushes to finish their project without reviewing the assessment criteria. They do not seek feedback from peers or reflect on their learning. During the final review, they discover several small errors and realise they could have improved their project with more time and reflection.</p>
+  </div>
+  <form class="scenario-form" data-unit="10">
+    <!-- Q1: Multiple‑choice -->
+    <div class="card">
+      <h3>1. Multiple‑choice</h3>
+      <p>What is the purpose of a final reflection?</p>
+      <label><input type="radio" name="q1" value="improve_learning" required> To identify what you learned and how to improve</label><br>
+      <label><input type="radio" name="q1" value="fill_time"> To fill time at the end of the project</label><br>
+      <label><input type="radio" name="q1" value="grade"> To assign a grade to your project</label><br>
+      <label><input type="radio" name="q1" value="show_off"> To show off to your friends</label>
+    </div>
+    <!-- Q2: Select all that apply -->
+    <div class="card">
+      <h3>2. Select all that apply</h3>
+      <p>Which actions could help improve your final submission?</p>
+      <label><input type="checkbox" name="q2" value="review_criteria"> Review the assessment criteria</label><br>
+      <label><input type="checkbox" name="q2" value="fix_errors"> Fix any mistakes you find</label><br>
+      <label><input type="checkbox" name="q2" value="seek_feedback"> Seek feedback from classmates or teachers</label><br>
+      <label><input type="checkbox" name="q2" value="ignore"> Ignore feedback and submit immediately</label><br>
+      <label><input type="checkbox" name="q2" value="rush"> Rush to finish as quickly as possible</label><br>
+      <label><input type="checkbox" name="q2" value="document_changes"> Document the changes you make</label>
+    </div>
+    <!-- Q3: Fill in the blanks -->
+    <div class="card">
+      <h3>3. Fill in the blanks</h3>
+      <p>To improve your project, you can 
+        <select name="q3a" required>
+          <option value="">--select--</option>
+          <option value="review">review</option>
+          <option value="fix">fix</option>
+          <option value="ignore">ignore</option>
+        </select> your work and 
+        <select name="q3b" required>
+          <option value="">--select--</option>
+          <option value="seek">seek</option>
+          <option value="avoid">avoid</option>
+          <option value="tune_out">tune out</option>
+        </select> feedback from peers.
+      </p>
+    </div>
+    <!-- Q4: Ordering (sortable list) -->
+    <div class="card">
+      <h3>4. Final review sequence</h3>
+      <p>Put these tasks into the correct order:</p>
+      <ul class="sortable-list">
+        <!-- Steps shuffled deliberately; students must reorder correctly -->
+        <li data-value="Reflect on what you learned">Reflect on what you learned</li>
+        <li data-value="Fix errors and make improvements">Fix errors and make improvements</li>
+        <li data-value="Seek feedback from peers or teacher">Seek feedback from peers or teacher</li>
+        <li data-value="Review assessment criteria">Review assessment criteria</li>
+      </ul>
+      <input type="hidden" name="q4">
+    </div>
+    <!-- Q5: Rate your reflection process -->
+    <div class="card">
+      <h3>5. Rate your reflection process</h3>
+      <p>How thoroughly do you reflect on your work at the end of a project? (1 = I rarely reflect, 5 = I reflect deeply and record improvements)</p>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+        <input type="hidden" name="q5">
+      </div>
+    </div>
+    <button type="submit">Submit Responses</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<footer>&copy; 2025 Hose Reel Holder Project</footer>
+</body>
+</html>

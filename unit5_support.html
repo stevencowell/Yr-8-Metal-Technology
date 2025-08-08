@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week&nbsp;5 Support &amp; Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week&nbsp;5: Joining Techniques</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>You learn different ways to join metal. Bolts and screws can be undone; welds and brazes permanently fuse the pieces. Glue is not strong enough for a hose holder. Always wear proper protection when welding or brazing and make sure the parts fit well before joining.</p>
+
+    <form class="quiz" data-week="Week 5" id="support-week5-quiz">
+      <fieldset>
+        <legend><b>Week 5 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>Which method permanently fuses metal pieces together?</p>
+            <label><input data-correct="false" name="w5_q1" type="radio"> A. Using screws</label><br>
+            <label><input data-correct="false" name="w5_q1" type="radio"> B. Taping them together</label><br>
+            <label><input data-correct="true"  name="w5_q1" type="radio"> C. Welding or brazing</label><br>
+            <label><input data-correct="false" name="w5_q1" type="radio"> D. Gluing them</label>
+          </li>
+          <li>
+            <p>Why don’t we use glue for the hose holder?</p>
+            <label><input data-correct="false" name="w5_q2" type="radio"> A. It’s messy</label><br>
+            <label><input data-correct="true"  name="w5_q2" type="radio"> B. It isn’t strong enough to hold metal parts securely</label><br>
+            <label><input data-correct="false" name="w5_q2" type="radio"> C. It’s too expensive</label><br>
+            <label><input data-correct="false" name="w5_q2" type="radio"> D. It looks ugly</label>
+          </li>
+          <li>
+            <p>What safety gear should you wear when welding or brazing?</p>
+            <label><input data-correct="false" name="w5_q3" type="radio"> A. No protection is needed</label><br>
+            <label><input data-correct="false" name="w5_q3" type="radio"> B. Just sunglasses</label><br>
+            <label><input data-correct="true"  name="w5_q3" type="radio"> C. Proper protective equipment like gloves and a welding helmet</label><br>
+            <label><input data-correct="false" name="w5_q3" type="radio"> D. Flip‑flops and shorts</label>
+          </li>
+          <li>
+            <p>Before joining pieces permanently, what should you make sure of?</p>
+            <label><input data-correct="true"  name="w5_q4" type="radio"> A. That the parts fit well and holes line up</label><br>
+            <label><input data-correct="false" name="w5_q4" type="radio"> B. That they are the same colour</label><br>
+            <label><input data-correct="false" name="w5_q4" type="radio"> C. That you have glue ready</label><br>
+            <label><input data-correct="false" name="w5_q4" type="radio"> D. That the weather is sunny</label>
+          </li>
+          <li>
+            <p>Which joining method allows you to take the pieces apart later if needed?</p>
+            <label><input data-correct="false" name="w5_q5" type="radio"> A. Welding</label><br>
+            <label><input data-correct="false" name="w5_q5" type="radio"> B. Brazing</label><br>
+            <label><input data-correct="true"  name="w5_q5" type="radio"> C. Using bolts or screws</label><br>
+            <label><input data-correct="false" name="w5_q5" type="radio"> D. Gluing</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>

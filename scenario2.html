@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario – Week 2 Design &amp; Planning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Week 2 Scenario — Design &amp; Planning</h1>
+  <p>Test your design and planning skills with this situation.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="interactive_scenarios.html">All Scenarios</a>
+</nav>
+<main>
+  <div class="card">
+    <h2>Scenario</h2>
+    <p>A student rushes through the planning stage of their hose reel holder. They sketch a rough idea without measurements, forget to prepare a materials list and jump straight into cutting materials. Halfway through, they realise the parts don’t fit together and they are running out of steel. The student becomes frustrated because they have to start over.</p>
+  </div>
+  <form class="scenario-form" data-unit="2">
+    <!-- Q1: Multiple‑choice -->
+    <div class="card">
+      <h3>1. Multiple‑choice</h3>
+      <p>What is the <em>main</em> purpose of a design sketch?</p>
+      <label><input type="radio" name="q1" value="communicate" required> To communicate your ideas and plan dimensions</label><br>
+      <label><input type="radio" name="q1" value="waste_time"> To waste time before starting construction</label><br>
+      <label><input type="radio" name="q1" value="record_finished"> To record only the finished product</label><br>
+      <label><input type="radio" name="q1" value="show_off"> To show off your drawing skills</label>
+    </div>
+    <!-- Q2: Select all that apply -->
+    <div class="card">
+      <h3>2. Select all that apply</h3>
+      <p>Which actions should be part of your planning process?</p>
+      <label><input type="checkbox" name="q2" value="define_problem"> Define the problem and goals</label><br>
+      <label><input type="checkbox" name="q2" value="sketch_views"> Sketch multiple views and dimensioned drawings</label><br>
+      <label><input type="checkbox" name="q2" value="materials_list"> Prepare a materials and tools list</label><br>
+      <label><input type="checkbox" name="q2" value="ignore_measurements"> Ignore measurements to save time</label><br>
+      <label><input type="checkbox" name="q2" value="research_methods"> Research construction methods</label>
+    </div>
+    <!-- Q3: Fill in the blanks -->
+    <div class="card">
+      <h3>3. Fill in the blanks</h3>
+      <p>During the planning stage you should 
+        <select name="q3a" required>
+          <option value="">--select--</option>
+          <option value="measure">measure</option>
+          <option value="paint">paint</option>
+          <option value="guess">guess</option>
+          <option value="bend">bend</option>
+        </select> 
+        each part of your project and 
+        <select name="q3b" required>
+          <option value="">--select--</option>
+          <option value="list">list</option>
+          <option value="ignore">ignore</option>
+          <option value="hide">hide</option>
+          <option value="waste">waste</option>
+        </select> the materials you will need.
+      </p>
+    </div>
+    <!-- Q4: Ordering (sortable list) -->
+    <div class="card">
+      <h3>4. Design process sequence</h3>
+      <p>Drag these design stages into the correct order:</p>
+      <ul class="sortable-list">
+        <!-- Out of order on purpose; students must arrange these correctly -->
+        <li data-value="Begin construction">Begin construction</li>
+        <li data-value="Sketch and plan design">Sketch and plan design</li>
+        <li data-value="Prepare materials list">Prepare materials list</li>
+        <li data-value="Define the problem">Define the problem</li>
+        <li data-value="Research and brainstorm">Research and brainstorm</li>
+      </ul>
+      <input type="hidden" name="q4">
+    </div>
+    <!-- Q5: Rate your planning habits -->
+    <div class="card">
+      <h3>5. Rate your planning habits</h3>
+      <p>On a scale of 1 to 5, how well do you usually plan and prepare before starting a project? (1 = Poor planning, 5 = Excellent planning)</p>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+        <input type="hidden" name="q5">
+      </div>
+    </div>
+    <button type="submit">Submit Responses</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<footer>&copy; 2025 Hose Reel Holder Project</footer>
+</body>
+</html>

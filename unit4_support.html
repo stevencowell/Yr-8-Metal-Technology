@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week&nbsp;4 Support &amp; Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week&nbsp;4: Shaping Techniques</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>This week you learn to bend metal. Use a vice to hold the piece and a hammer or long bar for leverage. Always mark where you want the bend and bend slowly. Some metals need heat to bend easily; always let the teacher handle heating.</p>
+
+    <form class="quiz" data-week="Week 4" id="support-week4-quiz">
+      <fieldset>
+        <legend><b>Week 4 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What tool is used to hold metal securely while bending?</p>
+            <label><input data-correct="false" name="w4_q1" type="radio"> A. A broom</label><br>
+            <label><input data-correct="true"  name="w4_q1" type="radio"> B. A vice</label><br>
+            <label><input data-correct="false" name="w4_q1" type="radio"> C. A ruler</label><br>
+            <label><input data-correct="false" name="w4_q1" type="radio"> D. A drill</label>
+          </li>
+          <li>
+            <p>Which of the following helps you bend metal more easily?</p>
+            <label><input data-correct="false" name="w4_q2" type="radio"> A. Using a light pencil</label><br>
+            <label><input data-correct="true"  name="w4_q2" type="radio"> B. Using a hammer or long bar for leverage</label><br>
+            <label><input data-correct="false" name="w4_q2" type="radio"> C. Wiggling it by hand</label><br>
+            <label><input data-correct="false" name="w4_q2" type="radio"> D. Asking someone to step on it</label>
+          </li>
+          <li>
+            <p>Why should you mark where you want to bend before shaping?</p>
+            <label><input data-correct="false" name="w4_q3" type="radio"> A. To doodle on the metal</label><br>
+            <label><input data-correct="true"  name="w4_q3" type="radio"> B. To know exactly where to bend</label><br>
+            <label><input data-correct="false" name="w4_q3" type="radio"> C. To impress your classmates</label><br>
+            <label><input data-correct="false" name="w4_q3" type="radio"> D. It’s not necessary</label>
+          </li>
+          <li>
+            <p>If a metal is very hard to bend, what can help?</p>
+            <label><input data-correct="false" name="w4_q4" type="radio"> A. Putting it in cold water</label><br>
+            <label><input data-correct="true"  name="w4_q4" type="radio"> B. Applying heat under the teacher’s supervision</label><br>
+            <label><input data-correct="false" name="w4_q4" type="radio"> C. Hitting it repeatedly with your hand</label><br>
+            <label><input data-correct="false" name="w4_q4" type="radio"> D. Adding glue to it</label>
+          </li>
+          <li>
+            <p>Why is it important to bend metal slowly instead of quickly?</p>
+            <label><input data-correct="false" name="w4_q5" type="radio"> A. To waste time</label><br>
+            <label><input data-correct="false" name="w4_q5" type="radio"> B. To make as much noise as possible</label><br>
+            <label><input data-correct="true"  name="w4_q5" type="radio"> C. To maintain control and avoid cracking the metal</label><br>
+            <label><input data-correct="false" name="w4_q5" type="radio"> D. Because the teacher said so</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>

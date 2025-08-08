@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week&nbsp;8 Support &amp; Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week&nbsp;8: Testing &amp; Evaluation</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>Testing shows whether your holder works. Hang a hose on it, see if it holds the weight and check if it’s easy to use. Reflection helps you learn by thinking about what you would change next time.</p>
+
+    <form class="quiz" data-week="Week 8" id="support-week8-quiz">
+      <fieldset>
+        <legend><b>Week 8 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>Why do we test our project?</p>
+            <label><input data-correct="false" name="w8_q1" type="radio"> A. Because it’s fun to play with</label><br>
+            <label><input data-correct="true"  name="w8_q1" type="radio"> B. To check if it actually works as intended</label><br>
+            <label><input data-correct="false" name="w8_q1" type="radio"> C. To show it off before it’s finished</label><br>
+            <label><input data-correct="false" name="w8_q1" type="radio"> D. Testing isn’t necessary</label>
+          </li>
+          <li>
+            <p>What should you check when testing the hose holder?</p>
+            <label><input data-correct="false" name="w8_q2" type="radio"> A. How shiny it is</label><br>
+            <label><input data-correct="true"  name="w8_q2" type="radio"> B. If it holds the hose’s weight and is easy to use</label><br>
+            <label><input data-correct="false" name="w8_q2" type="radio"> C. Whether it matches your favourite colour</label><br>
+            <label><input data-correct="false" name="w8_q2" type="radio"> D. How heavy it feels</label>
+          </li>
+          <li>
+            <p>When reflecting after testing, what question could you ask yourself?</p>
+            <label><input data-correct="false" name="w8_q3" type="radio"> A. How to avoid reflection</label><br>
+            <label><input data-correct="false" name="w8_q3" type="radio"> B. What did my friends do?</label><br>
+            <label><input data-correct="true"  name="w8_q3" type="radio"> C. What would I do differently next time?</label><br>
+            <label><input data-correct="false" name="w8_q3" type="radio"> D. How to finish as quickly as possible</label>
+          </li>
+          <li>
+            <p>If something didn’t work well during testing, what should you do?</p>
+            <label><input data-correct="false" name="w8_q4" type="radio"> A. Hide it so nobody knows</label><br>
+            <label><input data-correct="false" name="w8_q4" type="radio"> B. Ignore it and hope it fixes itself</label><br>
+            <label><input data-correct="true"  name="w8_q4" type="radio"> C. Learn from it and think about how to improve</label><br>
+            <label><input data-correct="false" name="w8_q4" type="radio"> D. Blame someone else</label>
+          </li>
+          <li>
+            <p>How does evaluating your project help you?</p>
+            <label><input data-correct="false" name="w8_q5" type="radio"> A. It doesn’t help at all</label><br>
+            <label><input data-correct="false" name="w8_q5" type="radio"> B. It wastes time you could spend building</label><br>
+            <label><input data-correct="true"  name="w8_q5" type="radio"> C. It helps you learn and improve future projects</label><br>
+            <label><input data-correct="false" name="w8_q5" type="radio"> D. It stops you from enjoying the project</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic centering styles for the login page */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f5f5f5;
+    }
+    .login-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 2rem;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .login-card h1 {
+      margin-top: 0;
+    }
+    .login-card label,
+    .login-card input {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .login-card button {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <h1>Student Login</h1>
+    <p>Please enter your name or student ID to begin.</p>
+    <form id="login-form">
+      <label for="username">Name or ID</label>
+      <input type="text" id="username" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <script>
+    // Handle student login.  When the form is submitted the
+    // provided name/ID is stored in localStorage under the
+    // key `currentUser`.  After a successful login the user
+    // is redirected to the home page.
+    document.getElementById('login-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value.trim();
+      if (username) {
+        localStorage.setItem('currentUser', username);
+        // Optionally initialise progress keys for this user.  This
+        // isn't strictly necessary because missing keys default to
+        // incomplete, but it clarifies intent.
+        for (let i = 1; i <= 10; i++) {
+          const key = `${username}_unit${i}_complete`;
+          if (localStorage.getItem(key) === null) {
+            localStorage.setItem(key, 'false');
+          }
+        }
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
+</body>
+</html>

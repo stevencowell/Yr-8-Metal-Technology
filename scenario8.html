@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario – Week 8 Testing &amp; Evaluation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Week 8 Scenario — Testing &amp; Evaluation</h1>
+  <p>Evaluate your final product through testing and critical assessment.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="interactive_scenarios.html">All Scenarios</a>
+</nav>
+<main>
+  <div class="card">
+    <h2>Scenario</h2>
+    <p>After finishing their hose reel holder, a student decides it’s done and puts it aside without testing it. During grading, the hose reel won’t fit properly and the holder flexes under load. The student is disappointed by the low mark.</p>
+  </div>
+  <form class="scenario-form" data-unit="8">
+    <!-- Q1: Multiple‑choice -->
+    <div class="card">
+      <h3>1. Multiple‑choice</h3>
+      <p>Which step should come immediately after completing the build?</p>
+      <label><input type="radio" name="q1" value="test" required> Test the product for fit and strength</label><br>
+      <label><input type="radio" name="q1" value="store"> Store the project away</label><br>
+      <label><input type="radio" name="q1" value="paint"> Start painting the project</label><br>
+      <label><input type="radio" name="q1" value="move_on"> Move on to the next project</label>
+    </div>
+    <!-- Q2: Select all that apply -->
+    <div class="card">
+      <h3>2. Select all that apply</h3>
+      <p>Which of the following are valid evaluation criteria for a metal project?</p>
+      <label><input type="checkbox" name="q2" value="fit"> Fit and function</label><br>
+      <label><input type="checkbox" name="q2" value="strength"> Strength and durability</label><br>
+      <label><input type="checkbox" name="q2" value="finish"> Finish and aesthetics</label><br>
+      <label><input type="checkbox" name="q2" value="safety"> Safety and usability</label><br>
+      <label><input type="checkbox" name="q2" value="time_resting"> Number of hours spent resting</label><br>
+      <label><input type="checkbox" name="q2" value="efficiency"> Efficiency of construction</label>
+    </div>
+    <!-- Q3: Self‑assessment matrix -->
+    <div class="card">
+      <h3>3. Self‑assessment matrix</h3>
+      <p>Rate your finished project:</p>
+      <table>
+        <tr><th>Aspect</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+        <tr><td>Fit of the hose reel</td>
+          <td><input type="radio" name="q3a" value="1"></td>
+          <td><input type="radio" name="q3a" value="2"></td>
+          <td><input type="radio" name="q3a" value="3"></td>
+          <td><input type="radio" name="q3a" value="4"></td>
+          <td><input type="radio" name="q3a" value="5"></td></tr>
+        <tr><td>Strength and durability</td>
+          <td><input type="radio" name="q3b" value="1"></td>
+          <td><input type="radio" name="q3b" value="2"></td>
+          <td><input type="radio" name="q3b" value="3"></td>
+          <td><input type="radio" name="q3b" value="4"></td>
+          <td><input type="radio" name="q3b" value="5"></td></tr>
+        <tr><td>Finish and appearance</td>
+          <td><input type="radio" name="q3c" value="1"></td>
+          <td><input type="radio" name="q3c" value="2"></td>
+          <td><input type="radio" name="q3c" value="3"></td>
+          <td><input type="radio" name="q3c" value="4"></td>
+          <td><input type="radio" name="q3c" value="5"></td></tr>
+      </table>
+    </div>
+    <!-- Q4: Ordering (sortable list) -->
+    <div class="card">
+      <h3>4. Evaluation sequence</h3>
+      <p>Drag these evaluation steps into the correct order:</p>
+      <ul class="sortable-list">
+        <!-- Intentionally scrambled evaluation order -->
+        <li data-value="Reflect on improvements">Reflect on improvements</li>
+        <li data-value="Evaluate finish and aesthetics">Evaluate finish and aesthetics</li>
+        <li data-value="Test the fit and function">Test the fit and function</li>
+        <li data-value="Assess strength and durability">Assess strength and durability</li>
+      </ul>
+      <input type="hidden" name="q4">
+    </div>
+    <!-- Q5: Rate your testing habits -->
+    <div class="card">
+      <h3>5. Rate your testing habits</h3>
+      <p>After finishing a project, how thoroughly do you test and evaluate it? (1 = Not at all, 5 = Very thoroughly)</p>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+        <input type="hidden" name="q5">
+      </div>
+    </div>
+    <button type="submit">Submit Responses</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<footer>&copy; 2025 Hose Reel Holder Project</footer>
+</body>
+</html>

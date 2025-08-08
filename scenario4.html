@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario – Week 4 Shaping Techniques</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Week 4 Scenario — Shaping Techniques</h1>
+  <p>Think about how to remove and shape material safely and effectively.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="interactive_scenarios.html">All Scenarios</a>
+</nav>
+<main>
+  <div class="card">
+    <h2>Scenario</h2>
+    <p>A student needs to round the end of a metal bar. They attempt to use a hammer to shape it, striking the bar directly on the vice without using any other tools. The blows mushroom the end and damage the vice jaws. Frustrated, they then grab a file and push it back and forth vigorously, lifting the file on the forward stroke.</p>
+  </div>
+  <form class="scenario-form" data-unit="4">
+    <!-- Q1: Multiple‑choice -->
+    <div class="card">
+      <h3>1. Multiple‑choice</h3>
+      <p>Which tool is best suited to remove small amounts of metal and smooth edges?</p>
+      <label><input type="radio" name="q1" value="file" required> File</label><br>
+      <label><input type="radio" name="q1" value="hammer"> Hammer</label><br>
+      <label><input type="radio" name="q1" value="chisel"> Cold chisel</label><br>
+      <label><input type="radio" name="q1" value="grinder"> Angle grinder</label>
+    </div>
+    <!-- Q2: Fill in the blanks -->
+    <div class="card">
+      <h3>2. Fill in the blanks</h3>
+      <p>Cold working involves shaping metal without 
+        <select name="q2a" required>
+          <option value="">--select--</option>
+          <option value="heating">heating</option>
+          <option value="cooling">cooling</option>
+          <option value="washing">washing</option>
+        </select> it. When filing, always 
+        <select name="q2b" required>
+          <option value="">--select--</option>
+          <option value="apply_pressure">apply pressure on the forward stroke</option>
+          <option value="lift_forward">lift on the forward stroke and push on the return</option>
+          <option value="hammer">strike the file with a hammer</option>
+        </select>.
+      </p>
+    </div>
+    <!-- Q3: Drag‑match -->
+    <div class="card">
+      <h3>3. Match the tool to its best use</h3>
+      <p>Drag each tool onto the appropriate use.</p>
+      <div class="drag-area">
+        <span class="drag-item pill" draggable="true" data-value="File">File</span>
+        <span class="drag-item pill" draggable="true" data-value="Hammer">Hammer</span>
+        <span class="drag-item pill" draggable="true" data-value="Chisel">Chisel</span>
+        <span class="drag-item pill" draggable="true" data-value="Grinder">Grinder</span>
+      </div>
+      <div class="match-area">
+        <div class="drop-target card-small">
+          <strong>Remove small amounts precisely:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_remove">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Shape metal by striking:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_strike">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Cut through stock:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_cut">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Smooth rough edges:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_smooth">
+        </div>
+      </div>
+    </div>
+    <!-- Q4: Ordering (sortable list) -->
+    <div class="card">
+      <h3>4. Filing procedure sequence</h3>
+      <p>Drag the steps for filing a metal edge into the correct order:</p>
+      <ul class="sortable-list">
+        <!-- Intentionally scrambled order; students must sort correctly -->
+        <li data-value="Deburr edges">Deburr edges</li>
+        <li data-value="File forward, lift on return">File forward, lift on return</li>
+        <li data-value="Select the appropriate file">Select the appropriate file</li>
+        <li data-value="Secure the workpiece">Secure the workpiece</li>
+      </ul>
+      <input type="hidden" name="q4">
+    </div>
+    <!-- Q5: Rate your filing technique -->
+    <div class="card">
+      <h3>5. Rate your filing technique</h3>
+      <p>How confident are you in your ability to file a metal edge safely and effectively? (1 = Not confident, 5 = Very confident)</p>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+        <input type="hidden" name="q5">
+      </div>
+    </div>
+    <button type="submit">Submit Responses</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<footer>&copy; 2025 Hose Reel Holder Project</footer>
+</body>
+</html>

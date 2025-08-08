@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario – Week 3 Tools &amp; Marking Out</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Week 3 Scenario — Tools &amp; Marking Out</h1>
+  <p>Assess your understanding of proper tool use and marking techniques.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="interactive_scenarios.html">All Scenarios</a>
+</nav>
+<main>
+  <div class="card">
+    <h2>Scenario</h2>
+    <p>While preparing to cut a piece of metal for their project, a student picks up a wood saw instead of a hacksaw. They decide not to mark out the cut line because they “can cut straight by eye.” After cutting, they realise the piece is too short and crooked.</p>
+  </div>
+  <form class="scenario-form" data-unit="3">
+    <!-- Q1: Multiple‑choice -->
+    <div class="card">
+      <h3>1. Multiple‑choice</h3>
+      <p>Which tool should be used to mark straight lines on metal?</p>
+      <label><input type="radio" name="q1" value="scriber" required> Scriber and steel rule</label><br>
+      <label><input type="radio" name="q1" value="pencil"> Pencil</label><br>
+      <label><input type="radio" name="q1" value="woodsaw"> Wood saw</label><br>
+      <label><input type="radio" name="q1" value="sharpie"> Permanent marker</label>
+    </div>
+    <!-- Q2: Self‑assessment matrix -->
+    <div class="card">
+      <h3>2. Self‑assessment matrix</h3>
+      <p>Rate how often you perform the following:</p>
+      <table>
+        <tr><th>Behaviour</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+        <tr><td>I double‑check measurements before cutting.</td>
+          <td><input type="radio" name="q2a" value="1"></td>
+          <td><input type="radio" name="q2a" value="2"></td>
+          <td><input type="radio" name="q2a" value="3"></td>
+          <td><input type="radio" name="q2a" value="4"></td>
+          <td><input type="radio" name="q2a" value="5"></td></tr>
+        <tr><td>I select the correct tool for the task.</td>
+          <td><input type="radio" name="q2b" value="1"></td>
+          <td><input type="radio" name="q2b" value="2"></td>
+          <td><input type="radio" name="q2b" value="3"></td>
+          <td><input type="radio" name="q2b" value="4"></td>
+          <td><input type="radio" name="q2b" value="5"></td></tr>
+        <tr><td>I mark out cut lines accurately.</td>
+          <td><input type="radio" name="q2c" value="1"></td>
+          <td><input type="radio" name="q2c" value="2"></td>
+          <td><input type="radio" name="q2c" value="3"></td>
+          <td><input type="radio" name="q2c" value="4"></td>
+          <td><input type="radio" name="q2c" value="5"></td></tr>
+      </table>
+    </div>
+    <!-- Q3: Drag‑match -->
+    <div class="card">
+      <h3>3. Match the tool to its use</h3>
+      <p>Drag each tool onto its correct use.</p>
+      <div class="drag-area">
+        <span class="drag-item pill" draggable="true" data-value="Scriber">Scriber</span>
+        <span class="drag-item pill" draggable="true" data-value="Hacksaw">Hacksaw</span>
+        <span class="drag-item pill" draggable="true" data-value="Vice">Vice</span>
+        <span class="drag-item pill" draggable="true" data-value="Square">Tri‑square</span>
+      </div>
+      <div class="match-area">
+        <div class="drop-target card-small">
+          <strong>Mark lines:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_mark">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Cut metal:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_cut">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Hold workpiece:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_hold">
+        </div>
+        <div class="drop-target card-small">
+          <strong>Check right angles:</strong> <span class="drop-label">Drop tool here</span>
+          <input type="hidden" name="q3_square">
+        </div>
+      </div>
+    </div>
+    <!-- Q4: Ordering (sortable list) -->
+    <div class="card">
+      <h3>4. Marking and cutting sequence</h3>
+      <p>Drag these steps into the correct order:</p>
+      <ul class="sortable-list">
+        <!-- Items start in an incorrect order to encourage sorting -->
+        <li data-value="Cut along line">Cut along line</li>
+        <li data-value="Secure workpiece">Secure workpiece</li>
+        <li data-value="Measure length">Measure length</li>
+        <li data-value="Mark cut line">Mark cut line</li>
+      </ul>
+      <input type="hidden" name="q4">
+    </div>
+    <!-- Q5: Highlight good marking practices -->
+    <div class="card">
+      <h3>5. Highlight good marking practices</h3>
+      <p>Tap all actions that contribute to accurate and safe marking out. Selected pills will highlight.</p>
+      <div class="pill-group">
+        <span class="pill-toggle" data-value="Double‑check measurements">Double‑check measurements</span>
+        <span class="pill-toggle" data-value="Use scriber and steel rule">Use scriber and steel rule</span>
+        <span class="pill-toggle" data-value="Eye‑ball cuts">Eye‑ball cuts</span>
+        <span class="pill-toggle" data-value="Clamp work securely">Clamp work securely</span>
+        <span class="pill-toggle" data-value="Guessing">Guessing</span>
+        <span class="pill-toggle" data-value="Use pencil">Use pencil</span>
+        <input type="hidden" name="q5">
+      </div>
+    </div>
+    <button type="submit">Submit Responses</button>
+  </form>
+</main>
+<script src="script.js"></script>
+<footer>&copy; 2025 Hose Reel Holder Project</footer>
+</body>
+</html>

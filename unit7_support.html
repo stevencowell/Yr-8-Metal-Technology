@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week&nbsp;7 Support &amp; Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week&nbsp;7: Finishing Techniques</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>Finishing makes the holder safe and long lasting. File off sharp edges, sand and clean the metal, then apply primer and paint. Always paint in a ventilated area wearing a mask and goggles. Proper disposal of paint and cans protects the environment.</p>
+
+    <form class="quiz" data-week="Week 7" id="support-week7-quiz">
+      <fieldset>
+        <legend><b>Week 7 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>Why do we file or sand the metal before painting?</p>
+            <label><input data-correct="false" name="w7_q1" type="radio"> A. To waste time</label><br>
+            <label><input data-correct="false" name="w7_q1" type="radio"> B. To make edges sharper</label><br>
+            <label><input data-correct="true"  name="w7_q1" type="radio"> C. To remove sharp edges and prepare the surface for painting</label><br>
+            <label><input data-correct="false" name="w7_q1" type="radio"> D. It’s optional and doesn’t matter</label>
+          </li>
+          <li>
+            <p>What protective gear should you wear when spray painting?</p>
+            <label><input data-correct="false" name="w7_q2" type="radio"> A. A scarf</label><br>
+            <label><input data-correct="false" name="w7_q2" type="radio"> B. Nothing at all</label><br>
+            <label><input data-correct="true"  name="w7_q2" type="radio"> C. A mask and goggles</label><br>
+            <label><input data-correct="false" name="w7_q2" type="radio"> D. Sunglasses only</label>
+          </li>
+          <li>
+            <p>Where is the best place to spray paint your project?</p>
+            <label><input data-correct="false" name="w7_q3" type="radio"> A. In a small, closed closet</label><br>
+            <label><input data-correct="true"  name="w7_q3" type="radio"> B. In a well‑ventilated area</label><br>
+            <label><input data-correct="false" name="w7_q3" type="radio"> C. Under water</label><br>
+            <label><input data-correct="false" name="w7_q3" type="radio"> D. In the dark</label>
+          </li>
+          <li>
+            <p>Why is proper disposal of paint and cans important?</p>
+            <label><input data-correct="false" name="w7_q4" type="radio"> A. It isn’t important</label><br>
+            <label><input data-correct="false" name="w7_q4" type="radio"> B. Because it’s messy otherwise</label><br>
+            <label><input data-correct="true"  name="w7_q4" type="radio"> C. To protect the environment</label><br>
+            <label><input data-correct="false" name="w7_q4" type="radio"> D. To avoid noise</label>
+          </li>
+          <li>
+            <p>What is the purpose of applying primer before the final coat of paint?</p>
+            <label><input data-correct="false" name="w7_q5" type="radio"> A. It’s just for colour</label><br>
+            <label><input data-correct="true"  name="w7_q5" type="radio"> B. It helps the paint stick and prevents rust</label><br>
+            <label><input data-correct="false" name="w7_q5" type="radio"> C. It makes the project heavier</label><br>
+            <label><input data-correct="false" name="w7_q5" type="radio"> D. It’s optional and doesn’t matter</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>
