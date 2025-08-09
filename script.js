@@ -172,9 +172,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Ensure an "External Resources" link appears in the global navigation on every page
+  // so students can easily access vetted support materials.
+  const nav = document.querySelector('nav');
+  if (nav) {
+    const existingResourcesLink = nav.querySelector('a[href="external_resources.html"]');
+    if (!existingResourcesLink) {
+      const resourcesLink = document.createElement('a');
+      resourcesLink.href = 'external_resources.html';
+      resourcesLink.textContent = 'External Resources';
+      nav.appendChild(resourcesLink);
+    }
+  }
+
   // Insert a logout link into the navigation if the user is logged in.
   // This is done dynamically so we don't have to modify every HTML file.
-  const nav = document.querySelector('nav');
   if (nav && getCurrentUser()) {
     const logoutLink = document.createElement('a');
     logoutLink.href = '#';
