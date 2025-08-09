@@ -499,3 +499,11 @@ footer {
   opacity: 0.5;
   pointer-events: none;
 }
+
+/*
+ * Hide all decorative images across the site. All inline images use the
+ * `responsive` class, so disable their display globally.
+ */
+img.responsive {
+  display: none !important;
+}
