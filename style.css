@@ -180,15 +180,16 @@ img.responsive {
   font-size: 1.1rem;
   font-weight: 600;
 }
+/* Fix hover for category card links */
 .category-card a:hover {
   text-decoration: none;
   text-decoration-line: none;
   color: #083b71;
+}
 /* Add a subtle hover lift effect to category cards */
 .category-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
-}
 }
 
 /*
@@ -240,10 +241,12 @@ img.responsive {
   transition: background 0.2s, transform 0.1s;
 }
 
+/* Close the quiz button hover block properly */
 .quiz-form button:hover {
   background: linear-gradient(90deg, #155fa0, #0b3c7f);
   transform: translateY(-2px);
-/* Give advanced form buttons the same styling as quiz buttons */
+}
+/* Give advanced/scenario form buttons the same styling as quiz buttons */
 .advanced-form button, .scenario-form button {
   margin-top: 0.7rem;
   padding: 0.6rem 1.2rem;
@@ -258,7 +261,6 @@ img.responsive {
 .advanced-form button:hover, .scenario-form button:hover {
   background: linear-gradient(90deg, #155fa0, #0b3c7f);
   transform: translateY(-2px);
-}
 }
 
 .progress-container {
@@ -324,4 +326,40 @@ footer {
 .pill-toggle.selected {
   background: #00796b;
   color: #ffffff;
+}
+
+/* Styles for interactive scenario drag-and-drop UI */
+.drag-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 0.5rem;
+}
+.drag-item.pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e8f0fe;
+  color: #0d47a1;
+  border: 1px solid #c5d7fb;
+}
+.match-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.card-small {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+.drop-target {
+  min-height: 60px;
+}
+.drop-target .drop-label {
+  display: inline-block;
+  margin-left: 6px;
+  color: #666;
 }

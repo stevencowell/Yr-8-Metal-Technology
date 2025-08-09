@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // storage.  Replace the placeholder URL below with your
       // actual deployment.  Without a configured URL the
       // submission is skipped.
-      const QUIZ_RESULTS_SCRIPT_URL = 'https://your-quiz-results-script-url-here';
+      const QUIZ_RESULTS_SCRIPT_URL = '';
       if (QUIZ_RESULTS_SCRIPT_URL && QUIZ_RESULTS_SCRIPT_URL.startsWith('https://') && user) {
         const payload = {
           user: user,
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // responses are sent to a Google Apps Script for storage in a
   // Google Sheet.  Replace the placeholder URL below with your
   // actual script URL when deploying.
-  const ADVANCED_RESPONSES_SCRIPT_URL = 'https://your-advanced-responses-script-url-here';
+  const ADVANCED_RESPONSES_SCRIPT_URL = '';
   const advancedForms = document.querySelectorAll('.advanced-form');
   advancedForms.forEach(form => {
     form.addEventListener('submit', function (event) {
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // keyed by the current user and unit.  If a Google Apps Script
   // endpoint is provided the data is also sent for central
   // collection.
-  const SCENARIO_SCRIPT_URL = 'https://your-scenario-responses-script-url-here';
+  const SCENARIO_SCRIPT_URL = '';
   const scenarioForms = document.querySelectorAll('.scenario-form');
   scenarioForms.forEach(form => {
     form.addEventListener('submit', function (event) {
