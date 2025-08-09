@@ -721,7 +721,7 @@ function applySupportPageChrome() {
   // Standard footer if missing
   if (!document.querySelector('footer')) {
     const footer = document.createElement('footer');
-    footer.innerHTML = '&copy; 2025 Hose\u00A0Reel Holder Project';
+    footer.innerHTML = '&copy; 2025 Metalwork Project Unit';
     document.body.appendChild(footer);
   }
 }
