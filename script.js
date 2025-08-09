@@ -247,8 +247,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Enable tap-to-flip on cards for touch devices
   initFlipCards();
 
+  // Ensure support pages use the same page chrome as main theory pages
+  applySupportPageChrome();
   // Insert contextual hint toggles for every week/topic page
   insertTopicHints();
+  // Insert previous/next week navigation on unit pages
+  insertWeekNav();
 });
 
 function updateProgressBar() {
@@ -629,4 +633,129 @@ function getHintsFor(week, topic) {
 
   const weekHints = (byWeek[week] && byWeek[week][topic]) || generic[topic] || [];
   return weekHints;
+}
+
+function applySupportPageChrome() {
+  const file = window.location.pathname.split('/').pop();
+  const match = file.match(/^unit(\d+)_support\.html$/);
+  if (!match) return; // not a support page
+  const week = parseInt(match[1], 10);
+
+  // If there is already a header we assume the page is already styled
+  if (document.querySelector('header')) return;
+
+  // Derive a nice title from the existing <summary> if present
+  let headerTitle = `Week ${week} (Support)`;
+  const summary = document.querySelector('summary');
+  if (summary) {
+    const txt = summary.textContent.trim();
+    const m = txt.match(/Week\s*\d+\s*[:\-–]\s*(.+)/i);
+    if (m) headerTitle = `Week ${week} – ${m[1]} (Support)`;
+    else headerTitle = `${txt} (Support)`;
+  }
+
+  // Build header and global nav
+  const header = document.createElement('header');
+  header.innerHTML = `<h1>${headerTitle}</h1>`;
+
+  const nav = document.createElement('nav');
+  nav.innerHTML = [
+    '<a href="index.html">Home</a>',
+    '<a href="program.html">Course\u00A0Program</a>',
+    '<a href="syllabus.html">Syllabus</a>',
+    '<a href="assessments.html">Assessments</a>'
+  ].join('');
+
+  // Local nav between Main/Support/Advanced for this week
+  const local = document.createElement('div');
+  local.className = 'local-nav';
+  local.innerHTML = [
+    `<a href="unit${week}.html">Main</a>`,
+    `<a href="unit${week}_support.html">Support</a>`,
+    `<a href="unit${week}_advanced.html">Advanced</a>`
+  ].join('');
+
+  // Create main content container and card
+  const main = document.createElement('main');
+  const card = document.createElement('div');
+  card.className = 'card';
+
+  // Move existing primary content into the card
+  // Prefer moving the <details> block; fall back to body children
+  const details = document.querySelector('details');
+  if (details) {
+    card.appendChild(details);
+  } else {
+    const moveables = Array.from(document.body.children).filter(el => !['SCRIPT'].includes(el.tagName));
+    moveables.forEach(el => {
+      if (!el.matches('header, nav, footer')) card.appendChild(el);
+    });
+  }
+
+  main.appendChild(card);
+
+  // Progress bar like main pages
+  const progress = document.createElement('div');
+  progress.className = 'progress-container';
+  progress.innerHTML = '<div class="progress-bar"></div>';
+  main.appendChild(progress);
+
+  // Assemble into the DOM
+  document.body.prepend(header);
+  document.body.insertBefore(nav, header.nextSibling);
+  document.body.insertBefore(local, nav.nextSibling);
+  document.body.insertBefore(main, (local.nextSibling));
+
+  // Standard footer if missing
+  if (!document.querySelector('footer')) {
+    const footer = document.createElement('footer');
+    footer.innerHTML = '&copy; 2025 Hose\u00A0Reel Holder Project';
+    document.body.appendChild(footer);
+  }
+}
+
+function insertWeekNav() {
+  const file = window.location.pathname.split('/').pop();
+  const m = file.match(/^unit(\d+)(?:_(support|advanced))?\.html$/);
+  if (!m) return;
+  const week = parseInt(m[1], 10);
+  const variant = m[2] ? `_${m[2]}` : '';
+
+  const prevWeek = week > 1 ? week - 1 : null;
+  const nextWeek = week < 10 ? week + 1 : null;
+
+  const container = document.querySelector('main') || document.querySelector('.card') || document.body;
+  const navWrap = document.createElement('div');
+  navWrap.className = 'week-nav';
+
+  const prevLink = document.createElement('a');
+  if (prevWeek) {
+    prevLink.href = `unit${prevWeek}${variant}.html`;
+    prevLink.textContent = '← Previous Week';
+  } else {
+    prevLink.href = '#';
+    prevLink.textContent = '← Previous Week';
+    prevLink.className = 'disabled';
+  }
+
+  const nextLink = document.createElement('a');
+  if (nextWeek) {
+    nextLink.href = `unit${nextWeek}${variant}.html`;
+    nextLink.textContent = 'Next Week →';
+  } else {
+    nextLink.href = '#';
+    nextLink.textContent = 'Next Week →';
+    nextLink.className = 'disabled';
+  }
+
+  navWrap.appendChild(prevLink);
+  navWrap.appendChild(nextLink);
+
+  // Place after the primary card if available; else at end of main
+  const card = container.querySelector('.card');
+  if (card && card.parentNode === container) {
+    card.insertAdjacentElement('afterend', navWrap);
+  } else {
+    container.appendChild(navWrap);
+  }
 }
