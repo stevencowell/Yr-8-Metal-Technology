@@ -452,6 +452,11 @@ footer {
   text-decoration: none;
   font-weight: 700;
 }
+/* Ensure white text for buttons within category cards, overriding generic link styles */
+.category-card .btn-link,
+.category-card .btn-link:hover {
+  color: #ffffff;
+}
 
 /* Hint boxes */
 .hint-container { margin: 0.75rem 0 1rem 0; }
