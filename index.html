@@ -18,34 +18,89 @@
   <a href="assessments.html">Assessments</a>
 </nav>
 <main>
-  <!-- Overview comes first so students understand the course before choosing a path -->
+  <!-- Course Overview -->
   <div class="card">
-    <h2>Overview</h2>
-    <p>This unit guides you through the design and construction of a metal hose reel holder over ten weeks. You will learn workshop safety, design processes, marking and cutting, shaping, joining, finishing, testing and evaluation.</p>
-    <p>Select one of the learning paths below to jump to the weekly content. The main theory covers the core lessons and quizzes, the support content offers simplified explanations and practice questions, and the advanced content poses deeper, open‑ended challenges.</p>
+    <h2>Course Overview</h2>
+    <p>You’ll progress through the entire design process: research, ideation, planning, marking, cutting, shaping, joining, finishing, testing and reflection.</p>
+    <p>Choose a learning path below that suits your needs. Main theory covers the core lessons and quizzes, support theory offers simplified explanations and practice questions, advanced theory poses deeper, open‑ended challenges, and interactive scenarios let you test your decision‑making skills in realistic situations.</p>
   </div>
+
+  <!-- Your Journey: horizontally scrollable week chips -->
+  <h2 class="journey-title">Your Journey</h2>
+  <div class="journey">
+    <button class="journey-btn left" aria-label="Scroll left">◀</button>
+    <div class="weeks" id="weeks-carousel">
+      <a class="week-chip" href="unit1.html"><span>Wk 1</span><small>Intro &amp; Safety</small></a>
+      <a class="week-chip" href="unit2.html"><span>Wk 2</span><small>Design &amp; Planning</small></a>
+      <a class="week-chip" href="unit3.html"><span>Wk 3</span><small>Tools &amp; Marking</small></a>
+      <a class="week-chip" href="unit4.html"><span>Wk 4</span><small>Shaping</small></a>
+      <a class="week-chip" href="unit5.html"><span>Wk 5</span><small>Joining</small></a>
+      <a class="week-chip" href="unit6.html"><span>Wk 6</span><small>Assembly</small></a>
+      <a class="week-chip" href="unit7.html"><span>Wk 7</span><small>Finishing</small></a>
+      <a class="week-chip" href="unit8.html"><span>Wk 8</span><small>Testing</small></a>
+      <a class="week-chip" href="unit9.html"><span>Wk 9</span><small>Portfolio</small></a>
+      <a class="week-chip" href="unit10.html"><span>Wk 10</span><small>Assessment</small></a>
+    </div>
+    <button class="journey-btn right" aria-label="Scroll right">▶</button>
+  </div>
+  <div class="journey-progress" aria-hidden="true"><div class="journey-progress-bar" id="weeks-progress"></div></div>
+
+  <!-- Category Flip Cards -->
   <div class="category-menu">
-    <div class="category-card">
-      <h3>Main Theory Content</h3>
-      <p>Core lessons and quizzes for each week.</p>
-      <a href="units_main.html">View Weeks</a>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front category-card">
+          <h3>Main Theory</h3>
+          <p>Core lessons and quizzes for each week.</p>
+        </div>
+        <div class="flip-card-back category-card">
+          <p>Explore weekly lessons that build your foundation. Quizzes track progress and unlock the journey bar.</p>
+          <a class="btn-link" href="units_main.html">Explore</a>
+        </div>
+      </div>
     </div>
-    <div class="category-card">
-      <h3>Support Theory Content</h3>
-      <p>Easy‑to‑read explanations and practice questions.</p>
-      <a href="units_support.html">View Weeks</a>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front category-card">
+          <h3>Support Theory</h3>
+          <p>Simplified explanations and practice questions.</p>
+        </div>
+        <div class="flip-card-back category-card">
+          <p>Short, clear notes with quick checks for understanding. Great for revision and catch‑up.</p>
+          <a class="btn-link" href="units_support.html">Explore</a>
+        </div>
+      </div>
     </div>
-    <div class="category-card">
-      <h3>Advanced Theory Content</h3>
-      <p>Open‑ended tasks to deepen your understanding.</p>
-      <a href="units_advanced.html">View Weeks</a>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front category-card">
+          <h3>Advanced Theory</h3>
+          <p>Open‑ended tasks to deepen understanding.</p>
+        </div>
+        <div class="flip-card-back category-card">
+          <p>Investigate industry practice, compare materials and propose improvements. Use the hint reveal to guide your responses.</p>
+          <a class="btn-link" href="units_advanced.html">Explore</a>
+        </div>
+      </div>
     </div>
-    <div class="category-card">
-      <h3>Interactive Scenario Questions</h3>
-      <p>Practice your decision‑making with realistic workshop situations.</p>
-      <a href="interactive_scenarios.html">View Scenarios</a>
+
+    <div class="flip-card wide">
+      <div class="flip-card-inner">
+        <div class="flip-card-front category-card">
+          <h3>Scenarios</h3>
+          <p>Interactive situations to test decision‑making.</p>
+        </div>
+        <div class="flip-card-back category-card">
+          <p>Face realistic workshop situations and choose safe, effective actions. Your choices are recorded.</p>
+          <a class="btn-link" href="interactive_scenarios.html">Explore</a>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Overall course completion progress -->
   <div class="progress-container"><div class="progress-bar"></div></div>
 </main>
 <script src="script.js"></script>

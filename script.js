@@ -240,6 +240,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update the message span with the score
     message.textContent = `You scored ${correct} out of ${total}.`;
   };
+
+  // Initialise the week carousel on the home page if present
+  initWeeksCarousel();
+
+  // Enable tap-to-flip on cards for touch devices
+  initFlipCards();
+
+  // Insert contextual hint toggles for every week/topic page
+  insertTopicHints();
 });
 
 function updateProgressBar() {
@@ -464,4 +473,160 @@ function initSelectablePills() {
       });
     });
   });
+}
+
+/**
+ * Home page week carousel: left/right buttons and progress indicator.
+ */
+function initWeeksCarousel() {
+  const carousel = document.getElementById('weeks-carousel');
+  const progress = document.getElementById('weeks-progress');
+  const leftBtn = document.querySelector('.journey .left');
+  const rightBtn = document.querySelector('.journey .right');
+  if (!carousel || !progress || !leftBtn || !rightBtn) return;
+  const update = () => {
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    const percent = maxScroll > 0 ? (carousel.scrollLeft / maxScroll) * 100 : 0;
+    progress.style.width = percent + '%';
+  };
+  leftBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -200, behavior: 'smooth' });
+  });
+  rightBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: 200, behavior: 'smooth' });
+  });
+  carousel.addEventListener('scroll', update);
+  // Initial fill
+  update();
+}
+
+function initFlipCards() {
+  const cards = document.querySelectorAll('.flip-card');
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+  });
+}
+
+/**
+ * Insert a hint toggle on main, support and advanced pages for each week.
+ * Hints content is driven by the map below. If a week lacks custom hints,
+ * we fall back to generic guidance for that topic type.
+ */
+function insertTopicHints() {
+  const file = window.location.pathname.split('/').pop();
+  const match = file.match(/^unit(\d+)(?:_(support|advanced))?\.html$/);
+  if (!match) return; // not on a unit page
+  const week = match[1];
+  const topic = match[2] || 'main';
+
+  // Try likely containers in order of preference
+  let container = document.querySelector('.card');
+  if (!container) container = document.querySelector('main');
+  if (!container) container = document.querySelector('article');
+  if (!container) container = document.body;
+
+  const hints = getHintsFor(week, topic);
+  if (!hints || hints.length === 0) return;
+
+  const hintWrapper = document.createElement('div');
+  hintWrapper.className = 'hint-container';
+
+  const toggle = document.createElement('button');
+  toggle.className = 'hint-toggle';
+  toggle.type = 'button';
+  toggle.textContent = topic === 'advanced' ? 'Reveal Hints' : 'Show Hints';
+
+  const box = document.createElement('div');
+  box.className = 'hint-box' + (topic === 'advanced' ? ' purple' : '');
+  box.style.display = 'none';
+  const ul = document.createElement('ul');
+  hints.forEach(t => {
+    const li = document.createElement('li');
+    li.textContent = t;
+    ul.appendChild(li);
+  });
+  box.appendChild(ul);
+
+  toggle.addEventListener('click', () => {
+    const isHidden = box.style.display === 'none';
+    box.style.display = isHidden ? 'block' : 'none';
+    toggle.textContent = (isHidden ? (topic === 'advanced' ? 'Hide Hints' : 'Hide Hints') : (topic === 'advanced' ? 'Reveal Hints' : 'Show Hints'));
+  });
+
+  hintWrapper.appendChild(toggle);
+  hintWrapper.appendChild(box);
+
+  // Placement rules
+  const quizForm = container.querySelector('.quiz-form') || container.querySelector('form.quiz');
+  const quizHeading = Array.from(container.querySelectorAll('h3, h2')).find(h => /quiz/i.test(h.textContent));
+  const advancedSection = container.querySelector('.advanced-section');
+
+  if (quizHeading && quizHeading.parentNode) {
+    quizHeading.parentNode.insertBefore(hintWrapper, quizHeading.nextSibling);
+  } else if (quizForm && quizForm.parentNode) {
+    quizForm.parentNode.insertBefore(hintWrapper, quizForm);
+  } else if (advancedSection) {
+    advancedSection.insertBefore(hintWrapper, advancedSection.firstChild);
+  } else {
+    container.insertBefore(hintWrapper, container.firstChild);
+  }
+}
+
+function getHintsFor(week, topic) {
+  const generic = {
+    main: [
+      'Read the question carefully and eliminate obviously incorrect options.',
+      'Apply the week’s key safety and process rules before choosing an answer.',
+      'If unsure, think about what would keep people safe and the project accurate.'
+    ],
+    support: [
+      'Skim the support notes above each quiz question.',
+      'Look for keywords that match the question, then choose the best fit.',
+      'Ask: what is the simplest, safest step to take first?' 
+    ],
+    advanced: [
+      'Back claims with a reason: safety, efficiency, cost or quality.',
+      'Compare options by strength, accuracy, risk and time required.',
+      'Suggest improvements and explain the trade‑offs.'
+    ]
+  };
+
+  const byWeek = {
+    '1': {
+      main: [
+        'Clear and tidy your workspace before starting any task.',
+        'Always wear appropriate PPE such as safety glasses and ear protection.',
+        'Clamp your workpiece securely before cutting or drilling.',
+        'Wait for teacher instructions and permission before using any machine.'
+      ],
+      support: [
+        'Safety first: PPE, clear space, ask for help before using machines.',
+        'Mild steel is chosen for strength and weather resistance.'
+      ],
+      advanced: [
+        'Research industry safety controls: machine guards, lockout/tagout.',
+        'Compare materials by strength, weight and corrosion resistance.',
+        'Think about usability add‑ons like clips or organisers.'
+      ]
+    },
+    '2': {
+      main: [
+        'Start with clear dimensions and a materials list.',
+        'Follow the design process: investigate → generate → produce → evaluate.'
+      ]
+    },
+    '3': { main: ['Measure twice, mark once. Use the correct marking tool for accuracy.'] },
+    '4': { main: ['Use vices and formers. Remove small amounts and check fit often.'] },
+    '5': { main: ['Prepare clean joints, clamp well, and check alignment before joining.'] },
+    '6': { main: ['Assemble in stages; test sub‑assemblies before final fixings.'] },
+    '7': { main: ['Surface prep matters. Deburr edges and sand before painting.'] },
+    '8': { main: ['Test against criteria: strength, safety, finish, and usability.'] },
+    '9': { main: ['Document steps with photos and captions for your portfolio.'] },
+    '10': { main: ['Reflect honestly: what worked, what didn’t, and how to improve.'] }
+  };
+
+  const weekHints = (byWeek[week] && byWeek[week][topic]) || generic[topic] || [];
+  return weekHints;
 }
