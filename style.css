@@ -473,3 +473,8 @@ footer {
 }
 .hint-box.purple { background: #f4f2ff; border-color: #d5cff8; }
 .hint-box ul { margin: 0.25rem 0 0 1rem; }
+
+/* Hide all images site-wide */
+img {
+  display: none !important;
+}
