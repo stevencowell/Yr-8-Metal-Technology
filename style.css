@@ -473,3 +473,29 @@ footer {
 }
 .hint-box.purple { background: #f4f2ff; border-color: #d5cff8; }
 .hint-box ul { margin: 0.25rem 0 0 1rem; }
+
+.week-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.week-nav a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(90deg, #1976d2, #0d47a1);
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s, opacity 0.2s;
+}
+.week-nav a:hover {
+  background: linear-gradient(90deg, #155fa0, #0b3c7f);
+  transform: translateY(-2px);
+}
+.week-nav a.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
