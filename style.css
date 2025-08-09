@@ -89,6 +89,9 @@ img.responsive {
   border-radius: 6px;
 }
 
+/* Remove all pictures/images site-wide */
+img, picture, figure { display: none !important; }
+
 /*
  * Styling for advanced content sections.  Inspired by the blueprint
  * layout, each advanced section sits within a light-grey box with a
