@@ -38,6 +38,43 @@ function getAppsScriptUrl() {
   return (window.APP_SCRIPT_URL || APP_CONFIG.appsScriptUrl || '').trim();
 }
 
+// Lightweight toast notifications shown in the corner of the page
+function getToastContainer() {
+  let container = document.querySelector('.toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'toast-container';
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        container.querySelectorAll('.toast').forEach(t => t.remove());
+      }
+    });
+    document.body.appendChild(container);
+  }
+  return container;
+}
+function showNotification(message, type = 'info', timeoutMs = 4000) {
+  const container = getToastContainer();
+  const toast = document.createElement('div');
+  toast.className = `toast ${type}`;
+  const msg = document.createElement('div');
+  msg.className = 'toast-msg';
+  msg.textContent = message;
+  const btn = document.createElement('button');
+  btn.className = 'toast-close';
+  btn.type = 'button';
+  btn.setAttribute('aria-label', 'Close');
+  btn.innerHTML = '&times;';
+  const remove = () => {
+    if (toast.parentNode) toast.parentNode.removeChild(toast);
+  };
+  btn.addEventListener('click', remove);
+  toast.appendChild(msg);
+  toast.appendChild(btn);
+  container.appendChild(toast);
+  if (timeoutMs > 0) setTimeout(remove, timeoutMs);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   // Prevent access without authentication.
   ensureLoggedIn();
@@ -76,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
           correct++;
         }
       }
-      alert(`You scored ${correct} out of ${total}.`);
+      showNotification(`You scored ${correct} out of ${total}.`, 'info');
       const user = getCurrentUser();
       if (user) {
         // Record completion status keyed by user and unit.  Storing
@@ -102,8 +139,17 @@ document.addEventListener('DOMContentLoaded', function () {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
-        }).catch(err => {
+        })
+        .then(res => {
+          if (res.ok) {
+            showNotification('Your marks have been submitted to your teacher.', 'success');
+          } else {
+            showNotification('There was a problem submitting your marks. They are saved locally.', 'error');
+          }
+        })
+        .catch(err => {
           console.error('Error submitting quiz result', err);
+          showNotification('There was a problem submitting your marks. They are saved locally.', 'error');
         });
       }
     });
@@ -148,19 +194,19 @@ document.addEventListener('DOMContentLoaded', function () {
         })
           .then(response => {
             if (response.ok) {
-              alert('Responses submitted successfully!');
+              showNotification('Responses submitted successfully!', 'success');
               form.reset();
             } else {
-              alert('There was an error submitting your responses.');
+              showNotification('There was an error submitting your responses.', 'error');
             }
           })
           .catch(error => {
             console.error(error);
-            alert('There was an error submitting your responses.');
+            showNotification('There was an error submitting your responses.', 'error');
           });
       } else {
         console.log('Advanced form submission (test mode):', { unit, user: user || 'anonymous', responses });
-        alert('Responses recorded (test mode).');
+        showNotification('Responses recorded (test mode).', 'info');
         form.reset();
       }
     });
@@ -218,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
           console.error('Error submitting scenario responses', err);
         });
       }
-      alert('Scenario responses recorded.');
+      showNotification('Scenario responses recorded.', 'info');
       // Optionally redirect back to the scenario list after submission
       // window.location.href = 'interactive_scenarios.html';
     });
@@ -344,7 +390,13 @@ document.addEventListener('DOMContentLoaded', function () {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
-        }).catch(() => {});
+        })
+        .then(res => {
+          if (res.ok) {
+            showNotification('Your marks have been submitted to your teacher.', 'success');
+          }
+        })
+        .catch(() => {});
       }
     } catch (err) {
       console.error('Error submitting support quiz result', err);
