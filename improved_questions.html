@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ben’s Workshop Safety — Improved Q1–Q10</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    /* Color palette for a professional dark theme */
+    --bg: #0a192f;
+    --card-bg: #112240;
+    --primary: #64ffda;
+    --secondary: #a8b2d1;
+    --text-light: #ccd6f6;
+    --text-muted: #8892b0;
+    --button-bg: #2563eb;
+    --button-hover: #1e40af;
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --error: #ef4444;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-light);
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  header {
+    margin-bottom: 16px;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 1.8rem;
+    color: var(--primary);
+  }
+  header p {
+    margin: 0;
+    color: var(--text-muted);
+  }
+  .scenario {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin-bottom: 24px;
+  }
+  .scenario h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: var(--primary);
+  }
+  .scenario p {
+    margin: 0.5rem 0;
+    color: var(--secondary);
+  }
+  section.item {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  section.item h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--primary);
+  }
+  section.item p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: var(--secondary);
+  }
+  label.block {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--text-light);
+  }
+  textarea, input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0 12px 0;
+    background: #0b2545;
+    border: 1px solid #1e3a60;
+    border-radius: 8px;
+    color: var(--text-light);
+  }
+  textarea::placeholder, input::placeholder {
+    color: var(--text-muted);
+  }
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+  fieldset {
+    border: none;
+    margin: 0 0 12px 0;
+    padding: 0;
+  }
+  .option {
+    display: block;
+    margin-bottom: 6px;
+  }
+  .option input {
+    margin-right: 8px;
+  }
+  .hint {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  button {
+    background: var(--button-bg);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #f8fafc;
+    transition: background 0.2s ease;
+  }
+  button:hover {
+    background: var(--button-hover);
+  }
+  output {
+    display: block;
+    min-height: 1.3rem;
+    margin-top: 4px;
+    color: var(--text-muted);
+  }
+  .success { color: var(--success); }
+  .warning { color: var(--warning); }
+  .error { color: var(--error); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+  }
+  th, td {
+    border: 1px solid #1e3a60;
+    padding: 6px;
+    text-align: center;
+    color: var(--text-light);
+  }
+  th[scope="row"] {
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Ben’s Workshop Safety — Improved Questions 1–10</h1>
+    <p class="hint">Complete each question below. When you're done, click the “Submit Answers” button to see your feedback. Check the browser console for a JSON summary of your responses.</p>
+  </header>
+
+  <section class="scenario" aria-labelledby="scenario-title">
+    <h2 id="scenario-title">Scenario</h2>
+    <p>During his first metalwork class, Ben quickly enters the workshop, excited about the hose reel holder project. Without thinking about the safety rules discussed earlier, he starts cutting mild steel with an <strong>angle grinder</strong> without wearing his safety glasses or ear protection. Additionally, he does not secure the metal properly in the vice, and halfway through cutting, the steel piece slips, narrowly missing his hand. Sparks from the grinder spray across his scattered tools, creating a potential fire hazard. Meanwhile, his tools are left all over his workspace, causing potential trip risks. The teacher immediately stops him, reminding Ben of the safety agreement he signed and highlighting the multiple risks he created for himself and others in the workshop.</p>
+  </section>
+
+  <!-- Q1 -->
+  <section id="q1" class="item" aria-labelledby="q1-title">
+    <h2 id="q1-title">1 · Identify the first unsafe action</h2>
+    <p>Please justify your answer with at least 15 words by referencing the scenario details that reveal the first unsafe action.</p>
+    <label for="q1-reason" class="block">Your reasoning:</label>
+    <textarea id="q1-reason" name="q1_reason" rows="4" required aria-required="true"></textarea>
+    <p class="hint">Focus on the moment he first uses the angle grinder.</p>
+
+    <fieldset>
+      <legend class="sr-only">Select the first unsafe action</legend>
+      <label class="option"><input type="radio" name="q1_choice" value="ppe-first" required> Started the angle grinder without wearing eye and ear protection</label>
+      <label class="option"><input type="radio" name="q1_choice" value="no-clamp"> Began cutting without clamping the metal in the vice</label>
+      <label class="option"><input type="radio" name="q1_choice" value="messy-tools"> Left tools scattered around the workspace</label>
+      <label class="option"><input type="radio" name="q1_choice" value="sparks-spray"> Allowed sparks to spray across nearby materials and tools</label>
+    </fieldset>
+    <output id="q1-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Q2 -->
+  <section id="q2" class="item" aria-labelledby="q2-title">
+    <h2 id="q2-title">2 · True or False — Workpiece Security</h2>
+    <p>First, in at least 5 words, explain why securing metal before using an angle grinder is crucial. Then decide if Ben secured the workpiece properly before cutting.</p>
+    <label for="q2-reason" class="block">Why securing metal matters:</label>
+    <textarea id="q2-reason" name="q2_reason" rows="3" required aria-required="true"></textarea>
+
+    <fieldset>
+      <legend class="sr-only">Did Ben secure the metal properly before cutting?</legend>
+      <label class="option"><input type="radio" name="q2_choice" value="true" required> True</label>
+      <label class="option"><input type="radio" name="q2_choice" value="false"> False</label>
+    </fieldset>
+    <output id="q2-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Q3 -->
+  <section id="q3" class="item" aria-labelledby="q3-title">
+    <h2 id="q3-title">3 · Hazard Identification (Select all that apply)</h2>
+    <p>Select <strong>all hazards</strong> that were present at Ben’s workstation when he began cutting with the angle grinder.</p>
+    <label class="option"><input type="checkbox" name="q3_choice" value="no-eye"> No eye protection</label>
+    <label class="option"><input type="checkbox" name="q3_choice" value="no-ear"> No ear protection</label>
+    <label class="option"><input type="checkbox" name="q3_choice" value="unsecured"> Unsecured workpiece</label>
+    <label class="option"><input type="checkbox" name="q3_choice" value="scattered-tools"> Tools scattered across workspace</label>
+    <label class="option"><input type="checkbox" name="q3_choice" value="sparks-flammable"> Sparks directed toward flammable materials</label>
+    <label class="option"><input type="checkbox" name="q3_choice" value="missing-guard"> Missing or incorrect grinder guard</label>
+    <label class="option"><input type="checkbox" name="q3_choice" value="no-extinguisher"> No fire extinguisher nearby</label>
+    <label class="option"><input type="checkbox" name="q3_choice" value="bench-clutter"> Bench surface cluttered</label>
+
+    <label for="q3-other" class="block">Add one more hazard in your own words:</label>
+    <textarea id="q3-other" name="q3_other" rows="2" placeholder="e.g., loose clothing near spinning disc"></textarea>
+    <output id="q3-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Q4 -->
+  <section id="q4" class="item" aria-labelledby="q4-title">
+    <h2 id="q4-title">4 · Immediate Action when PPE is Missing</h2>
+    <p>You are about to start the angle grinder when you realise you forgot safety glasses and ear protection. What should you do <strong>immediately</strong>?</p>
+    <select name="q4_choice" id="q4-choice" required aria-required="true">
+      <option value="">-- choose --</option>
+      <option value="stop-ppe">Stop, switch off the grinder, and put on the required PPE</option>
+      <option value="cut-quick">Hold the metal securely and cut quickly before anything happens</option>
+      <option value="spotter">Ask a classmate to watch for hazards while you keep working without PPE</option>
+      <option value="turn-head">Continue cutting but keep your head turned away from sparks</option>
+    </select>
+    <output id="q4-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Q5 -->
+  <section id="q5" class="item" aria-labelledby="q5-title">
+    <h2 id="q5-title">5 · Short Answer — Securing the Metal</h2>
+    <p>In one sentence, explain why securing the metal is critical <em>before</em> cutting with an angle grinder. Focus on hazards such as movement, kickback, or loss of control.</p>
+    <label for="q5-answer" class="block">Your explanation:</label>
+    <textarea id="q5-answer" name="q5_answer" rows="3" required aria-required="true"></textarea>
+    <output id="q5-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Q6 -->
+  <section id="q6" class="item" aria-labelledby="q6-title">
+    <h2 id="q6-title">6 · Unit Conversion</h2>
+    <p>The recommended stand‑off distance for your hands when using an angle grinder is <strong>12.5 cm</strong>. Convert this to millimetres and enter your answer below.</p>
+    <label for="q6-answer" class="block">Answer (mm):</label>
+    <input type="number" id="q6-answer" name="q6_answer" min="0" step="1" required aria-required="true"> mm
+    <output id="q6-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Q7 -->
+  <section id="q7" class="item" aria-labelledby="q7-title">
+    <h2 id="q7-title">7 · Confidence Rating</h2>
+    <p>On a scale from 1 (not confident) to 5 (very confident), rate how confident you are that you could set up a safe angle grinder cutting job.</p>
+    <div style="display:flex; align-items:center;">
+      <input type="range" id="q7-slider" name="q7_slider" min="1" max="5" step="1" value="3" oninput="q7Val.textContent=this.value" aria-label="Confidence 1 to 5">
+      <span id="q7Val" style="margin-left:8px;">3</span> / 5
+    </div>
+    <label for="q7-reason" class="block">Why did you choose this number? Mention at least one factor (e.g., PPE, clamping, hazards):</label>
+    <textarea id="q7-reason" name="q7_reason" rows="3" required aria-required="true"></textarea>
+    <output id="q7-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Q8 -->
+  <section id="q8" class="item" aria-labelledby="q8-title">
+    <h2 id="q8-title">8 · Self‑Assessment Matrix</h2>
+    <p>Rate how consistently you perform each of these safety behaviours when setting up an angle grinder job. Use the scale: 1 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = always.</p>
+
+    <table role="table">
+      <thead>
+        <tr>
+          <th scope="col">Behaviour</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">PPE on <em>before</em> power (glasses + ear protection)</th>
+          <td><input type="radio" name="q8_row1" value="1"></td>
+          <td><input type="radio" name="q8_row1" value="2"></td>
+          <td><input type="radio" name="q8_row1" value="3"></td>
+          <td><input type="radio" name="q8_row1" value="4"></td>
+          <td><input type="radio" name="q8_row1" value="5"></td>
+        </tr>
+        <tr>
+          <th scope="row">Workpiece secured/clamped; won’t move</th>
+          <td><input type="radio" name="q8_row2" value="1"></td>
+          <td><input type="radio" name="q8_row2" value="2"></td>
+          <td><input type="radio" name="q8_row2" value="3"></td>
+          <td><input type="radio" name="q8_row2" value="4"></td>
+          <td><input type="radio" name="q8_row2" value="5"></td>
+        </tr>
+        <tr>
+          <th scope="row">Sparks controlled (safe direction; flammables clear)</th>
+          <td><input type="radio" name="q8_row3" value="1"></td>
+          <td><input type="radio" name="q8_row3" value="2"></td>
+          <td><input type="radio" name="q8_row3" value="3"></td>
+          <td><input type="radio" name="q8_row3" value="4"></td>
+          <td><input type="radio" name="q8_row3" value="5"></td>
+        </tr>
+        <tr>
+          <th scope="row">Workspace tidy (tools stored; clear floor)</th>
+          <td><input type="radio" name="q8_row4" value="1"></td>
+          <td><input type="radio" name="q8_row4" value="2"></td>
+          <td><input type="radio" name="q8_row4" value="3"></td>
+          <td><input type="radio" name="q8_row4" value="4"></td>
+          <td><input type="radio" name="q8_row4" value="5"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <label for="q8-note" class="block">Which behaviour will you improve first, and how? (optional)</label>
+    <textarea id="q8-note" name="q8_note" rows="3" placeholder="e.g., Place PPE near the grinder so I always put it on first."></textarea>
+    <output id="q8-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Q9 -->
+  <section id="q9" class="item" aria-labelledby="q9-title">
+    <h2 id="q9-title">9 · Fill‑in‑the‑Blank</h2>
+    <p>Fill in the blanks: Before cutting with an angle grinder, always ____ the workpiece using a ____ to prevent movement and kickback.</p>
+    <label for="q9-verb" class="block">Action (e.g., secure, clamp):</label>
+    <input type="text" id="q9-verb" name="q9_verb" placeholder="verb (e.g., secure)" required aria-required="true">
+    <label for="q9-tool" class="block">Tool (e.g., vice):</label>
+    <input type="text" id="q9-tool" name="q9_tool" placeholder="tool (e.g., vice)" required aria-required="true">
+    <output id="q9-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Q10 -->
+  <section id="q10" class="item" aria-labelledby="q10-title">
+    <h2 id="q10-title">10 · Cloze — Safety Breach</h2>
+    <p>Select the correct options to complete the sentence below:</p>
+    <p>
+      Ben ignored the 
+      <select id="q10-part1" name="q10_part1" required aria-required="true">
+        <option value="">--select--</option>
+        <option value="agreement">safety agreement he signed</option>
+        <option value="lunch">teacher’s lunch break</option>
+        <option value="paint">paint drying instructions</option>
+        <option value="roll">class attendance roll</option>
+      </select>
+      and started cutting with the angle grinder without 
+      <select id="q10-part2" name="q10_part2" required aria-required="true">
+        <option value="">--select--</option>
+        <option value="ppe">wearing safety glasses and ear protection</option>
+        <option value="sweep">sweeping the floor first</option>
+        <option value="friend">asking a friend to hold the metal</option>
+        <option value="clock">checking the clock</option>
+      </select>.
+    </p>
+    <output id="q10-feedback" role="status" aria-live="polite"></output>
+  </section>
+
+  <!-- Submit -->
+  <section class="item">
+    <div class="controls">
+      <button id="submitAll" type="button">Submit Answers</button>
+      <span id="submitMsg" class="hint"></span>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Q1 evaluation
+  function evaluateQ1() {
+    const reason = (document.getElementById('q1-reason').value || '').trim();
+    const choice = document.querySelector('input[name="q1_choice"]:checked');
+    const out = document.getElementById('q1-feedback');
+
+    const words = reason.split(/\s+/).filter(Boolean).length;
+    if (words < 15) {
+      out.textContent = "Please write at least 15 words explaining what in the scenario shows the first unsafe action.";
+      out.className = "warning";
+      return { score: 0, detail: "reason-too-short" };
+    }
+    if (!choice) {
+      out.textContent = "Please select the first unsafe action.";
+      out.className = "warning";
+      return { score: 0, detail: "no-choice" };
+    }
+    let score = 0;
+    if (choice.value === "ppe-first") {
+      score = 1;
+      out.textContent = "Correct: He powered up the angle grinder without eye/ear protection before taking any other actions.";
+      out.className = "success";
+    } else if (choice.value === "no-clamp") {
+      out.textContent = "Not quite. Clamping is important, but the grinder was already running — meaning he missed PPE first.";
+      out.className = "warning";
+    } else if (choice.value === "messy-tools") {
+      out.textContent = "Housekeeping is a hazard, but the first unsafe action was starting the grinder without PPE.";
+      out.className = "warning";
+    } else {
+      out.textContent = "Sparks happen after the grinder is running. The first miss is starting without PPE.";
+      out.className = "warning";
+    }
+    return { score, reasoning_words: words, choice: choice.value, reasoning: reason };
+  }
+
+  // Q2 evaluation
+  function evaluateQ2() {
+    const reason = (document.getElementById('q2-reason').value || '').trim();
+    const choice = document.querySelector('input[name="q2_choice"]:checked');
+    const out = document.getElementById('q2-feedback');
+
+    if (!choice) {
+      out.textContent = "Select True or False.";
+      out.className = "warning";
+      return { score: 0, detail: "no-choice" };
+    }
+    if (reason.split(/\s+/).length < 5) {
+      out.textContent = "Please write at least 5 words explaining why securing metal is crucial.";
+      out.className = "warning";
+      return { score: 0, detail: "reason-too-short" };
+    }
+    let score = 0;
+    if (choice.value === "false") {
+      score = 1;
+      out.textContent = "Correct — he didn’t secure the metal, risking kickback and loss of control.";
+      out.className = "success";
+    } else {
+      out.textContent = "Incorrect — the scenario states the metal slipped during cutting. He didn’t secure it properly.";
+      out.className = "error";
+    }
+    return { score, choice: choice.value, reasoning: reason };
+  }
+
+  // Q3 evaluation
+  function evaluateQ3() {
+    const checks = [...document.querySelectorAll('input[name="q3_choice"]:checked')].map(c => c.value);
+    const other = (document.getElementById('q3-other').value || '').trim();
+    const out = document.getElementById('q3-feedback');
+    const correct = ["no-eye","no-ear","unsecured","scattered-tools","sparks-flammable","missing-guard","bench-clutter"];
+    const missed = correct.filter(c => !checks.includes(c));
+    const extras = checks.filter(c => !correct.includes(c));
+    if (checks.length === 0) {
+      out.textContent = "Select at least one hazard.";
+      out.className = "warning";
+      return { score: 0, detail: "none-selected" };
+    }
+    let score = 0;
+    if (missed.length === 0 && extras.length === 0) {
+      score = 1;
+      out.textContent = "Great — you’ve identified all hazards from the scenario.";
+      out.className = "success";
+    } else {
+      out.textContent = "Check again — you missed: " + (missed.join(", ") || "none") + "; unnecessary: " + (extras.join(", ") || "none") + ".";
+      out.className = "warning";
+    }
+    return { score, selected: checks, other_hazard: other };
+  }
+
+  // Q4 evaluation
+  function evaluateQ4() {
+    const choice = document.getElementById('q4-choice').value;
+    const out = document.getElementById('q4-feedback');
+    if (!choice) {
+      out.textContent = "Please choose an option.";
+      out.className = "warning";
+      return { score: 0, detail: "no-choice" };
+    }
+    let score = 0;
+    if (choice === "stop-ppe") {
+      score = 1;
+      out.textContent = "Correct — stop, power down, and wear PPE before resuming.";
+      out.className = "success";
+    } else if (choice === "cut-quick") {
+      out.textContent = "No — even a brief cut without PPE risks severe injury.";
+      out.className = "error";
+    } else if (choice === "spotter") {
+      out.textContent = "No — a spotter can’t protect your eyes or ears from debris and noise.";
+      out.className = "error";
+    } else {
+      out.textContent = "No — turning away doesn’t protect against flying debris or noise.";
+      out.className = "error";
+    }
+    return { score, choice };
+  }
+
+  // Q5 evaluation
+  function evaluateQ5() {
+    const ans = (document.getElementById('q5-answer').value || '').trim();
+    const out = document.getElementById('q5-feedback');
+    if (!ans) {
+      out.textContent = "Please provide an explanation.";
+      out.className = "warning";
+      return { score: 0, detail: "no-answer" };
+    }
+    const ok = /(secure|clamp|vice|movement|move|kickback|control|stability|slip|lose control)/i.test(ans);
+    if (ok) {
+      out.textContent = "Good — you explained why securing the workpiece prevents movement and kickback.";
+      out.className = "success";
+      return { score: 1, answer: ans };
+    } else {
+      out.textContent = "Try to mention movement, kickback, slipping, or loss of control with the grinder.";
+      out.className = "warning";
+      return { score: 0, answer: ans };
+    }
+  }
+
+  // Q6 evaluation
+  function evaluateQ6() {
+    const raw = document.getElementById('q6-answer').value;
+    const val = Number(raw);
+    const out = document.getElementById('q6-feedback');
+    if (!raw.length || Number.isNaN(val)) {
+      out.textContent = "Enter a number.";
+      out.className = "warning";
+      return { score: 0, detail: "no-answer" };
+    }
+    if (val === 125) {
+      out.textContent = "Correct — 12.5 cm × 10 = 125 mm.";
+      out.className = "success";
+      return { score: 1, answer: val };
+    } else {
+      out.textContent = "Incorrect — multiply centimetres by 10. 12.5 × 10 = 125.";
+      out.className = "error";
+      return { score: 0, answer: val };
+    }
+  }
+
+  // Q7 evaluation
+  function evaluateQ7() {
+    const sliderVal = parseInt(document.getElementById('q7-slider').value, 10);
+    const reason = (document.getElementById('q7-reason').value || '').trim();
+    const out = document.getElementById('q7-feedback');
+    if (reason.split(/\s+/).length < 5) {
+      out.textContent = "Please write at least 5 words explaining your rating.";
+      out.className = "warning";
+      return { score: 0, detail: "reason-too-short" };
+    }
+    if (sliderVal >= 4) {
+      out.textContent = "Great — high confidence. Keep practicing PPE checks, clamping, and workspace safety.";
+      out.className = "success";
+    } else if (sliderVal <= 2) {
+      out.textContent = "Low confidence — focus on PPE sequence, secure clamping, and hazard control to improve.";
+      out.className = "warning";
+    } else {
+      out.textContent = "Mid confidence — there’s room to refine your safety process.";
+      out.className = "warning";
+    }
+    return { score: 1, confidence: sliderVal, reason };
+  }
+
+  // Q8 evaluation
+  function evaluateQ8() {
+    const rows = ["q8_row1","q8_row2","q8_row3","q8_row4"];
+    const labels = { q8_row1: "PPE before power", q8_row2: "Clamp workpiece", q8_row3: "Control sparks", q8_row4: "Tidy workspace" };
+    const ratings = {};
+    for (const r of rows) {
+      const sel = document.querySelector('input[name="'+r+'"]:checked');
+      if (!sel) {
+        document.getElementById('q8-feedback').textContent = "Please rate each behaviour.";
+        document.getElementById('q8-feedback').className = "warning";
+        return { score: 0, detail: "missing-rating", missing: r };
+      }
+      ratings[r] = Number(sel.value);
+    }
+    const avg = (ratings.q8_row1 + ratings.q8_row2 + ratings.q8_row3 + ratings.q8_row4) / 4;
+    const low = Object.entries(ratings).filter(([,v]) => v <= 2).map(([k]) => labels[k]);
+
+    let msg = "Average: " + avg.toFixed(1) + " / 5. ";
+    const feedbackElem = document.getElementById('q8-feedback');
+    if (low.length) {
+      msg += "Focus next on: " + low.join(", ") + ". Start there in your setup sequence.";
+      feedbackElem.className = "warning";
+    } else if (avg >= 4) {
+      msg += "Strong habits — keep them consistent under time pressure.";
+      feedbackElem.className = "success";
+    } else {
+      msg += "Decent base — pick one behaviour to raise to a 4 or 5.";
+      feedbackElem.className = "warning";
+    }
+    feedbackElem.textContent = msg;
+    return { score: 1, ratings, average: Number(avg.toFixed(2)), improvement_note: (document.getElementById('q8-note').value || "").trim() };
+  }
+
+  // Q9 evaluation
+  function evaluateQ9() {
+    const verb = (document.getElementById('q9-verb').value || '').trim().toLowerCase();
+    const tool = (document.getElementById('q9-tool').value || '').trim().toLowerCase();
+    const out = document.getElementById('q9-feedback');
+    const verbs = ["secure","clamp","fasten"];
+    const tools = ["vice","bench vice"];
+    const verbOK = verbs.includes(verb);
+    const toolOK = tools.includes(tool);
+    if (verbOK && toolOK) {
+      out.textContent = "Correct — clamping the workpiece in a vice prevents movement and reduces kickback.";
+      out.className = "success";
+      return { score: 1, verb, tool };
+    } else if (!verbOK && toolOK) {
+      out.textContent = "The action must describe fixing the workpiece in place — e.g., secure, clamp, fasten.";
+      out.className = "warning";
+      return { score: 0, verb, tool };
+    } else if (verbOK && !toolOK) {
+      out.textContent = "The tool must hold the workpiece firmly — e.g., vice or bench vice.";
+      out.className = "warning";
+      return { score: 0, verb, tool };
+    } else {
+      out.textContent = "Check both the action and the tool — think about preventing movement and kickback.";
+      out.className = "warning";
+      return { score: 0, verb, tool };
+    }
+  }
+
+  // Q10 evaluation
+  function evaluateQ10() {
+    const part1 = document.getElementById('q10-part1').value;
+    const part2 = document.getElementById('q10-part2').value;
+    const out = document.getElementById('q10-feedback');
+    if (!part1 || !part2) {
+      out.textContent = "Please select an option for both blanks.";
+      out.className = "warning";
+      return { score: 0, detail: "incomplete" };
+    }
+    if (part1 === "agreement" && part2 === "ppe") {
+      out.textContent = "Correct — he ignored the safety agreement he signed and didn’t wear PPE.";
+      out.className = "success";
+      return { score: 1, part1, part2 };
+    } else if (part1 !== "agreement" && part2 === "ppe") {
+      out.textContent = "PPE part correct, but the requirement was the safety agreement he signed.";
+      out.className = "warning";
+      return { score: 0, part1, part2 };
+    } else if (part1 === "agreement" && part2 !== "ppe") {
+      out.textContent = "Agreement part correct, but the missing action was wearing PPE.";
+      out.className = "warning";
+      return { score: 0, part1, part2 };
+    } else {
+      out.textContent = "Both selections are incorrect — revisit the scenario.";
+      out.className = "error";
+      return { score: 0, part1, part2 };
+    }
+  }
+
+  // Submit all evaluations and log results
+  document.getElementById('submitAll').addEventListener('click', () => {
+    const result = {
+      q1: evaluateQ1(),
+      q2: evaluateQ2(),
+      q3: evaluateQ3(),
+      q4: evaluateQ4(),
+      q5: evaluateQ5(),
+      q6: evaluateQ6(),
+      q7: evaluateQ7(),
+      q8: evaluateQ8(),
+      q9: evaluateQ9(),
+      q10: evaluateQ10()
+    };
+    const msg = document.getElementById('submitMsg');
+    const allAnswered = Object.values(result).every(r => r && ('score' in r));
+    if (allAnswered) {
+      msg.textContent = "Submitted. Open your browser console to view the JSON payload.";
+      msg.className = "success";
+    } else {
+      msg.textContent = "Some items are incomplete or need more detail — see the feedback above.";
+      msg.className = "warning";
+    }
+    console.log("Workshop Safety Assessment results:", result);
+  });
+</script>
+</body>
+</html>
