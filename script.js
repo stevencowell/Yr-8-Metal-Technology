@@ -15,9 +15,35 @@ function ensureLoggedIn() {
   }
 }
 
+// Lightweight runtime configuration. If a file named `config.json` exists at
+// the site root with a shape like { "appsScriptUrl": "https://.../exec" },
+// it will be loaded on startup. You may also define window.APP_SCRIPT_URL in
+// a `config.js` if you prefer. Both are optional; if not present, the app
+// runs in test mode and logs payloads locally.
+const APP_CONFIG = { appsScriptUrl: '' };
+async function loadAppConfig() {
+  try {
+    const res = await fetch('config.json', { cache: 'no-store' });
+    if (res.ok) {
+      const json = await res.json();
+      if (json && typeof json.appsScriptUrl === 'string') {
+        APP_CONFIG.appsScriptUrl = json.appsScriptUrl.trim();
+      }
+    }
+  } catch (err) {
+    // No config file present; proceed in test mode
+  }
+}
+function getAppsScriptUrl() {
+  return (window.APP_SCRIPT_URL || APP_CONFIG.appsScriptUrl || '').trim();
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   // Prevent access without authentication.
   ensureLoggedIn();
+
+  // Load optional runtime config (non-blocking).
+  loadAppConfig();
 
   // Show progress when the page loads.
   updateProgressBar();
@@ -50,26 +76,23 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem(`${user}_unit${unit}_complete`, 'true');
       }
       updateProgressBar();
-      // Submit the quiz result to a Google Apps Script for central
-      // storage.  Replace the placeholder URL below with your
-      // actual deployment.  Without a configured URL the
-      // submission is skipped.
-      const QUIZ_RESULTS_SCRIPT_URL = '';
-      if (QUIZ_RESULTS_SCRIPT_URL && QUIZ_RESULTS_SCRIPT_URL.startsWith('https://') && user) {
+      // Submit the quiz result to the central Google Apps Script endpoint
+      // if configured. Uses a unified payload understood by the server.
+      const url = getAppsScriptUrl();
+      if (url && user) {
         const payload = {
+          kind: 'quiz',
           user: user,
           unit: unit,
-          type: 'main',
+          quizNumber: `M${unit}`,
           score: correct,
           total: total,
           timestamp: new Date().toISOString()
         };
-        fetch(QUIZ_RESULTS_SCRIPT_URL, {
+        fetch(url, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
-        }).then(r => {
-          // Optionally handle success/failure here
         }).catch(err => {
           console.error('Error submitting quiz result', err);
         });
@@ -82,20 +105,28 @@ document.addEventListener('DOMContentLoaded', function () {
   // responses are sent to a Google Apps Script for storage in a
   // Google Sheet.  Replace the placeholder URL below with your
   // actual script URL when deploying.
-  const ADVANCED_RESPONSES_SCRIPT_URL = '';
   const advancedForms = document.querySelectorAll('.advanced-form');
   advancedForms.forEach(form => {
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       const user = getCurrentUser();
-      const payload = { unit: form.dataset.unit, user: user || 'anonymous' };
+      const unit = form.dataset.unit;
+      const responses = {};
       // Gather all textarea responses
       form.querySelectorAll('textarea').forEach(textarea => {
-        payload[textarea.name] = textarea.value;
+        responses[textarea.name] = textarea.value;
       });
+      const url = getAppsScriptUrl();
       // Send to Google Apps Script if configured
-      if (ADVANCED_RESPONSES_SCRIPT_URL && ADVANCED_RESPONSES_SCRIPT_URL.startsWith('https://')) {
-        fetch(ADVANCED_RESPONSES_SCRIPT_URL, {
+      if (url && url.startsWith('https://')) {
+        const payload = {
+          kind: 'advanced',
+          user: user || 'anonymous',
+          unit: unit,
+          responses: responses,
+          timestamp: new Date().toISOString()
+        };
+        fetch(url, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
@@ -113,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('There was an error submitting your responses.');
           });
       } else {
-        console.log('Advanced form submission (test mode):', payload);
+        console.log('Advanced form submission (test mode):', { unit, user: user || 'anonymous', responses });
         alert('Responses recorded (test mode).');
         form.reset();
       }
@@ -126,7 +157,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // keyed by the current user and unit.  If a Google Apps Script
   // endpoint is provided the data is also sent for central
   // collection.
-  const SCENARIO_SCRIPT_URL = '';
   const scenarioForms = document.querySelectorAll('.scenario-form');
   scenarioForms.forEach(form => {
     form.addEventListener('submit', function (event) {
@@ -150,15 +180,16 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem(`${user}_scenario_unit${unit}`, JSON.stringify(responses));
       }
       // Send responses to Google Apps Script if configured.
-      if (SCENARIO_SCRIPT_URL && SCENARIO_SCRIPT_URL.startsWith('https://') && user) {
+      const url = getAppsScriptUrl();
+      if (url && url.startsWith('https://') && user) {
         const payload = {
+          kind: 'scenario',
           user: user,
           unit: unit,
-          type: 'scenario',
           responses: responses,
           timestamp: new Date().toISOString()
         };
-        fetch(SCENARIO_SCRIPT_URL, {
+        fetch(url, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
