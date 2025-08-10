@@ -183,6 +183,15 @@ document.addEventListener('DOMContentLoaded', function () {
       resourcesLink.textContent = 'External Resources';
       nav.appendChild(resourcesLink);
     }
+
+    // Inject a global Activities link so newly added activity pages can be discovered easily
+    const existingActivitiesLink = nav.querySelector('a[href="activities.html"]');
+    if (!existingActivitiesLink) {
+      const activitiesLink = document.createElement('a');
+      activitiesLink.href = 'activities.html';
+      activitiesLink.textContent = 'Activities';
+      nav.appendChild(activitiesLink);
+    }
   }
 
   // Insert a logout link into the navigation if the user is logged in.
