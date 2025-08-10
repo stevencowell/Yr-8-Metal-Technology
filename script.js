@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Show progress when the page loads.
   updateProgressBar();
 
+  // Inject a user name field into all relevant forms so the submitter's name is captured
+  insertUserNameFields();
+
   // Attach event listener to any quiz form found on the page.  When
   // the form is submitted the answers are graded, the unit is
   // marked complete for this user, and the result is optionally
@@ -56,6 +59,12 @@ document.addEventListener('DOMContentLoaded', function () {
   if (quizForm) {
     quizForm.addEventListener('submit', function (e) {
       e.preventDefault();
+      // If a name was entered in the injected field, persist it for this session
+      const nameField = quizForm.querySelector('.user-name-input');
+      const typedName = nameField ? nameField.value.trim() : '';
+      if (typedName) {
+        localStorage.setItem('currentUser', typedName);
+      }
       const unit = quizForm.dataset.unit;
       const answers = quizAnswers[unit] || {};
       let total = 0;
@@ -109,6 +118,12 @@ document.addEventListener('DOMContentLoaded', function () {
   advancedForms.forEach(form => {
     form.addEventListener('submit', function (event) {
       event.preventDefault();
+      // Capture/update user from injected field if provided
+      const nameField = form.querySelector('.user-name-input');
+      const typedName = nameField ? nameField.value.trim() : '';
+      if (typedName) {
+        localStorage.setItem('currentUser', typedName);
+      }
       const user = getCurrentUser();
       const unit = form.dataset.unit;
       const responses = {};
@@ -161,6 +176,12 @@ document.addEventListener('DOMContentLoaded', function () {
   scenarioForms.forEach(form => {
     form.addEventListener('submit', function (event) {
       event.preventDefault();
+      // Capture/update user from injected field if provided
+      const nameField = form.querySelector('.user-name-input');
+      const typedName = nameField ? nameField.value.trim() : '';
+      if (typedName) {
+        localStorage.setItem('currentUser', typedName);
+      }
       const user = getCurrentUser();
       const unit = form.dataset.unit;
       const responses = {};
@@ -278,6 +299,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const message = form.querySelector('.quiz-msg');
     // Guard against missing elements
     if (!form || !message) return;
+    // Capture/update user from injected field if provided
+    const nameField = form.querySelector('.user-name-input');
+    const typedName = nameField ? nameField.value.trim() : '';
+    if (typedName) {
+      localStorage.setItem('currentUser', typedName);
+    }
     let total = 0;
     let correct = 0;
     // Each list item (<li>) represents a question
@@ -841,4 +868,33 @@ function insertWeekNav() {
   } else {
     container.appendChild(navWrap);
   }
+}
+
+// Insert a small name field at the top of all relevant forms so the submitter can provide their name
+function insertUserNameFields() {
+  const forms = document.querySelectorAll('.quiz-form, .advanced-form, .scenario-form, form.quiz');
+  const current = getCurrentUser() || '';
+  forms.forEach(form => {
+    if (form.querySelector('.user-name-input')) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'user-name-field';
+    wrapper.style.marginBottom = '0.5rem';
+
+    const label = document.createElement('label');
+    label.textContent = 'Your Name';
+    label.style.display = 'block';
+
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.name = 'studentName';
+    input.className = 'user-name-input';
+    input.placeholder = 'Enter your full name';
+    input.value = current;
+    input.autocomplete = 'name';
+
+    wrapper.appendChild(label);
+    wrapper.appendChild(input);
+
+    form.insertBefore(wrapper, form.firstChild);
+  });
 }
