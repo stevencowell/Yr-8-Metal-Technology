@@ -23,7 +23,7 @@ function ensureLoggedIn() {
 const APP_CONFIG = { appsScriptUrl: '' };
 async function loadAppConfig() {
   try {
-    const res = await fetch('config.json', { cache: 'no-store' });
+    const res = await fetch('./config.json?ts=' + Date.now(), { cache: 'no-store' });
     if (res.ok) {
       const json = await res.json();
       if (json && typeof json.appsScriptUrl === 'string') {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
   ensureLoggedIn();
 
   // Load optional runtime config (non-blocking).
-  loadAppConfig();
+  const configPromise = loadAppConfig();
 
   // Show progress when the page loads.
   updateProgressBar();
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function () {
    * submit any data externally; these support quizzes are purely
    * formative.
    */
-  window.submitSupportQuiz = function (button) {
+  window.submitSupportQuiz = async function (button) {
     // Find the parent form and message span
     const form = button.closest('form');
     const message = form.querySelector('.quiz-msg');
@@ -291,6 +291,37 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     // Update the message span with the score
     message.textContent = `You scored ${correct} out of ${total}.`;
+
+    // Also submit this support quiz result to the central endpoint
+    try {
+      const user = getCurrentUser();
+      const file = window.location.pathname.split('/').pop();
+      const m = file.match(/^unit(\d+)_support\.html$/);
+      const unit = m ? m[1] : '';
+      let url = getAppsScriptUrl();
+      if (!url) {
+        try { await configPromise; } catch (_) {}
+        url = getAppsScriptUrl();
+      }
+      if (url && url.startsWith('https://') && user && unit) {
+        const payload = {
+          kind: 'quiz',
+          user: user,
+          unit: unit,
+          quizNumber: `S${unit}`,
+          score: correct,
+          total: total,
+          timestamp: new Date().toISOString()
+        };
+        fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }).catch(() => {});
+      }
+    } catch (err) {
+      console.error('Error submitting support quiz result', err);
+    }
   };
 
   // Initialise the week carousel on the home page if present
