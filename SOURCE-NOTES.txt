@@ -1,0 +1,19 @@
+YEAR 8 METALWORK - SOURCE NOTES
+
+Primary local course source
+- Existing ten-week Year 8 Metal Technology repository content.
+- Existing repository imagery identifies the hose reel holder context.
+
+Current syllabus authority
+- NSW Technology 7-8 Syllabus (2023), implemented from 2026.
+- Official outcomes: https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes
+
+Source boundary
+- No authentic project working drawing, detailed assessment notification, due date, weighting or submission destination was present in the repository.
+- The guided course therefore defers all dimensions, exact components, production specifications, assessment details and submission directions to teacher-issued material.
+- The original weekly pages are retained as teacher-reference source material.
+
+New authored material
+- Each new integrative theory section was authored individually with ChatGPT in the in-app browser, using the source boundary above.
+- The new hero is a process-led workshop scene created with ChatGPT. It does not claim to show the finished project or plan geometry.
+- The folio uses one matching 12-panel ChatGPT-created visual sequence, cropped into twelve accessible evidence prompts. It contains no measurements or authentic plan claims.

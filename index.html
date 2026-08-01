@@ -1,122 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-AU">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metalwork Project Unit</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Year 8 Metalwork guided course for the hose reel holder project.">
+  <title>Year 8 Metalwork | Hose Reel Holder</title>
+  <link rel="stylesheet" href="guided/course.css">
 </head>
 <body>
-<header>
-  <h1>Metalwork Project</h1>
-  <p>Year 8 Technology Mandatory – Metalwork</p>
-</header>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="program.html">Course Program</a>
-  <a href="syllabus.html">Syllabus</a>
-  <a href="assessments.html">Assessments</a>
-</nav>
-<main>
-  <!-- Course Overview -->
-  <div class="card">
-    <h2>Course Overview</h2>
-    <p>You’ll progress through the entire design process: research, ideation, planning, marking, cutting, shaping, joining, finishing, testing and reflection.</p>
-    <p>Choose a learning path below that suits your needs. Main theory covers the core lessons and quizzes, support theory offers simplified explanations and practice questions, advanced theory poses deeper, open‑ended challenges, and interactive scenarios let you test your decision‑making skills in realistic situations.</p>
-  </div>
-
-  <!-- Your Journey: horizontally scrollable week chips -->
-  <h2 class="journey-title">Your Journey</h2>
-  <div class="journey">
-    <button class="journey-btn left" aria-label="Scroll left">◀</button>
-    <div class="weeks" id="weeks-carousel">
-      <a class="week-chip" href="unit1.html"><span>Wk 1</span><small>Intro &amp; Safety</small></a>
-      <a class="week-chip" href="unit2.html"><span>Wk 2</span><small>Design &amp; Planning</small></a>
-      <a class="week-chip" href="unit3.html"><span>Wk 3</span><small>Tools &amp; Marking</small></a>
-      <a class="week-chip" href="unit4.html"><span>Wk 4</span><small>Shaping</small></a>
-      <a class="week-chip" href="unit5.html"><span>Wk 5</span><small>Joining</small></a>
-      <a class="week-chip" href="unit6.html"><span>Wk 6</span><small>Assembly</small></a>
-      <a class="week-chip" href="unit7.html"><span>Wk 7</span><small>Finishing</small></a>
-      <a class="week-chip" href="unit8.html"><span>Wk 8</span><small>Testing</small></a>
-      <a class="week-chip" href="unit9.html"><span>Wk 9</span><small>Portfolio</small></a>
-      <a class="week-chip" href="unit10.html"><span>Wk 10</span><small>Assessment</small></a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">Year 8 Metalwork</a>
+      <nav class="nav-links" aria-label="Course navigation">
+        <a href="#pathway">Modules</a><a href="#outcomes">Outcomes</a><a href="#assessment">Assessment</a><a href="#resources">Resources</a><a href="folio.html">Folio</a>
+      </nav>
     </div>
-    <button class="journey-btn right" aria-label="Scroll right">▶</button>
-  </div>
-  <div class="journey-progress" aria-hidden="true"><div class="journey-progress-bar" id="weeks-progress"></div></div>
+  </header>
 
-  <!-- Category Flip Cards -->
-  <div class="category-menu">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front category-card">
-          <h3>Main Theory</h3>
-          <p>Core lessons and quizzes for each week.</p>
-        </div>
-        <div class="flip-card-back category-card">
-          <p>Explore weekly lessons that build your foundation. Quizzes track progress and unlock the journey bar.</p>
-          <a class="btn-link" href="units_main.html">Explore</a>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="hero-inner"><div class="hero-copy">
+        <p class="eyebrow">Stage 4 · Materials and production processes</p>
+        <h1>Year 8 Metalwork</h1>
+        <p>Build the thinking, safety and production skills behind the outdoor hose reel holder—one checked stage at a time.</p>
+        <div class="hero-actions"><a class="btn" href="module.html?module=1">Start Module 1</a><a class="btn secondary" href="folio.html">Open project folio</a></div>
+      </div></div>
+    </section>
+
+    <section class="section" id="overview">
+      <p class="eyebrow">Course overview</p><h2>Plan carefully. Work safely. Prove the process.</h2>
+      <p class="section-intro">This guided pathway supports the existing Year 8 hose-reel-holder project through five two-week modules. Project dimensions, exact components and production details come from teacher-issued plans and demonstrations; this site provides course context, theory, checks and an editable evidence workflow.</p>
+      <div class="grid three" style="margin-top:28px">
+        <article class="card"><h3>Practical first</h3><p>Theory runs alongside teacher-supervised workshop production, with practical experiences forming the centre of the course.</p></article>
+        <article class="card"><h3>Evidence built in</h3><p>Each module includes checks, written evidence, local autosave and Print / Save PDF.</p></article>
+        <article class="card"><h3>Honest source boundary</h3><p>No plan measurements, assessment dates or classroom links are guessed. Missing items remain clearly teacher supplied.</p></article>
       </div>
-    </div>
+    </section>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front category-card">
-          <h3>Support Theory</h3>
-          <p>Simplified explanations and practice questions.</p>
-        </div>
-        <div class="flip-card-back category-card">
-          <p>Short, clear notes with quick checks for understanding. Great for revision and catch‑up.</p>
-          <a class="btn-link" href="units_support.html">Explore</a>
-        </div>
+    <section class="section tint" id="pathway"><div class="section-inner">
+      <p class="eyebrow">Guided pathway</p><h2>Five modules, each covering two weeks</h2>
+      <div class="grid three">
+        <article class="card module-card"><span class="stage">Module 1 · Weeks 1–2</span><h3>Project purpose and workshop readiness</h3><p>Brief, users, constraints, workshop entry and machine permission.</p><a class="module-link" href="module.html?module=1">Open module →</a></article>
+        <article class="card module-card"><span class="stage">Module 2 · Weeks 3–4</span><h3>Design, plans and accurate marking</h3><p>Working drawings, datum edges, marking-out and pre-cut checks.</p><a class="module-link" href="module.html?module=2">Open module →</a></article>
+        <article class="card module-card"><span class="stage">Module 3 · Weeks 5–6</span><h3>Cut, shape and drill under control</h3><p>Workholding, cutting, edge preparation, forming and stop signals.</p><a class="module-link" href="module.html?module=3">Open module →</a></article>
+        <article class="card module-card"><span class="stage">Module 4 · Weeks 7–8</span><h3>Join, assemble and protect</h3><p>Trial fit, alignment, approved joining and corrosion protection.</p><a class="module-link" href="module.html?module=4">Open module →</a></article>
+        <article class="card module-card"><span class="stage">Module 5 · Weeks 9–10</span><h3>Test, evaluate and present evidence</h3><p>Teacher-approved testing, folio organisation and specific evaluation.</p><a class="module-link" href="module.html?module=5">Open module →</a></article>
+        <article class="card module-card"><span class="status-pill">12-part evidence folio</span><h3>Your project story</h3><p>Capture the brief, safety, planning, production, testing, problem solving and evaluation in one editable folio.</p><a class="module-link" href="folio.html">Open folio →</a></article>
       </div>
-    </div>
+    </div></section>
 
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front category-card">
-          <h3>Advanced Theory</h3>
-          <p>Open‑ended tasks to deepen understanding.</p>
-        </div>
-        <div class="flip-card-back category-card">
-          <p>Investigate industry practice, compare materials and propose improvements. Use the hint reveal to guide your responses.</p>
-          <a class="btn-link" href="units_advanced.html">Explore</a>
-        </div>
+    <section class="section" id="outcomes">
+      <p class="eyebrow">NSW syllabus alignment</p><h2>Technology 7–8 (2023)</h2>
+      <p class="section-intro">The new syllabus is implemented from 2026. This project can provide opportunities to develop the outcomes below; final school programming and assessment mapping remain teacher decisions.</p>
+      <div class="grid two" style="margin-top:28px">
+        <article class="card"><ul class="outcome-list"><li><strong>TE4-SDP-01</strong> sustainability, design and production</li><li><strong>TE4-PDP-01</strong> practices and processes of designers and producers</li><li><strong>TE4-MSC-01</strong> materials, systems and components</li><li><strong>TE4-PPM-01</strong> planning, management and production</li></ul></article>
+        <article class="card"><ul class="outcome-list"><li><strong>TE4-DES-01</strong> communicates and evaluates design ideas and solutions</li><li><strong>TE4-SAF-01</strong> safely uses tools, materials, technologies and processes</li><li><strong>TE4-DIG-01</strong> safe digital interaction</li><li><strong>TE4-DIG-02</strong> data and digital systems in design and production</li></ul></article>
       </div>
-    </div>
+    </section>
 
-          <div class="flip-card half">
-        <div class="flip-card-inner">
-          <div class="flip-card-front category-card">
-            <h3>Scenarios</h3>
-          <p>Interactive situations to test decision‑making.</p>
-        </div>
-        <div class="flip-card-back category-card">
-          <p>Face realistic workshop situations and choose safe, effective actions. Your choices are recorded.</p>
-          <a class="btn-link" href="interactive_scenarios.html">Explore</a>
-        </div>
+    <section class="section tint" id="assessment"><div class="section-inner">
+      <p class="eyebrow">Assessment and evidence</p><h2>What students can show</h2>
+      <div class="grid three">
+        <article class="card"><h3>Practical project</h3><p>Safe production, accuracy, construction quality, function and finish, judged using teacher-issued criteria.</p></article>
+        <article class="card"><h3>Design and production folio</h3><p>A 12-part evidence trail covering the brief, ideas, planning, production, testing and evaluation.</p></article>
+        <article class="card"><h3>Theory and reflection</h3><p>Module checks, written explanations, problem-solving evidence and an evidence-based final evaluation.</p></article>
       </div>
-    </div>
+      <div class="card pending" style="margin-top:22px"><strong>Teacher supplied:</strong> task notification, weighting, due date, detailed marking criteria, authentic project plans and submission destination. None are inferred here.</div>
+    </div></section>
 
-    <div class="flip-card half">
-      <div class="flip-card-inner">
-        <div class="flip-card-front category-card">
-          <h3>Activities</h3>
-          <p>Extended practice tasks and interactive activities.</p>
-        </div>
-        <div class="flip-card-back category-card">
-          <p>Explore practice activities like improved questions and more as they are added.</p>
-          <a class="btn-link" href="activities.html">Explore</a>
-        </div>
+    <section class="section" id="resources">
+      <p class="eyebrow">Resources</p><h2>Verified and clearly labelled</h2>
+      <div class="grid three">
+        <article class="card resource-card"><span class="status-pill">Official</span><h3>Technology 7–8 syllabus</h3><p>Current Stage 4 outcomes and implementation information from NSW Curriculum.</p><a href="https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes" target="_blank" rel="noopener">Open official outcomes ↗</a></article>
+        <article class="card resource-card"><span class="status-pill">Course source</span><h3>Legacy weekly lessons</h3><p>The original ten weekly pages remain available for teacher reference while the guided modules become the student pathway.</p><a href="unit1.html">Open Week 1 source lesson →</a></article>
+        <article class="card resource-card pending"><span class="status-pill">Teacher supplied</span><h3>Project plan and assessment pack</h3><p>No authentic working drawing or local assessment pack is present in this repository. Use the copies issued by the teacher.</p></article>
       </div>
-    </div>
-  </div>
-
-  <!-- Overall course completion progress -->
-  <div class="progress-container"><div class="progress-bar"></div></div>
-</main>
-<script src="script.js"></script>
-<footer>&copy; 2025 Metalwork Project Unit</footer>
+    </section>
+  </main>
+  <footer>Year 8 Metalwork · Hose Reel Holder · Student work autosaves only in this browser and on this device.</footer>
 </body>
 </html>

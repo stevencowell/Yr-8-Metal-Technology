@@ -1,0 +1,12 @@
+YEAR 8 METALWORK - LOCAL BUILD VALIDATION
+
+- Landing page renders with direct course access; the former forced login is not loaded by the new pathway.
+- Five two-week modules render through the shared module shell.
+- Each module contains three theory sections, two knowledge checks, written evidence, model feedback, student identity, local autosave, progress and Print / Save PDF.
+- The folio contains exactly 12 editable evidence cards with matching course-specific infographic crops, local autosave and Print / Save PDF.
+- Module answers, identity and written evidence persist after reload.
+- All local links and assets from index.html, module 1, module 5 and folio.html returned successfully.
+- JavaScript syntax checks passed and the rendered browser console contained no errors or warnings.
+- Desktop rendering was visually checked in the in-app browser.
+- Landing, module and folio pages were rendered and visually checked at a genuine 500 px narrow viewport; the navigation stacks or scrolls cleanly, content remains readable and the folio becomes one column.
+- Folio visual assets were inspected as a 4-by-3 sequence and all 12 accessible visual prompts are present in the rendered document.
