@@ -68,6 +68,10 @@
     return `<section class="card theory-section">
       <p class="eyebrow">Theory ${index + 1}</p>
       <h2>${escapeHtml(section.title)}</h2>
+      <figure class="theory-visual${index % 2 ? " theory-visual--left" : ""}">
+        <div class="theory-visual__image" role="img" aria-label="${escapeHtml(section.visual.alt)}" style="background-position:${escapeHtml(section.visual.position)}"></div>
+        <figcaption>${escapeHtml(section.visual.caption)}</figcaption>
+      </figure>
       ${section.paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
       ${section.callout ? `<div class="callout">${escapeHtml(section.callout)}</div>` : ""}
     </section>`;

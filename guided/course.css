@@ -158,8 +158,29 @@ input[type="text"], textarea {
   color: var(--ink);
 }
 textarea { min-height: 135px; resize: vertical; }
-.theory-section { margin-top: 24px; }
+.theory-section { margin-top: 24px; display: flow-root; }
 .theory-section p { color: #31484e; }
+.theory-visual {
+  float: right;
+  width: min(38%, 360px);
+  margin: .25rem 0 1rem 1.35rem;
+  padding: .65rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f5f8f7;
+  box-shadow: 0 10px 24px rgba(17, 46, 52, .1);
+}
+.theory-visual--left { float: left; margin: .25rem 1.35rem 1rem 0; }
+.theory-visual__image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 9px;
+  background-image: url("../img/folio-deck-year8-metal.png");
+  background-repeat: no-repeat;
+  background-size: 410% 307.5%;
+  background-color: var(--ink);
+}
+.theory-visual figcaption { margin-top: .6rem; color: var(--muted); font-size: .82rem; line-height: 1.4; }
 .callout { margin: 20px 0 0; padding: 16px 18px; border-radius: 12px; background: #e6f1f3; border-left: 5px solid var(--steel); font-weight: 750; }
 .check { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
 .option { display: block; margin: 9px 0; font-weight: 500; }
@@ -203,6 +224,7 @@ textarea { min-height: 135px; resize: vertical; }
 footer { background: var(--steel-dark); color: #dce8e9; padding: 34px 16px; text-align: center; }
 
 @media (max-width: 820px) {
+  .theory-visual, .theory-visual--left { float: none; width: 100%; margin: 1.1rem 0; }
   .grid.three, .grid.two, .folio-grid { grid-template-columns: 1fr; }
   .nav-wrap { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; justify-content: stretch; padding: 14px 0; }
   .brand { display: block; width: 100%; }
