@@ -154,3 +154,5 @@
   renderModule();
   bindFolio();
 })();
+
+(() => { const script = document.createElement('script'); script.src = '/Yr-8-Metal-Technology/shared/hub-navigation.js'; document.head.append(script); })();
