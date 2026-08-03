@@ -159,7 +159,26 @@ input[type="text"], textarea {
 }
 textarea { min-height: 135px; resize: vertical; }
 .theory-section { margin-top: 24px; display: flow-root; }
-.theory-section p { color: #31484e; }
+.theory-section p { max-width: 78ch; color: #31484e; text-wrap: pretty; }
+.theory-chunk-heading {
+  margin: 22px 0 8px;
+  padding-left: 11px;
+  border-left: 4px solid var(--steel);
+  color: var(--steel-dark);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+.theory-section li + li { margin-top: 6px; }
+.written-evidence { width: 100%; min-width: 0; }
+.written-evidence textarea {
+  display: block;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  min-height: 175px;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
 .theory-visual {
   float: right;
   width: min(38%, 360px);
@@ -241,6 +260,7 @@ footer { background: var(--steel-dark); color: #dce8e9; padding: 34px 16px; text
   .card { padding: 19px; border-radius: 15px; }
   .module-nav { flex-direction: column; }
   .module-nav .btn { text-align: center; }
+  .written-evidence textarea { min-height: 210px; }
   .nav-links { gap: 3px; }
   .nav-links a { padding: 7px 8px; }
 }

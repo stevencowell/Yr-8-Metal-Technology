@@ -65,14 +65,16 @@
   }
 
   function theoryHtml(section, index) {
+    const readingHeadings = ["Understand the idea", "Apply it to this project", "Check before moving on"];
     return `<section class="card theory-section">
       <p class="eyebrow">Theory ${index + 1}</p>
       <h2>${escapeHtml(section.title)}</h2>
+      <h3 class="theory-chunk-heading">${readingHeadings[0]}</h3>
       <figure class="theory-visual${index % 2 ? " theory-visual--left" : ""}">
         <div class="theory-visual__image" role="img" aria-label="${escapeHtml(section.visual.alt)}" style="background-position:${escapeHtml(section.visual.position)}"></div>
         <figcaption>${escapeHtml(section.visual.caption)}</figcaption>
       </figure>
-      ${section.paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
+      ${section.paragraphs.map((p, paragraphIndex) => `${paragraphIndex > 0 && paragraphIndex < readingHeadings.length ? `<h3 class="theory-chunk-heading">${readingHeadings[paragraphIndex]}</h3>` : ""}<p>${escapeHtml(p)}</p>`).join("")}
       ${section.callout ? `<div class="callout">${escapeHtml(section.callout)}</div>` : ""}
     </section>`;
   }
@@ -109,7 +111,7 @@
       </section>
       ${module.sections.map(theoryHtml).join("")}
       ${checksHtml(module.checks)}
-      <section class="card theory-section">
+      <section class="card theory-section written-evidence">
         <p class="eyebrow">Written evidence</p><h2>Explain your thinking</h2>
         <p>${escapeHtml(module.writtenPrompt)}</p>
         <textarea data-save data-required name="written-response" aria-label="Written response"></textarea>
