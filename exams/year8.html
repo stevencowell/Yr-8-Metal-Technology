@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Year 8 Industrial Technology – Metal End-of-Year Digital Knowledge Examination">
+  <title>Year 8 Industrial Technology – Metal | End-of-Year Digital Knowledge Examination</title>
+  <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+  <div class="password-gate" id="passwordGate">
+    <form class="gate-card" id="gateForm">
+      <p class="exam-kicker" style="color:var(--brand)">Teacher-controlled access</p>
+      <h1>Unlock exam</h1>
+      <p>Enter the password supplied by your teacher. Your answers will save only in this browser on this device.</p>
+      <label for="gatePassword"><strong>Exam password</strong></label>
+      <input id="gatePassword" type="password" inputmode="numeric" autocomplete="off" required>
+      <button class="btn" type="submit">Open exam</button>
+      <p class="gate-error" id="gateError" role="alert"></p>
+    </form>
+  </div>
+  <div id="examPage" hidden>
+    <header class="exam-header">
+      <div class="exam-shell">
+        <p><a id="backLink" href="../index.html">Back to course home</a></p>
+        <p class="exam-kicker" id="courseName"></p>
+        <h1 id="examTitle"></h1>
+        <p id="examSubtitle"></p>
+      </div>
+    </header>
+    <main class="exam-main">
+      <div class="exam-shell">
+        <section class="exam-card">
+          <h2>Exam information</h2>
+          <div class="notice-grid">
+            <div class="notice-item"><span>Course stage</span><strong id="metaStage"></strong></div>
+            <div class="notice-item"><span>Recommended time</span><strong id="metaTime"></strong></div>
+            <div class="notice-item"><span>Total marks</span><strong id="metaMarks"></strong></div>
+            <div class="notice-item"><span>Assessment status</span><strong id="metaStatus"></strong></div>
+            <div class="notice-item"><span>Task</span><strong id="metaTask"></strong></div>
+            <div class="notice-item"><span>Scheduled date</span><strong id="metaDate"></strong></div>
+            <div class="notice-item notice-wide"><span>Assessed outcomes</span><strong id="metaOutcomes"></strong></div>
+          </div>
+          <p class="exam-note" id="examDirections"></p>
+          <p><strong>PDF submission:</strong> When finished, use <em>Print / Save PDF</em>, choose <em>Save as PDF</em>, and name the file <strong id="pdfFilename"></strong>. Check the saved PDF before turning it in.</p>
+        </section>
+        <form id="examForm" novalidate>
+          <section class="exam-card">
+            <h2>Student details</h2>
+            <div class="student-grid">
+              <label>Student name<input data-student id="studentName" name="studentName" autocomplete="name"></label>
+              <label>Class<input data-student name="studentClass" autocomplete="off"></label>
+              <label>Teacher<input data-student name="teacherName" autocomplete="off"></label>
+              <label>Date completed<input data-student name="completedDate" type="date"></label>
+            </div>
+          </section>
+          <div class="exam-toolbar screen-only">
+            <div class="exam-progress">
+              <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+              <span class="progress-label" id="progressLabel"></span>
+            </div>
+            <button class="btn secondary" id="saveBtn" type="button">Save now</button>
+            <button class="btn" id="printBtn" type="button">Print / Save PDF</button>
+            <button class="btn secondary" id="lockBtn" type="button">Lock exam</button>
+            <button class="btn danger" id="clearBtn" type="button">Clear saved work</button>
+            <div class="save-status" id="saveStatus">Answers autosave on this device.</div>
+          </div>
+          <div id="examSections"></div>
+        </form>
+        <p class="exam-footer">This page stores work locally in this browser and device. Saving a PDF is the submission copy; local autosave is not a cloud submission.</p>
+      </div>
+    </main>
+  </div>
+  <script>window.EXAM_CONFIG = {"id":"wwhs-y8-metal-eoy-2026","course":"Year 8 Industrial Technology – Metal","title":"End-of-Year Digital Knowledge Examination","subtitle":"Hose Reel Holder context · safe workshop practice · design, production and evaluation","stage":"Stage 4 · Year 8","time":"50 minutes","status":"School-based knowledge evidence · teacher confirms formal use","backLabel":"Year 8 Metalwork","pdfFilename":"Surname_Firstname_Year8_Metal_Exam.pdf","directions":"Answer every question. Select one response for each multiple-choice question and type concise, specific answers for written questions. Use the project and workshop contexts taught in class. No sketches are required.","sections":[{"label":"Section A","title":"Multiple choice","instructions":"Select the best answer for each question.","questions":[{"kind":"choice","marks":1,"prompt":"Which statement best describes a design requirement?","options":["A preferred colour only","A feature essential for function or safety","A decorative idea with no link to the brief","Any change made during production"]},{"kind":"choice","marks":1,"prompt":"What is the safest response when a machine guard or work setup differs from the teacher demonstration?","options":["Continue at a slower speed","Ask another student to test it","Rely on safety glasses","Stop, make the area safe and seek teacher direction"]},{"kind":"choice","marks":1,"prompt":"Why is a datum or reference edge used during marking out?","options":["To provide one consistent measuring starting point","To identify the waste material after cutting","To make mild steel easier to bend","To replace the working drawing"]},{"kind":"choice","marks":1,"prompt":"What should happen immediately before an irreversible cut?","options":["Estimate whether the line looks correct","Remove all layout marks","Recheck the marked dimensions and orientation against the issued plan","Change the production sequence"]},{"kind":"choice","marks":1,"prompt":"Why must material be supported and secured before drilling?","options":["To improve corrosion resistance","To prevent slipping, spinning or vibration","To soften the metal","To reduce the need for PPE"]},{"kind":"choice","marks":1,"prompt":"What is the main reason for removing burrs after cutting or drilling?","options":["To change the material from ferrous to non-ferrous","To replace surface coating","To increase the overall dimensions","To make edges safe and prepare for accurate assembly"]},{"kind":"choice","marks":1,"prompt":"Why should components be dry checked before permanent joining?","options":["To identify fit and alignment problems while they can still be corrected","To avoid using the issued plan","To make the joint permanent","To reduce the need for measurement"]},{"kind":"choice","marks":1,"prompt":"Why does an outdoor mild-steel project need an approved protective finish?","options":["The finish replaces accurate construction","All finishes make joints stronger","Moisture and weather can cause corrosion","It changes the shape of the project"]},{"kind":"choice","marks":1,"prompt":"Which folio caption provides the strongest evidence?","options":["This photo shows the final job","After the trial fit I found the bracket was misaligned, re-marked it and confirmed the corrected fit","I used tools","The project looks good"]},{"kind":"choice","marks":1,"prompt":"Which evaluation statement is strongest?","options":["Everything went well","I liked making it","Next time I would do better","The holder was stable in the teacher-approved test, but the uneven coating shows that surface preparation should be improved"]}]},{"label":"Section B","title":"Short responses","instructions":"Use complete sentences and relevant workshop terminology.","questions":[{"kind":"short","marks":3,"prompt":"Explain a reliable marking-out sequence from reading the issued plan to the final check before cutting.","hint":"Refer to dimensions, a datum/reference edge and checking."},{"kind":"short","marks":3,"prompt":"A student is about to drill mild steel that is not clamped. Identify the hazard and explain two controls that should be applied before work begins."},{"kind":"short","marks":3,"prompt":"Explain why mild steel can be suitable for a fabricated outdoor holder and why its limitations still need to be managed."},{"kind":"short","marks":3,"prompt":"Explain how trial fitting, alignment checks and the approved joining sequence contribute to construction quality."},{"kind":"short","marks":3,"prompt":"Describe three preparation checks that should be completed before an approved protective coating is applied."},{"kind":"short","marks":3,"prompt":"Describe one useful item of production evidence and explain what decision, process or quality check it proves."}]},{"label":"Section C","title":"Applied workshop scenarios","instructions":"Apply safe, practical reasoning to each situation.","questions":[{"kind":"long","marks":6,"prompt":"During drilling, the workpiece begins to vibrate and move. Explain the immediate response, the likely setup problems to investigate, and the checks required before work may restart.","hint":"Do not describe an improvised repair while the machine is operating."},{"kind":"long","marks":6,"prompt":"A completed hose-reel holder is slightly twisted and rust spots appear soon after outdoor use. Diagnose likely causes from marking out, forming/assembly and finishing, then recommend a realistic improvement for each cause."}]}]};</script>
+  <script>Object.assign(window.EXAM_CONFIG, {"taskLabel":"End-of-year class test","scheduledDate":"Teacher to confirm","outcomes":"Teacher to confirm: 2026 handbook IND4 mapping conflicts with the live course TE4 mapping","status":"Informal class test · no weighting · not a formal handbook task","backLabel":"Year 8 Industrial Technology – Metal","title":"End-of-Year Digital Class Test"});</script>
+  <script src="exam.js"></script>
+</body>
+</html>
