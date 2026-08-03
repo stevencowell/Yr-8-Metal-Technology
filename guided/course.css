@@ -203,6 +203,30 @@ textarea { min-height: 135px; resize: vertical; }
 .callout { margin: 20px 0 0; padding: 16px 18px; border-radius: 12px; background: #e6f1f3; border-left: 5px solid var(--steel); font-weight: 750; }
 .check { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
 .option { display: block; margin: 9px 0; font-weight: 500; }
+.question-help { margin: 14px 0; }
+.hint-toggle, .secondary-hint-toggle {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--steel);
+  font: inherit;
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.theory-direction {
+  margin-top: 10px;
+  padding: 13px 15px;
+  border-left: 4px solid var(--amber);
+  border-radius: 0 10px 10px 0;
+  background: var(--amber-pale);
+}
+.theory-direction > a { display: block; width: fit-content; color: var(--steel-dark); font-weight: 850; }
+.secondary-hint-toggle { display: block; margin-top: 10px; font-size: .92rem; }
+.theory-reminder { margin-top: 9px; color: #31484e; }
+.theory-section:focus-visible { outline: 4px solid var(--amber); outline-offset: 4px; }
+.theory-section[id] { scroll-margin-top: 92px; }
 .feedback { margin-top: 10px; min-height: 26px; font-weight: 750; }
 .feedback.good { color: var(--success); }
 .feedback.bad { color: var(--danger); }
@@ -266,7 +290,7 @@ footer { background: var(--steel-dark); color: #dce8e9; padding: 34px 16px; text
 }
 
 @media print {
-  .site-header, .hero-actions, .button-row, .module-nav, footer { display: none !important; }
+  .site-header, .hero-actions, .button-row, .module-nav, .question-help, footer { display: none !important; }
   body { background: white; font-size: 11pt; }
   .module-hero { color: black; background: white; padding: 20px 0; }
   .module-main, .folio-main { width: 100%; padding: 0; }

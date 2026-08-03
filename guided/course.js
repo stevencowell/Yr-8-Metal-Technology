@@ -64,9 +64,9 @@
     if (text) text.textContent = `${percent}% evidence entered`;
   }
 
-  function theoryHtml(section, index) {
+  function theoryHtml(section, index, moduleNumber) {
     const readingHeadings = ["Understand the idea", "Apply it to this project", "Check before moving on"];
-    return `<section class="card theory-section">
+    return `<section class="card theory-section" id="theory-${moduleNumber}-${index + 1}" tabindex="-1">
       <p class="eyebrow">Theory ${index + 1}</p>
       <h2>${escapeHtml(section.title)}</h2>
       <h3 class="theory-chunk-heading">${readingHeadings[0]}</h3>
@@ -79,14 +79,31 @@
     </section>`;
   }
 
-  function checksHtml(checks) {
+  function helpHtml(id, section, moduleNumber) {
+    const targetId = `theory-${moduleNumber}-${section.index + 1}`;
+    return `<div class="question-help">
+      <button class="hint-toggle" type="button" aria-expanded="false" aria-controls="${id}-direction" data-hint-toggle="${id}-direction">Need a hint?</button>
+      <div class="theory-direction" id="${id}-direction" hidden>
+        <a href="#${targetId}" data-theory-link="${targetId}">Revisit ${escapeHtml(section.title)}</a>
+        <button class="secondary-hint-toggle" type="button" aria-expanded="false" aria-controls="${id}-reminder" data-hint-toggle="${id}-reminder">Still need help?</button>
+        <div class="theory-reminder" id="${id}-reminder" hidden><strong>Theory reminder:</strong> ${escapeHtml(section.callout)}</div>
+      </div>
+    </div>`;
+  }
+
+  function checksHtml(module, moduleNumber) {
+    const checks = module.checks;
     return `<section class="card theory-section"><p class="eyebrow">Knowledge check</p><h2>Check your understanding</h2>
-      ${checks.map((check, index) => `<div class="check" data-check="${index}">
+      ${checks.map((check, index) => {
+        const theoryIndex = Math.max(0, Math.min(module.sections.length - 1, Number(check.theoryIndex) || 0));
+        const section = { ...module.sections[theoryIndex], index: theoryIndex };
+        return `<div class="check" data-check="${index}">
         <h3>${escapeHtml(check.question)}</h3>
         ${check.options.map((option, optionIndex) => `<label class="option"><input data-save data-required type="radio" name="check-${index}" value="${optionIndex}"> ${escapeHtml(option)}</label>`).join("")}
+        ${helpHtml(`check-${moduleNumber}-${index}`, section, moduleNumber)}
         <button class="btn ghost" type="button" data-check-button="${index}">Check answer</button>
         <div class="feedback" aria-live="polite" data-check-feedback="${index}"></div>
-      </div>`).join("")}
+      </div>`; }).join("")}
     </section>`;
   }
 
@@ -109,17 +126,18 @@
         </div>
         <p class="save-state" data-save-state>Autosaves on this browser and device.</p>
       </section>
-      ${module.sections.map(theoryHtml).join("")}
-      ${checksHtml(module.checks)}
+      ${module.sections.map((section, index) => theoryHtml(section, index, number)).join("")}
+      ${checksHtml(module, number)}
       <section class="card theory-section written-evidence">
         <p class="eyebrow">Written evidence</p><h2>Explain your thinking</h2>
         <p>${escapeHtml(module.writtenPrompt)}</p>
+        ${helpHtml(`written-${number}`, { ...module.sections[module.writtenTheoryIndex || 0], index: module.writtenTheoryIndex || 0 }, number)}
         <textarea data-save data-required name="written-response" aria-label="Written response"></textarea>
         <div class="button-row">
-          <button class="btn ghost" type="button" data-model-toggle>Show model feedback</button>
+          <button class="btn ghost" type="button" data-model-toggle aria-expanded="false" aria-controls="response-example-${number}">Show appropriate response example</button>
           <button class="btn" type="button" onclick="window.print()">Print / Save PDF</button>
         </div>
-        <div class="model-feedback" data-model-feedback><strong>Model feedback:</strong> ${escapeHtml(module.modelFeedback)}</div>
+        <div class="model-feedback" id="response-example-${number}" data-model-feedback><strong>Appropriate response example:</strong> ${escapeHtml(module.modelFeedback)}</div>
       </section>
       <section class="card theory-section completion-box">
         <h2>Module completion</h2>
@@ -140,10 +158,28 @@
         feedback.textContent = `${correct ? "Correct. " : "Not yet. "}${check.explanation}`;
       });
     });
+    host.querySelectorAll("[data-hint-toggle]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const panel = host.querySelector(`#${button.dataset.hintToggle}`);
+        const isOpening = panel.hidden;
+        panel.hidden = !isOpening;
+        button.setAttribute("aria-expanded", String(isOpening));
+        if (button.classList.contains("hint-toggle")) button.textContent = isOpening ? "Hide theory direction" : "Need a hint?";
+        else button.textContent = isOpening ? "Hide extra help" : "Still need help?";
+      });
+    });
+    host.querySelectorAll("[data-theory-link]").forEach((link) => {
+      link.addEventListener("click", () => {
+        const target = host.querySelector(`#${link.dataset.theoryLink}`);
+        if (target) window.setTimeout(() => target.focus({ preventScroll: true }), 0);
+      });
+    });
     host.querySelector("[data-model-toggle]").addEventListener("click", (event) => {
       const panel = host.querySelector("[data-model-feedback]");
       panel.classList.toggle("open");
-      event.currentTarget.textContent = panel.classList.contains("open") ? "Hide model feedback" : "Show model feedback";
+      const isOpen = panel.classList.contains("open");
+      event.currentTarget.setAttribute("aria-expanded", String(isOpen));
+      event.currentTarget.textContent = isOpen ? "Hide appropriate response example" : "Show appropriate response example";
     });
     bindAutosave(`module-${number}`, host);
   }

@@ -36,11 +36,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "Where should the holder’s exact shape and details come from?", options: ["The teacher-issued plans", "A guess based on another project", "A picture found online", "Whatever material is nearby"], answerIndex: 0, explanation: "The teacher-issued plans provide the approved project details and must be followed rather than guessed." },
-        { question: "Which statement best describes a design requirement?", options: ["A feature that is only decorative", "Something essential for function or safety", "A personal colour preference", "An optional improvement"], answerIndex: 1, explanation: "A requirement is essential for the project to function safely and effectively." }
+        { question: "Where should the holder’s exact shape and details come from?", options: ["The teacher-issued plans", "A guess based on another project", "A picture found online", "Whatever material is nearby"], answerIndex: 0, explanation: "The teacher-issued plans provide the approved project details and must be followed rather than guessed.", theoryIndex: 0 },
+        { question: "Which statement best describes a design requirement?", options: ["A feature that is only decorative", "Something essential for function or safety", "A personal colour preference", "An optional improvement"], answerIndex: 1, explanation: "A requirement is essential for the project to function safely and effectively.", theoryIndex: 0 }
       ],
       writtenPrompt: "Identify one user need and two likely constraints for the Hose Reel Holder. Explain how each could affect the finished project.",
-      modelFeedback: "A strong response names a realistic user need, such as stable and convenient hose storage, and explains two relevant constraints, such as outdoor exposure, available materials, workshop time, approved tools or safe working limits. Use teacher-issued plans for any exact project detail."
+      modelFeedback: "One user need is stable, convenient hose storage. Outdoor exposure is one constraint, so the steel needs the teacher-approved protective finish. Available workshop time and tools are another constraint, so I must follow the issued plan and approved processes."
     },
     {
       weeks: "3–4",
@@ -76,11 +76,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "Why is a datum or reference edge used?", options: ["To provide a consistent measuring starting point", "To decorate the finished project", "To make the metal easier to cut", "To replace the teacher-issued plan"], answerIndex: 0, explanation: "A consistent starting point helps measurements relate accurately to one another and reduces accumulated errors." },
-        { question: "What should happen immediately before cutting?", options: ["Add extra marks", "Estimate whether the size looks right", "Recheck marking against the issued plan", "Remove the reference edge"], answerIndex: 2, explanation: "Rechecking can identify mistakes before material is cut." }
+        { question: "Why is a datum or reference edge used?", options: ["To provide a consistent measuring starting point", "To decorate the finished project", "To make the metal easier to cut", "To replace the teacher-issued plan"], answerIndex: 0, explanation: "A consistent starting point helps measurements relate accurately to one another and reduces accumulated errors.", theoryIndex: 0 },
+        { question: "What should happen immediately before cutting?", options: ["Add extra marks", "Estimate whether the size looks right", "Recheck marking against the issued plan", "Remove the reference edge"], answerIndex: 2, explanation: "Rechecking can identify mistakes before material is cut.", theoryIndex: 0 }
       ],
       writtenPrompt: "Explain how using a reference edge and checking measurements twice can improve the accuracy of marked metal.",
-      modelFeedback: "A strong response explains that the reference edge provides one reliable starting point and that measuring twice helps detect incorrect positions, unclear marks or use of the wrong edge before cutting."
+      modelFeedback: "I measure each position from the same reference edge so the measurements have one reliable starting point. I then check them against the issued plan before cutting. This can catch a wrong position, an unclear mark or use of the wrong edge."
     },
     {
       weeks: "5–6",
@@ -116,11 +116,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "Why must the workpiece be secured before work begins?", options: ["To prevent unexpected movement", "To make the steel softer", "To remove all sharp edges", "To avoid reading the plan"], answerIndex: 0, explanation: "A secured and supported workpiece is less likely to slip, spin, vibrate or fall." },
-        { question: "What should you do if the sound or movement changes?", options: ["Push harder", "Ask a student to hold it", "Stop safely and tell the teacher", "Change the setup yourself"], answerIndex: 2, explanation: "A changed condition may indicate a loose workpiece, incorrect setup or developing hazard." }
+        { question: "Why must the workpiece be secured before work begins?", options: ["To prevent unexpected movement", "To make the steel softer", "To remove all sharp edges", "To avoid reading the plan"], answerIndex: 0, explanation: "A secured and supported workpiece is less likely to slip, spin, vibrate or fall.", theoryIndex: 0 },
+        { question: "What should you do if the sound or movement changes?", options: ["Push harder", "Ask a student to hold it", "Stop safely and tell the teacher", "Change the setup yourself"], answerIndex: 2, explanation: "A changed condition may indicate a loose workpiece, incorrect setup or developing hazard.", theoryIndex: 0 }
       ],
       writtenPrompt: "Explain how securing the workpiece, using a balanced body position and stopping when something changes can reduce risk during metalwork.",
-      modelFeedback: "A strong response explains that secure support prevents unexpected movement, balanced positioning keeps the body away from likely paths, and stopping allows the changed condition to be checked before work continues."
+      modelFeedback: "I secure and support the metal so it cannot slip, spin, vibrate or fall. I use a balanced position and keep my body away from the tool’s likely path. If the sound or movement changes, I stop safely and tell the teacher before continuing."
     },
     {
       weeks: "7–8",
@@ -156,11 +156,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "Why should parts be dry checked before joining?", options: ["To find fit and alignment problems early", "To replace the plan", "To make steel lighter", "To avoid preparation"], answerIndex: 0, explanation: "Dry checking allows problems to be identified before parts are permanently joined." },
-        { question: "Why does the finished project need corrosion protection?", options: ["It will be used outdoors", "It makes every joint stronger", "It removes sharp edges", "It changes dimensions"], answerIndex: 0, explanation: "Outdoor moisture and weather can cause mild steel to corrode." }
+        { question: "Why should parts be dry checked before joining?", options: ["To find fit and alignment problems early", "To replace the plan", "To make steel lighter", "To avoid preparation"], answerIndex: 0, explanation: "Dry checking allows problems to be identified before parts are permanently joined.", theoryIndex: 0 },
+        { question: "Why does the finished project need corrosion protection?", options: ["It will be used outdoors", "It makes every joint stronger", "It removes sharp edges", "It changes dimensions"], answerIndex: 0, explanation: "Outdoor moisture and weather can cause mild steel to corrode.", theoryIndex: 2 }
       ],
       writtenPrompt: "Explain how dry checking, careful alignment and surface preparation can improve the quality and durability of the Hose Reel Holder.",
-      modelFeedback: "A strong response explains that dry checking reveals fit problems, alignment supports function, and surface preparation allows the teacher-approved protective finish to cover the steel effectively."
+      modelFeedback: "I dry check the parts first so I can correct fit or alignment before the joint becomes permanent. I remove burrs and contamination using the approved process so the teacher-approved finish can cover and protect the steel properly."
     },
     {
       weeks: "9–10",
@@ -196,11 +196,11 @@ window.COURSE_DATA = {
         }
       ],
       checks: [
-        { question: "What makes an evidence caption useful?", options: ["It explains the stage, purpose and result", "It says the project looks good", "It copies another student", "It lists every workshop tool"], answerIndex: 0, explanation: "A useful caption explains what the evidence shows, why the stage mattered and what was learned or checked." },
-        { question: "What should functional testing follow?", options: ["A method invented by the student", "Teacher-approved criteria and instructions", "An online review", "The quickest test"], answerIndex: 1, explanation: "Teacher-approved criteria ensure testing is safe and relevant." }
+        { question: "What makes an evidence caption useful?", options: ["It explains the stage, purpose and result", "It says the project looks good", "It copies another student", "It lists every workshop tool"], answerIndex: 0, explanation: "A useful caption explains what the evidence shows, why the stage mattered and what was learned or checked.", theoryIndex: 0 },
+        { question: "What should functional testing follow?", options: ["A method invented by the student", "Teacher-approved criteria and instructions", "An online review", "The quickest test"], answerIndex: 1, explanation: "Teacher-approved criteria ensure testing is safe and relevant.", theoryIndex: 2 }
       ],
       writtenPrompt: "Choose one stage of the project and describe suitable evidence, the decision or check it would prove, and one realistic improvement for future work.",
-      modelFeedback: "A strong response names a clear stage, identifies a relevant photo or record, explains the decision or check shown, and suggests one achievable improvement linked to safety, accuracy, function or finish."
+      modelFeedback: "For the marking-out stage, I would include a photo showing the issued plan, datum edge and finished marks. The caption would explain that I checked the positions before cutting. Next time I would record that check straight away so the evidence is clearer."
     }
   ]
 };
