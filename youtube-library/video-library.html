@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project-specific curated YouTube clip library">
+  <title>Project video library</title>
+  <link rel="stylesheet" href="video-library.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="library-header">
+      <div>
+        <p class="eyebrow" id="course-name">Guided course</p>
+        <h1 id="library-title">Project video library</h1>
+        <p class="sub" id="library-introduction">Approved clips aligned to the skill currently being taught.</p>
+      </div>
+      <a class="back-link" id="back-link" href="../index.html">Back to course</a>
+    </header>
+
+    <nav class="topic-nav" id="topic-nav" aria-label="Video topics"></nav>
+
+    <section class="table-card" aria-labelledby="library-title">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Module / topic</th>
+            <th scope="col">Thumbnail</th>
+            <th scope="col">Clip overview</th>
+          </tr>
+        </thead>
+        <tbody id="video-rows"></tbody>
+      </table>
+      <p class="empty-state" id="empty-state" hidden>No approved clips have been added yet.</p>
+    </section>
+
+    <p class="source-note">Clip availability and suitability must be checked before class. The course page remains the authority for workshop method and safety.</p>
+  </main>
+
+  <div class="modal" id="video-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-top">
+        <div class="modal-title" id="modal-title">Video</div>
+        <button class="close-button" id="close-button" type="button">Close</button>
+      </div>
+      <div class="player">
+        <iframe id="player-frame" src="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="video-library.data.js"></script>
+  <script src="video-library.js"></script>
+</body>
+</html>
