@@ -170,6 +170,10 @@ textarea { min-height: 135px; resize: vertical; }
 }
 .theory-section li + li { margin-top: 6px; }
 .written-evidence { width: 100%; min-width: 0; }
+.clarification-button { min-height: 44px; margin: 2px 0 10px; padding: 8px 12px; border: 1px solid #8aa9a0; border-radius: 9px; background: #f7fbf9; color: var(--ink); font: inherit; font-weight: 750; cursor: pointer; }
+.clarification-button:hover { background: #edf4f1; }
+.clarification-button:focus-visible { outline: 3px solid #236e5b; outline-offset: 3px; }
+.clarification-panel { max-width: 68ch; margin: 0 0 12px; padding: 11px 13px; border-left: 4px solid #3c806e; border-radius: 0 9px 9px 0; background: #edf4f1; overflow-wrap: anywhere; }
 .written-evidence textarea {
   display: block;
   width: 100%;
@@ -290,7 +294,7 @@ footer { background: var(--steel-dark); color: #dce8e9; padding: 34px 16px; text
 }
 
 @media print {
-  .site-header, .hero-actions, .button-row, .module-nav, .question-help, footer { display: none !important; }
+  .site-header, .hero-actions, .button-row, .clarification-button, .question-help, .module-nav, footer { display: none !important; }
   body { background: white; font-size: 11pt; }
   .module-hero { color: black; background: white; padding: 20px 0; }
   .module-main, .folio-main { width: 100%; padding: 0; }

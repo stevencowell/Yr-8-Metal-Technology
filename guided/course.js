@@ -131,10 +131,12 @@
       <section class="card theory-section written-evidence">
         <p class="eyebrow">Written evidence</p><h2>Explain your thinking</h2>
         <p>${escapeHtml(module.writtenPrompt)}</p>
+        <button class="clarification-button" type="button" data-clarification-toggle aria-expanded="false" aria-controls="clarification-${number}">What is this asking?</button>
+        <div class="clarification-panel" id="clarification-${number}" data-clarification-panel hidden><strong>In simpler words:</strong> ${escapeHtml(module.clarification)}</div>
         ${helpHtml(`written-${number}`, { ...module.sections[module.writtenTheoryIndex || 0], index: module.writtenTheoryIndex || 0 }, number)}
         <textarea data-save data-required name="written-response" aria-label="Written response"></textarea>
         <div class="button-row">
-          <button class="btn ghost" type="button" data-model-toggle aria-expanded="false" aria-controls="response-example-${number}">Show appropriate response example</button>
+          <button class="btn ghost" type="button" data-model-toggle aria-expanded="false" aria-controls="response-example-${number}">Appropriate response example</button>
           <button class="btn" type="button" onclick="window.print()">Print / Save PDF</button>
         </div>
         <div class="model-feedback" id="response-example-${number}" data-model-feedback><strong>Appropriate response example:</strong> ${escapeHtml(module.modelFeedback)}</div>
@@ -174,12 +176,19 @@
         if (target) window.setTimeout(() => target.focus({ preventScroll: true }), 0);
       });
     });
+    host.querySelector("[data-clarification-toggle]").addEventListener("click", (event) => {
+      const panel = host.querySelector("[data-clarification-panel]");
+      const isOpening = panel.hidden;
+      panel.hidden = !isOpening;
+      event.currentTarget.setAttribute("aria-expanded", String(isOpening));
+      event.currentTarget.textContent = isOpening ? "Hide simpler wording" : "What is this asking?";
+    });
     host.querySelector("[data-model-toggle]").addEventListener("click", (event) => {
       const panel = host.querySelector("[data-model-feedback]");
       panel.classList.toggle("open");
       const isOpen = panel.classList.contains("open");
       event.currentTarget.setAttribute("aria-expanded", String(isOpen));
-      event.currentTarget.textContent = isOpen ? "Hide appropriate response example" : "Show appropriate response example";
+      event.currentTarget.textContent = isOpen ? "Hide appropriate response example" : "Appropriate response example";
     });
     bindAutosave(`module-${number}`, host);
   }

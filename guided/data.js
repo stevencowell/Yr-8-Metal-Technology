@@ -40,6 +40,7 @@ window.COURSE_DATA = {
         { question: "Which statement best describes a design requirement?", options: ["A feature that is only decorative", "Something essential for function or safety", "A personal colour preference", "An optional improvement"], answerIndex: 1, explanation: "A requirement is essential for the project to function safely and effectively.", theoryIndex: 0 }
       ],
       writtenPrompt: "Identify one user need and two likely constraints for the Hose Reel Holder. Explain how each could affect the finished project.",
+      clarification: "Who will use the Hose Reel Holder? What do they need? Name two limits that could affect the project.",
       modelFeedback: "One user need is stable, convenient hose storage. Outdoor exposure is one constraint, so the steel needs the teacher-approved protective finish. Available workshop time and tools are another constraint, so I must follow the issued plan and approved processes."
     },
     {
@@ -80,6 +81,7 @@ window.COURSE_DATA = {
         { question: "What should happen immediately before cutting?", options: ["Add extra marks", "Estimate whether the size looks right", "Recheck marking against the issued plan", "Remove the reference edge"], answerIndex: 2, explanation: "Rechecking can identify mistakes before material is cut.", theoryIndex: 0 }
       ],
       writtenPrompt: "Explain how using a reference edge and checking measurements twice can improve the accuracy of marked metal.",
+      clarification: "How does one reference edge and a second measurement check make the marking more accurate?",
       modelFeedback: "I measure each position from the same reference edge so the measurements have one reliable starting point. I then check them against the issued plan before cutting. This can catch a wrong position, an unclear mark or use of the wrong edge."
     },
     {
@@ -120,6 +122,7 @@ window.COURSE_DATA = {
         { question: "What should you do if the sound or movement changes?", options: ["Push harder", "Ask a student to hold it", "Stop safely and tell the teacher", "Change the setup yourself"], answerIndex: 2, explanation: "A changed condition may indicate a loose workpiece, incorrect setup or developing hazard.", theoryIndex: 0 }
       ],
       writtenPrompt: "Explain how securing the workpiece, using a balanced body position and stopping when something changes can reduce risk during metalwork.",
+      clarification: "How do secure work, a balanced stance and stopping when things change make the task safer?",
       modelFeedback: "I secure and support the metal so it cannot slip, spin, vibrate or fall. I use a balanced position and keep my body away from the tool’s likely path. If the sound or movement changes, I stop safely and tell the teacher before continuing."
     },
     {
@@ -160,6 +163,7 @@ window.COURSE_DATA = {
         { question: "Why does the finished project need corrosion protection?", options: ["It will be used outdoors", "It makes every joint stronger", "It removes sharp edges", "It changes dimensions"], answerIndex: 0, explanation: "Outdoor moisture and weather can cause mild steel to corrode.", theoryIndex: 2 }
       ],
       writtenPrompt: "Explain how dry checking, careful alignment and surface preparation can improve the quality and durability of the Hose Reel Holder.",
+      clarification: "How do trial fitting, alignment and surface preparation improve the finished Hose Reel Holder?",
       modelFeedback: "I dry check the parts first so I can correct fit or alignment before the joint becomes permanent. I remove burrs and contamination using the approved process so the teacher-approved finish can cover and protect the steel properly."
     },
     {
@@ -200,6 +204,7 @@ window.COURSE_DATA = {
         { question: "What should functional testing follow?", options: ["A method invented by the student", "Teacher-approved criteria and instructions", "An online review", "The quickest test"], answerIndex: 1, explanation: "Teacher-approved criteria ensure testing is safe and relevant.", theoryIndex: 2 }
       ],
       writtenPrompt: "Choose one stage of the project and describe suitable evidence, the decision or check it would prove, and one realistic improvement for future work.",
+      clarification: "Which project stage will you use? What evidence proves the check or decision, and what would you improve?",
       modelFeedback: "For the marking-out stage, I would include a photo showing the issued plan, datum edge and finished marks. The caption would explain that I checked the positions before cutting. Next time I would record that check straight away so the evidence is clearer."
     }
   ]
