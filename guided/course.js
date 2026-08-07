@@ -76,7 +76,7 @@
       </figure>
       ${section.paragraphs.map((p, paragraphIndex) => `${paragraphIndex > 0 && paragraphIndex < readingHeadings.length ? `<h3 class="theory-chunk-heading">${readingHeadings[paragraphIndex]}</h3>` : ""}<p>${escapeHtml(p)}</p>`).join("")}
       ${section.callout ? `<div class="callout">${escapeHtml(section.callout)}</div>` : ""}
-    </section>`;
+    </section>${checksHtml(course.modules[moduleNumber - 1], moduleNumber, index)}`;
   }
 
   function helpHtml(id, section, moduleNumber) {
@@ -91,11 +91,12 @@
     </div>`;
   }
 
-  function checksHtml(module, moduleNumber) {
-    const checks = module.checks;
+  function checksHtml(module, moduleNumber, theoryIndex) {
+    if (!Number.isInteger(theoryIndex)) return "";
+    const checks = module.checks.map((check, index) => ({ check, index })).filter(({ check }) => (Number(check.theoryIndex) || 0) === theoryIndex);
+    if (!checks.length) return "";
     return `<section class="card theory-section"><p class="eyebrow">Knowledge check</p><h2>Check your understanding</h2>
-      ${checks.map((check, index) => {
-        const theoryIndex = Math.max(0, Math.min(module.sections.length - 1, Number(check.theoryIndex) || 0));
+      ${checks.map(({ check, index }) => {
         const section = { ...module.sections[theoryIndex], index: theoryIndex };
         return `<div class="check" data-check="${index}">
         <h3>${escapeHtml(check.question)}</h3>
