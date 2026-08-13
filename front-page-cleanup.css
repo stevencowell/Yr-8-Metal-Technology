@@ -1,0 +1,3 @@
+/* Task 34: keep the course home focussed on orientation and the real module path. */
+.front-page-extra { display:none !important; }
+#pathway .module-card:last-child { display:none !important; }
