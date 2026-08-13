@@ -1,0 +1,185 @@
+/* Task 33E: calm, compact module-pathway cards for non-VET course homes. */
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid) {
+  counter-reset: module-pathway;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px 16px !important;
+  align-items: stretch !important;
+  margin-top: 24px !important;
+  padding: 0 !important;
+}
+
+:where(.module-grid, .module-map) > li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  > :where(.week-card, .phase-card, .module-card, .module-tile, article, a),
+:where(.module-grid, .module-map) > li > :where(.module-card, .module-tile, a) {
+  counter-increment: module-pathway;
+  position: relative !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 148px !important;
+  min-height: 148px !important;
+  max-height: 148px !important;
+  margin: 0 !important;
+  padding: 16px 54px 16px 78px !important;
+  overflow: hidden !important;
+  border: 1px solid color-mix(in srgb, var(--accent, #176a63) 32%, #d6dfdd) !important;
+  border-radius: 16px !important;
+  background: #fff !important;
+  box-shadow: 0 5px 16px rgba(24, 49, 48, 0.06) !important;
+  color: var(--ink, #173436) !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  transform: none !important;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  > :where(.week-card, .phase-card, .module-card, .module-tile, article, a)::before,
+:where(.module-grid, .module-map) > li > :where(.module-card, .module-tile, a)::before {
+  content: counter(module-pathway, decimal-leading-zero);
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  transform: translateY(-50%);
+  border-radius: 13px;
+  background: var(--ink, #173f4a);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  > :where(.week-card, .phase-card, .module-card, .module-tile, article, a):hover,
+:where(.module-grid, .module-map) > li > :where(.module-card, .module-tile, a):hover {
+  border-color: var(--accent, #176a63) !important;
+  box-shadow: 0 8px 20px rgba(24, 49, 48, 0.1) !important;
+  transform: translateY(-1px) !important;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  :where(.module-number, .phase-number, .number),
+.module-grid > li > .module-card > span:first-child {
+  display: none !important;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  :where(.stage, .module-stage),
+.course-map .module-card > p:first-of-type {
+  margin: 0 0 4px !important;
+  color: var(--accent, #176a63) !important;
+  font-size: 0.76rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.01em !important;
+  text-transform: none !important;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  :where(h3, strong, .phase-title) {
+  display: block;
+  margin: 0 0 5px !important;
+  color: var(--ink, #173436) !important;
+  font-size: 1.02rem !important;
+  font-weight: 800 !important;
+  line-height: 1.22 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  :where(p:not(.module-stage):not(.stage):not(.module-outcomes)) {
+  display: -webkit-box;
+  margin: 0 !important;
+  overflow: hidden;
+  color: var(--muted, #4f6262) !important;
+  font-size: 0.83rem !important;
+  line-height: 1.35 !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  :where(.topics, .module-outcomes, .status) {
+  display: none !important;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  > :where(.week-card, .module-card, article) > a:last-child,
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  > :where(.week-card, .module-card, article) > div > a:last-child {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 2;
+  display: block !important;
+  overflow: hidden;
+  color: transparent !important;
+  font-size: 0 !important;
+  text-decoration: none !important;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  > :where(.week-card, .module-card, article) > a:last-child::after,
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  > :where(.week-card, .module-card, article) > div > a:last-child::after,
+:where(.module-grid, .module-map) > :where(a, .phase-card, .module-card, .module-tile)::after,
+:where(.module-grid, .module-map) > li > :where(.module-card, .module-tile, a)::after {
+  content: "\2192";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  color: var(--accent, #176a63) !important;
+  font-size: 1.15rem !important;
+  font-weight: 700;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  > .module-card:has(.status-pill) {
+  counter-increment: none;
+  padding-left: 20px !important;
+}
+
+:where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+  > .module-card:has(.status-pill)::before {
+  content: none;
+}
+
+@media (max-width: 720px) {
+  :where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid) {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  :where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+    > :where(.week-card, .phase-card, .module-card, .module-tile, article, a),
+  :where(.module-grid, .module-map) > li > :where(.module-card, .module-tile, a) {
+    height: 148px !important;
+    min-height: 148px !important;
+  max-height: 148px !important;
+    padding: 16px 50px 16px 72px !important;
+  }
+
+  :where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
+    > :where(.week-card, .phase-card, .module-card, .module-tile, article, a)::before,
+  :where(.module-grid, .module-map) > li > :where(.module-card, .module-tile, a)::before {
+    left: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+}

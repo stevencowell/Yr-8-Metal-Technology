@@ -2,6 +2,7 @@
   "use strict";
 
   const HUB_URL = "https://stevencowell.github.io/Main-Page/";
+  const BUSY_WORK_URL = "https://stevencowell.github.io/busy-worksheets/?library=metal";
   const script = document.currentScript;
   const stylesheetUrl = script ? new URL("sister-site.css", script.src).href : "";
 
@@ -33,7 +34,12 @@
   label.className = "hub-course-label";
   label.textContent = courseLabel;
 
-  inner.append(link, label);
+  const busyWork = document.createElement("a");
+  busyWork.className = "hub-return-link";
+  busyWork.href = BUSY_WORK_URL;
+  busyWork.textContent = "Busy Work";
+
+  inner.append(link, busyWork, label);
   bar.append(inner);
   document.body.prepend(bar);
 })();
