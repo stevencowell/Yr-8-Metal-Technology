@@ -1,0 +1,22 @@
+:root { --hub-ink: #0b3039; --hub-paper: #f5f7f4; }
+.course-family-nav { background: var(--hub-paper); border-top: 2px solid #0b3039; border-bottom: 1px solid #d7e0df; color: var(--hub-ink); position: relative; width: 100%; z-index: 1000; }
+.course-family-nav *, .course-family-nav *::before, .course-family-nav *::after { box-sizing: border-box; }
+.course-family-nav__inner { align-items: center; display: flex; gap: 1.15rem 2rem; margin: 0 auto; max-width: 1440px; min-height: 82px; padding: 0.8rem 1.25rem; }
+.course-family-nav__brand { align-items: center; color: var(--hub-ink); display: inline-flex; flex: 0 0 auto; font-size: 1.05rem; font-weight: 850; gap: 0.7rem; line-height: 1.2; text-decoration: none; }
+.course-family-nav__mark { align-items: center; background: #d99032; border-radius: 50%; color: #10252b; display: inline-flex; font-size: 0.75rem; font-weight: 900; height: 42px; justify-content: center; letter-spacing: -0.04em; width: 42px; }
+.course-family-nav__links { align-items: center; display: flex; flex: 1 1 auto; flex-wrap: wrap; gap: 0.25rem 0.4rem; }
+.course-family-nav__links a { border-radius: 12px; color: var(--hub-ink); display: inline-flex; font-size: 1rem; font-weight: 760; line-height: 1.2; padding: 0.72rem 0.78rem; text-decoration: none; white-space: nowrap; }
+.course-family-nav__links a:hover, .course-family-nav__links a:focus-visible { background: #e4eceb; color: #061c22; outline: 3px solid #cbd9d7; outline-offset: 2px; }
+.course-family-nav__links a[aria-current="page"] { background: #dce8e7; color: #0b3039; }
+.has-course-family-nav .hub-return-bar,
+.has-course-family-nav .site-header,
+.has-course-family-nav .course-bar { display: none !important; }
+@media (max-width: 780px) {
+  .course-family-nav { position: relative; }
+  .course-family-nav__inner { display: grid; gap: 0.6rem; min-height: 0; padding: 0.7rem 0.8rem 0.55rem; }
+  .course-family-nav__brand { font-size: 1rem; }
+  .course-family-nav__mark { height: 36px; width: 36px; }
+  .course-family-nav__links { flex-wrap: nowrap; margin-inline: -0.8rem; overflow-x: auto; padding: 0 0.8rem 0.45rem; scrollbar-width: thin; }
+  .course-family-nav__links a { flex: 0 0 auto; font-size: 0.92rem; padding: 0.62rem 0.72rem; }
+}
+@media print { .course-family-nav { display: none !important; } }
