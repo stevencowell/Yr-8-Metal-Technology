@@ -1,5 +1,5 @@
 window.COURSE_DATA = {
-  shortTitle: "Year 8 Metalwork",
+  shortTitle: "Hose Reel Holder",
   storagePrefix: "yr8-metal-guided",
   modules: [
     {

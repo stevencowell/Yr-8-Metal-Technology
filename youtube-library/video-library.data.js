@@ -1,5 +1,5 @@
 window.PROJECT_VIDEO_LIBRARY = {
-  courseName: "Year 8 Metalwork",
+  courseName: "Hose Reel Holder · Year 8 Metalwork",
   title: "Hose Reel Holder video library",
   introduction: "Verified clips aligned to the five Hose Reel Holder modules. Teacher-issued plans, demonstrations and permission control every practical operation.",
   backHref: "../index.html",
