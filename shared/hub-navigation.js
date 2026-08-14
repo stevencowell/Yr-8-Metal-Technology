@@ -21,7 +21,7 @@
 
   const nav = document.createElement("nav");
   nav.className = "course-family-nav screen-only";
-  nav.setAttribute("aria-label", "Year 8 Metalwork course navigation");
+  nav.setAttribute("aria-label", "Hose Reel Holder course navigation");
 
   const inner = document.createElement("div");
   inner.className = "course-family-nav__inner";
@@ -29,7 +29,7 @@
   const brand = document.createElement("a");
   brand.className = "course-family-nav__brand";
   brand.href = new URL("index.html", root).href;
-  brand.innerHTML = '<span class="course-family-nav__mark" aria-hidden="true">M8</span><span>Year 8 Metalwork</span>';
+  brand.innerHTML = '<span class="course-family-nav__mark" aria-hidden="true">HR</span><span>Hose Reel Holder</span>';
 
   const links = document.createElement("div");
   links.className = "course-family-nav__links";
@@ -40,7 +40,7 @@
     ["Video learning", "youtube-library/video-library.html", path.includes("/youtube-library/")],
     ["Busy Work", "https://stevencowell.github.io/busy-worksheets/?library=metal", false, true],
     ["My folio", "folio.html", path.endsWith("/folio.html")],
-    ["Project resource", "index.html#resources", isHome && location.hash === "#resources"],
+    ["Project resource", "project-resource.html", path.endsWith("/project-resource.html")],
     ["Teacher resources", "teacher-resources.html", path.includes("/teacher-resources")],
     ["Main Menu", "https://stevencowell.github.io/Main-Page/", false, true]
   ];
