@@ -1,0 +1,79 @@
+.section-reference {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  width: auto;
+  margin: 0 0 12px auto;
+  color: #c4cad3;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  text-decoration: none;
+  text-align: right;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.section-reference-overlay-target {
+  position: relative;
+}
+
+.section-reference-layout-safe {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.section-reference--overlay {
+  bottom: auto;
+  display: block;
+  height: auto;
+  left: auto;
+  margin: 0;
+  max-width: calc(100% - 28px);
+  min-height: 0;
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  width: max-content;
+  z-index: 6;
+}
+
+.section-reference--on-dark {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section-reference--on-dark:hover,
+.section-reference--on-dark:focus-visible {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.section-reference:hover,
+.section-reference:focus-visible {
+  color: #0757a0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.section-reference:focus-visible {
+  outline: 2px solid #0757a0;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.section-reference.is-copied {
+  color: #667085;
+}
+
+.section-reference.is-capturing,
+.section-reference.is-capturing:focus-visible {
+  color: #c4cad3;
+  outline: none;
+  text-decoration: none;
+}
+
+@media print {
+  .section-reference {
+    display: none;
+  }
+}

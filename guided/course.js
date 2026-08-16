@@ -4,6 +4,16 @@
   const course = window.COURSE_DATA;
   if (!course) return;
 
+  const sectionVideos = {
+    "1:Workshop entry and machine permission": { videoId: "XOkPcLD5Soo", title: "The Hierarchy of Controls", channel: "Healthier Workforce Center", watchFor: "Notice why stronger controls, permission and secure work come before relying on PPE alone." },
+    "2:From drawing to marked metal: planning the work": { videoId: "bByYRFZYAIA", title: "N5 D&M - Marking Out (Metal)", channel: "LHS Technologies", watchFor: "Identify the reference edge used for each mark and the checks made before cutting." },
+    "3:Control the workpiece before the tool": { videoId: "Nu9tYcld7ck", title: "Drill Press Safety", channel: "WoodWorkers Guild Of America", watchFor: "Look for secure workholding, chuck-key control and safe stopping before adjustment." },
+    "3:Cutting and edge preparation": { videoId: "uHjEuSeo0fc", title: "Hand Deburring Sheetmetal in 2 Min", channel: "Ramsey Laser Press Brake", watchFor: "Notice why burr removal matters before handling, fitting or coating metal." },
+    "3:Forming with a planned sequence": { videoId: "NAaHh_V3rX0", title: "Sheet Metal Bending: Basics, Allowances, and Tips for Best Results", channel: "RAPID DIRECT", watchFor: "Track how material behaviour, bend order and spring-back affect a controlled forming sequence." },
+    "4:Choose and complete the approved joint": { videoId: "1G8lGECOe1U", title: "A Step-By-Step Guide on How to Use POP Rivets", channel: "Albany County Fasteners", watchFor: "Identify the rivet parts, grip range and controlled setting sequence; use this method only when the approved plan specifies it." },
+    "4:Prepare for corrosion protection": { videoId: "q0CAfXV-YdY", title: "What is Corrosion and How to Stop it", channel: "Cognito", watchFor: "Listen for the conditions needed for rusting and why a continuous protective barrier matters." }
+  };
+
   const escapeHtml = (value) => String(value)
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
@@ -76,7 +86,18 @@
       </figure>
       ${section.paragraphs.map((p, paragraphIndex) => `${paragraphIndex > 0 && paragraphIndex < readingHeadings.length ? `<h3 class="theory-chunk-heading">${readingHeadings[paragraphIndex]}</h3>` : ""}<p>${escapeHtml(p)}</p>`).join("")}
       ${section.callout ? `<div class="callout">${escapeHtml(section.callout)}</div>` : ""}
+      ${videoHtml(sectionVideos[`${moduleNumber}:${section.title}`])}
     </section>${checksHtml(course.modules[moduleNumber - 1], moduleNumber, index)}`;
+  }
+
+  function videoHtml(video) {
+    if (!video) return "";
+    const url = `https://www.youtube.com/watch?v=${encodeURIComponent(video.videoId)}`;
+    return `<aside class="section-video" aria-label="Video learning">
+      <div><p class="eyebrow">Video learning</p><h3>${escapeHtml(video.title)}</h3><p><strong>Watch for:</strong> ${escapeHtml(video.watchFor)}</p><p class="video-source">YouTube · ${escapeHtml(video.channel)}</p></div>
+      <button class="video-shell" type="button" data-video-id="${escapeHtml(video.videoId)}" data-video-title="${escapeHtml(video.title)}" aria-label="Play ${escapeHtml(video.title)}"><img src="https://i.ytimg.com/vi/${encodeURIComponent(video.videoId)}/hqdefault.jpg" alt="" loading="lazy"><span>Play video</span></button>
+      <a class="video-fallback" href="${url}" target="_blank" rel="noopener">Open in YouTube</a>
+    </aside>`;
   }
 
   function helpHtml(id, section, moduleNumber) {
@@ -118,7 +139,12 @@
     document.querySelector("[data-module-title]").textContent = module.title;
     document.querySelector("[data-module-summary]").textContent = module.summary;
     host.innerHTML = `
-      <section class="card progress-panel">
+      <section class="card module-overview">
+        <div><p class="eyebrow">Module presentation</p><h2>Preview, learn and save evidence</h2><p>${escapeHtml(module.summary)}</p><p class="fine">Work through the presentation, theory, guided checks and written response in order.</p></div>
+        <a class="btn presentation-link" href="presentations/hose-reel-holder-module-${number}.pptx" download>Download presentation</a>
+      </section>
+      <section class="card progress-panel student-evidence" aria-labelledby="student-evidence-title">
+        <div><p class="eyebrow">Student evidence</p><h2 id="student-evidence-title">Your details and progress</h2></div>
         <strong data-progress-text>0% evidence entered</strong>
         <div class="progress-track" aria-hidden="true"><div class="progress-fill" data-progress-fill></div></div>
         <div class="student-grid" style="margin-top:18px">
@@ -160,6 +186,16 @@
         feedback.className = `feedback ${correct ? "good" : "bad"}`;
         feedback.textContent = `${correct ? "Correct. " : "Not yet. "}${check.explanation}`;
       });
+    });
+    host.querySelectorAll("[data-video-id]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const iframe = document.createElement("iframe");
+        iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(button.dataset.videoId)}?autoplay=1&rel=0`;
+        iframe.title = button.dataset.videoTitle;
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        button.replaceWith(iframe);
+      }, { once: true });
     });
     host.querySelectorAll("[data-hint-toggle]").forEach((button) => {
       button.addEventListener("click", () => {
