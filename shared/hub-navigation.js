@@ -38,7 +38,7 @@
     ["Course", "index.html", isHome],
     ["Modules", "index.html#pathway", path.endsWith("/module.html")],
     ["Video learning", "youtube-library/video-library.html", path.includes("/youtube-library/")],
-    ["Busy Work", "https://stevencowell.github.io/busy-worksheets/?library=metal", false, true],
+    ["Puzzles", "https://stevencowell.github.io/busy-worksheets/?library=metal", false, true],
     ["My folio", "folio.html", path.endsWith("/folio.html")],
     ["Project resource", "project-resource.html", path.endsWith("/project-resource.html")],
     ["Teacher resources", "teacher-resources.html", path.includes("/teacher-resources")],
