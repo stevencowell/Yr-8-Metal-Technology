@@ -1,0 +1,1051 @@
+{
+  "schema_version": "1.1",
+  "program_id": "hose-reel-holder",
+  "version": "v2.0",
+  "teacher_facing_display": {
+    "course_identity": "Stage 4 Technology Mandatory",
+    "specific_year_group_visible": false,
+    "official_outcomes_complete": true,
+    "outcome_code_placement": "Beneath the plain-English syllabus alignment statement"
+  },
+  "course": {
+    "title": "Stage 4 Technology Mandatory",
+    "classification": "Technology Mandatory",
+    "stage_or_year": "Stage 4",
+    "delivery_year": 2027,
+    "project": "Hose Reel Holder"
+  },
+  "site": {
+    "name": "Hose Reel Holder",
+    "reference": "https://stevencowell.github.io/Yr-8-Metal-Technology/",
+    "inspection_date": "2026-08-28",
+    "state": "repository"
+  },
+  "syllabus": {
+    "title": "Technology 7-8 Syllabus",
+    "version": "2023",
+    "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/overview/course",
+    "verified_date": "2026-08-28",
+    "mandatory_from": "2026",
+    "early_implementation": "not-applicable",
+    "steve_decision": "use-current",
+    "implementation_status": "current"
+  },
+  "timetable": {
+    "weeks": 10,
+    "period_minutes": 60,
+    "periods_per_fortnight": 5,
+    "total_periods": 25
+  },
+  "outcomes": [
+    {
+      "code": "TE4-SDP-01",
+      "statement": "explains relationships between sustainability, design and production",
+      "source_id": "S1",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes"
+    },
+    {
+      "code": "TE4-PDP-01",
+      "statement": "describes the practices and processes of designers and producers",
+      "source_id": "S1",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes"
+    },
+    {
+      "code": "TE4-MSC-01",
+      "statement": "explains how materials, systems and components contribute to solutions",
+      "source_id": "S1",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes"
+    },
+    {
+      "code": "TE4-PPM-01",
+      "statement": "applies processes in the planning, management and production of projects",
+      "source_id": "S1",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes"
+    },
+    {
+      "code": "TE4-DES-01",
+      "statement": "communicates and evaluates design ideas and solutions",
+      "source_id": "S1",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes"
+    },
+    {
+      "code": "TE4-SAF-01",
+      "statement": "selects and safely uses tools, materials, technologies and processes",
+      "source_id": "S1",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes"
+    },
+    {
+      "code": "TE4-DIG-01",
+      "statement": "demonstrates technological literacy to safely interact in digital environments",
+      "source_id": "S1",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes"
+    },
+    {
+      "code": "TE4-DIG-02",
+      "statement": "uses data and digital systems to code, design and produce projects",
+      "source_id": "S1",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes"
+    }
+  ],
+  "source_register": [
+    {
+      "id": "S1",
+      "title": "NSW Technology 7-8 Syllabus (2023)",
+      "authority": "official-syllabus",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/overview/course",
+      "revision": "verified 2026-08-28",
+      "use": "Course identity, complete Stage 4 outcomes and focus-area alignment"
+    },
+    {
+      "id": "S2",
+      "title": "Previous Hose Reel Holder teaching program",
+      "authority": "local-program",
+      "location": "C:\\Users\\scowell1\\Documents\\Codex\\2026-08-28\\okay-so-with-the-all-the\\work\\network-alignment\\hose-reel-holder\\resources\\teacher\\Hose-Reel-Holder-25-Period-Teaching-Program-v1.0-Website-Complete-10pt.docx",
+      "revision": "5D62F01815C3F6C46991A7C41281EBF9497ABF6B48AD41841DF08B476CD24360",
+      "use": "Preserved period sequence, teaching content, evidence and Teacher to confirm boundaries"
+    },
+    {
+      "id": "S3",
+      "title": "Hose Reel Holder course website",
+      "authority": "website",
+      "location": "https://stevencowell.github.io/Yr-8-Metal-Technology/",
+      "revision": "repository inspection 2026-08-28",
+      "use": "Named learning routes and evidence destinations"
+    },
+    {
+      "id": "S4",
+      "title": "Riv Burger network benchmark v2.3",
+      "authority": "quality-reference",
+      "location": "C:\\Users\\scowell1\\Documents\\Codex\\2026-08-28\\okay-so-with-the-all-the\\work\\riv-burger-benchmark\\resources\\teacher\\Riv-Burger-25-Period-Teaching-Program-v2.3-Network-Benchmark.docx",
+      "revision": "CD4F9EB7F57559C3F15A756E09AB219BC2A6E0877FDE6B0FF813B169A0B80B7F",
+      "use": "Program structure and visual pattern only"
+    }
+  ],
+  "website_learning_inventory": [
+    {
+      "id": "P01-LEARNING",
+      "route": "module.html?module=1",
+      "theory_section": "Module 1: website",
+      "quiz_or_check": "Matching knowledge check and guided response",
+      "question_count": 10,
+      "scaffolded_response_count": 0,
+      "period_numbers": [
+        1
+      ],
+      "coverage_state": "scheduled",
+      "evidence": "Check the completed website evidence",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "id": "P06-LEARNING",
+      "route": "module.html?module=2",
+      "theory_section": "Module 2: website",
+      "quiz_or_check": "Matching knowledge check and guided response",
+      "question_count": 10,
+      "scaffolded_response_count": 0,
+      "period_numbers": [
+        6
+      ],
+      "coverage_state": "scheduled",
+      "evidence": "Check the completed website evidence",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "id": "P11-LEARNING",
+      "route": "module.html?module=3",
+      "theory_section": "Module 3: website",
+      "quiz_or_check": "Matching knowledge check and guided response",
+      "question_count": 10,
+      "scaffolded_response_count": 1,
+      "period_numbers": [
+        11
+      ],
+      "coverage_state": "scheduled",
+      "evidence": "Check the completed website evidence",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "id": "P16-LEARNING",
+      "route": "module.html?module=4",
+      "theory_section": "Module 4: website",
+      "quiz_or_check": "Matching knowledge check and guided response",
+      "question_count": 10,
+      "scaffolded_response_count": 0,
+      "period_numbers": [
+        16
+      ],
+      "coverage_state": "scheduled",
+      "evidence": "Check the completed website evidence",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "id": "P21-LEARNING",
+      "route": "module.html?module=5",
+      "theory_section": "Module 5: website",
+      "quiz_or_check": "Matching knowledge check and guided response",
+      "question_count": 10,
+      "scaffolded_response_count": 1,
+      "period_numbers": [
+        21
+      ],
+      "coverage_state": "scheduled",
+      "evidence": "Check the completed website evidence",
+      "teacher_to_confirm_ids": []
+    }
+  ],
+  "periods": [
+    {
+      "number": 1,
+      "type": "Site/theory",
+      "focus": "Module 1: website",
+      "student_work": "Read and discuss: Meet the project: function, users and constraints; Meet the project: function, users and constraints knowledge check (2 questions).",
+      "evidence": "Check the completed website evidence",
+      "syllabus_content": [
+        "Communicate and evaluate design ideas and solutions"
+      ],
+      "outcome_codes": [
+        "TE4-PDP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=1"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": [
+        "P01-LEARNING"
+      ]
+    },
+    {
+      "number": 2,
+      "type": "Project/folio",
+      "focus": "Module 1: folio",
+      "student_work": "Read and complete: Workshop entry and machine permission. Update the folio with the current decision, process evidence and next step.",
+      "evidence": "Check the folio and matching website evidence",
+      "syllabus_content": [
+        "Plan, manage, document, communicate and evaluate design and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-DES-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": []
+    },
+    {
+      "number": 3,
+      "type": "Practical",
+      "focus": "Module 1: site + practical",
+      "student_work": "First 20 min: Learn from the unsafe scenario. Then complete the teacher-approved project stage; check the plan, setup and one quality point.",
+      "evidence": "Website + practical check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 4,
+      "type": "Practical",
+      "focus": "Module 1: production",
+      "student_work": "Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.",
+      "evidence": "Practical quality check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 5,
+      "type": "Practical",
+      "focus": "Module 1: evidence",
+      "student_work": "Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.",
+      "evidence": "Check the project photograph and quality note",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 6,
+      "type": "Site/theory",
+      "focus": "Module 2: website",
+      "student_work": "Read and discuss: From drawing to marked metal: planning the work; From drawing to marked metal: planning the work knowledge check (2 questions).",
+      "evidence": "Check the completed website evidence",
+      "syllabus_content": [
+        "How materials, systems and components contribute to a quality solution"
+      ],
+      "outcome_codes": [
+        "TE4-PDP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=2"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": [
+        "P06-LEARNING"
+      ]
+    },
+    {
+      "number": 7,
+      "type": "Project/folio",
+      "focus": "Module 2: folio",
+      "student_work": "Read and complete: Use the design process deliberately. Update the folio with the current decision, process evidence and next step.",
+      "evidence": "Check the folio and matching website evidence",
+      "syllabus_content": [
+        "Plan, manage, document, communicate and evaluate design and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-DES-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": []
+    },
+    {
+      "number": 8,
+      "type": "Practical",
+      "focus": "Module 2: site + practical",
+      "student_work": "First 20 min: Marking-out evidence. Then complete the teacher-approved project stage; check the plan, setup and one quality point.",
+      "evidence": "Website + practical check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 9,
+      "type": "Practical",
+      "focus": "Module 2: production",
+      "student_work": "Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.",
+      "evidence": "Practical quality check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 10,
+      "type": "Practical",
+      "focus": "Module 2: evidence",
+      "student_work": "Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.",
+      "evidence": "Check the project photograph and quality note",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 11,
+      "type": "Site/theory",
+      "focus": "Module 3: website",
+      "student_work": "Read and discuss: Control the workpiece before the tool; Control the workpiece before the tool knowledge check (2 questions); written response.",
+      "evidence": "Check the completed website evidence",
+      "syllabus_content": [
+        "Practices and processes used by designers and producers"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PDP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=3"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": [
+        "P11-LEARNING"
+      ]
+    },
+    {
+      "number": 12,
+      "type": "Project/folio",
+      "focus": "Module 3: folio",
+      "student_work": "Read and complete: Cutting and edge preparation. Update the folio with the current decision, process evidence and next step.",
+      "evidence": "Check the folio and matching website evidence",
+      "syllabus_content": [
+        "Plan, manage, document, communicate and evaluate design and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-DES-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": []
+    },
+    {
+      "number": 13,
+      "type": "Practical",
+      "focus": "Module 3: site + practical",
+      "student_work": "First 20 min: Forming with a planned sequence. Then complete the teacher-approved project stage; check the plan, setup and one quality point.",
+      "evidence": "Website + practical check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 14,
+      "type": "Practical",
+      "focus": "Module 3: production",
+      "student_work": "Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.",
+      "evidence": "Practical quality check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 15,
+      "type": "Practical",
+      "focus": "Module 3: evidence",
+      "student_work": "Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.",
+      "evidence": "Check the project photograph and quality note",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 16,
+      "type": "Site/theory",
+      "focus": "Module 4: website",
+      "student_work": "Read and discuss: Assembly quality: fit, alignment and finish; Assembly quality: fit, alignment and finish knowledge check (1 question).",
+      "evidence": "Check the completed website evidence",
+      "syllabus_content": [
+        "How materials, systems and components contribute to a quality solution"
+      ],
+      "outcome_codes": [
+        "TE4-PDP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=4"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": [
+        "P16-LEARNING"
+      ]
+    },
+    {
+      "number": 17,
+      "type": "Project/folio",
+      "focus": "Module 4: folio",
+      "student_work": "Read and complete: Choose and complete the approved joint. Update the folio with the current decision, process evidence and next step.",
+      "evidence": "Check the folio and matching website evidence",
+      "syllabus_content": [
+        "Plan, manage, document, communicate and evaluate design and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-DES-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": []
+    },
+    {
+      "number": 18,
+      "type": "Practical",
+      "focus": "Module 4: site + practical",
+      "student_work": "First 20 min: Prepare for corrosion protection; Prepare for corrosion protection knowledge check (1 question).",
+      "evidence": "Website + practical check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 19,
+      "type": "Practical",
+      "focus": "Module 4: production",
+      "student_work": "Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.",
+      "evidence": "Practical quality check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 20,
+      "type": "Practical",
+      "focus": "Module 4: evidence",
+      "student_work": "Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.",
+      "evidence": "Check the project photograph and quality note",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 21,
+      "type": "Site/theory",
+      "focus": "Module 5: website",
+      "student_work": "Read and discuss: Evidence proves the process; Evidence proves the process knowledge check (1 question); written response.",
+      "evidence": "Check the completed website evidence",
+      "syllabus_content": [
+        "Communicate and evaluate design ideas and solutions"
+      ],
+      "outcome_codes": [
+        "TE4-PDP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=5"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": [
+        "P21-LEARNING"
+      ]
+    },
+    {
+      "number": 22,
+      "type": "Project/folio",
+      "focus": "Module 5: folio",
+      "student_work": "Read and complete: Organise the folio. Update the folio with the current decision, process evidence and next step.",
+      "evidence": "Check the folio and matching website evidence",
+      "syllabus_content": [
+        "Plan, manage, document, communicate and evaluate design and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-DES-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": [],
+      "website_learning_ids": []
+    },
+    {
+      "number": 23,
+      "type": "Practical",
+      "focus": "Module 5: site + practical",
+      "student_work": "First 20 min: Evaluate with evidence; Evaluate with evidence knowledge check (1 question). Then complete the teacher-approved project stage.",
+      "evidence": "Website + practical check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 24,
+      "type": "Practical",
+      "focus": "Module 5: production",
+      "student_work": "Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.",
+      "evidence": "Practical quality check",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    },
+    {
+      "number": 25,
+      "type": "Practical",
+      "focus": "Module 5: evidence",
+      "student_work": "Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.",
+      "evidence": "Check the project photograph and quality note",
+      "syllabus_content": [
+        "Select and safely use tools, materials, technologies and production processes"
+      ],
+      "outcome_codes": [
+        "TE4-SAF-01",
+        "TE4-PPM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-02"
+      ],
+      "website_learning_ids": []
+    }
+  ],
+  "site_route_map": [
+    {
+      "destination": "folio.html",
+      "purpose": "Named learning or saved evidence destination",
+      "audience": "student",
+      "period_numbers": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ]
+    },
+    {
+      "destination": "module.html?module=1",
+      "purpose": "Named learning or saved evidence destination",
+      "audience": "student",
+      "period_numbers": [
+        1
+      ]
+    },
+    {
+      "destination": "module.html?module=2",
+      "purpose": "Named learning or saved evidence destination",
+      "audience": "student",
+      "period_numbers": [
+        6
+      ]
+    },
+    {
+      "destination": "module.html?module=3",
+      "purpose": "Named learning or saved evidence destination",
+      "audience": "student",
+      "period_numbers": [
+        11
+      ]
+    },
+    {
+      "destination": "module.html?module=4",
+      "purpose": "Named learning or saved evidence destination",
+      "audience": "student",
+      "period_numbers": [
+        16
+      ]
+    },
+    {
+      "destination": "module.html?module=5",
+      "purpose": "Named learning or saved evidence destination",
+      "audience": "student",
+      "period_numbers": [
+        21
+      ]
+    }
+  ],
+  "teacher_to_confirm": [
+    {
+      "id": "TTC-01",
+      "item": "Confirm timetable, lesson order, class supports and approved adjustments.",
+      "owner": "Teacher / faculty",
+      "affected_periods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "due_before": "Before the unit"
+    },
+    {
+      "id": "TTC-02",
+      "item": "Confirm each practical activity, materials, equipment, supervision and current risk controls.",
+      "owner": "Teacher / faculty",
+      "affected_periods": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        23,
+        24,
+        25
+      ],
+      "due_before": "Before each practical"
+    },
+    {
+      "id": "TTC-03",
+      "item": "Confirm assessment authority, marks, dates, conditions and submission method.",
+      "owner": "Teacher / faculty",
+      "affected_periods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "due_before": "Before assessment use"
+    },
+    {
+      "id": "TTC-04",
+      "item": "Confirm current links, program version and local sequence changes.",
+      "owner": "Teacher / faculty",
+      "affected_periods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "due_before": "Before classroom issue"
+    }
+  ],
+  "files": [
+    {
+      "path": "resources/teacher/Hose-Reel-Holder-25-Period-Teaching-Program-v2.0-Network-Benchmark.docx",
+      "purpose": "editable-program",
+      "version": "v2.0",
+      "sha256": "E65326ACA31D0A54F4DD4AC890ABE38DBCADAAF050F48FF53119609F652FE454"
+    },
+    {
+      "path": "resources/teacher/Hose-Reel-Holder-25-Period-Teaching-Program-v2.0-Network-Benchmark.pdf",
+      "purpose": "rendered-program",
+      "version": "v2.0",
+      "sha256": "9209E563D6AF7EA9BA97AF7AD00D0E7C59BC0EB95CD9A35BF6DB137937FAC398"
+    },
+    {
+      "path": "resources/teacher/Hose-Reel-Holder-25-Period-Alignment-Manifest-v2.0.json",
+      "purpose": "alignment-manifest",
+      "version": "v2.0"
+    }
+  ]
+}
