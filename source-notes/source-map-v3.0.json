@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0",
+  "source_map_id": "hose-reel-holder-source-map-v3.0",
+  "version": "v3.0",
+  "verified_date": "2026-09-01",
+  "course": {
+    "id": "year-8-hose-reel-holder-metal-elective",
+    "title": "Hose Reel Holder",
+    "classification": "Introductory unit contributing to a 100-hour Industrial Technology – Metal elective",
+    "year": "Year 8",
+    "stage": "Stage 4",
+    "delivery_year": 2027,
+    "duration": {
+      "weeks": 20,
+      "periods": 50,
+      "period_minutes": 60,
+      "periods_per_fortnight": 5,
+      "average_hours_per_week": 2.5
+    },
+    "course_requirement": "Sufficient additional study is required to complete the school's named 100-hour Industrial Technology – Metal elective."
+  },
+  "syllabus": {
+    "family_key": "industrial-technology-7-10-2025",
+    "title": "Industrial Technology 7–10 Syllabus (2025)",
+    "version": "2025",
+    "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course",
+    "status": "Early use in 2027; mandatory from 2028",
+    "implementation_basis": "approved early adoption for 2027",
+    "outcome_code_family": "INT5",
+    "stage4_adjustment_advice": "INT4-ADJ-01"
+  },
+  "program_family": {
+    "in_scope": true,
+    "program_kind": "unit",
+    "family_key": "industrial-technology-7-10-2025",
+    "syllabus_title": "Industrial Technology 7–10 Syllabus (2025)",
+    "syllabus_version": "2025",
+    "syllabus_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course",
+    "syllabus_status": "Early use in 2027; mandatory from 2028",
+    "syllabus_verified_date": "2026-09-01",
+    "implementation_basis": "approved early adoption for 2027",
+    "outcome_code_family": "INT5",
+    "course_family": "Metal",
+    "content_area": "Industrial Technology – Metal",
+    "stage_or_year": "Year 8 / Stage 4",
+    "project_title": "Hose Reel Holder",
+    "duration": { "value": 50, "unit": "periods" },
+    "master_relationship": {
+      "state": "master-not-established",
+      "coverage_state": "gap-recorded"
+    },
+    "site_state": "confirmed-public",
+    "canonical_public_url": "https://stevencowell.github.io/Yr-8-Metal-Technology/",
+    "central_library": {
+      "url": "https://stevencowell.github.io/Main-Page/subject-program-library/",
+      "local_repository": "../Main-Page",
+      "registration_authority": "not-authorised-in-this-pass"
+    },
+    "palette": {
+      "mode": "existing-content-area",
+      "registry_key": "metal",
+      "stage4_focus_area_key": ""
+    },
+    "authority": {
+      "course_repository_edits": true,
+      "main_page_edits": false,
+      "library_registration": false,
+      "commit": false,
+      "publication": false
+    }
+  },
+  "controlling_sources": [
+    {
+      "id": "S1",
+      "title": "Industrial Technology 7–10 Syllabus (2025) course overview",
+      "authority_domain": "official syllabus, course structure and implementation advice",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course",
+      "verified_date": "2026-09-01",
+      "snapshot_sha256": "533400e165c58b98ffbcbcb0b40142f763810feaf7b142b22fc338f54aee4db83"
+    },
+    {
+      "id": "S2",
+      "title": "Industrial Technology 7–10 Syllabus (2025) outcomes",
+      "authority_domain": "exact outcome wording and Stage 4 adjustment advice",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes",
+      "verified_date": "2026-09-01",
+      "snapshot_sha256": "82b2253dfba0c1c2cbe3d1f9385d58af2827023a7c095ccd117f230e1929fea5"
+    },
+    {
+      "id": "S3",
+      "title": "Industrial Technology project development content",
+      "authority_domain": "project development syllabus content",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/content/stage-5/fadd3860da",
+      "verified_date": "2026-09-01",
+      "snapshot_sha256": "8354224e13e71d1d1aa9d04260f44bbaf1538725081d5de49d0e12d90a4e44d6"
+    },
+    {
+      "id": "S4",
+      "title": "Industrial Technology Metal industry content",
+      "authority_domain": "Metal materials, tools, equipment, processes, techniques, applications and industry context",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/content/stage-5/fac72af895",
+      "verified_date": "2026-09-01",
+      "snapshot_sha256": "a9b3ee09f5673e53736231b862265decdb2460c45adf2eece00c6a416b2a6197"
+    },
+    {
+      "id": "S5",
+      "title": "Hose Holder Program Theory Package",
+      "authority_domain": "teacher-issued unit identity, project context and broad theory sequence",
+      "location": "private-google-drive://file/1wSOBCITgjLWcsafzKPymxlxhp6uqEiBy3SQP9WkLmq4",
+      "provider_modified": "2023-03-20",
+      "boundary": "Does not authorise current dimensions, practical methods, safety controls, assessment conditions or syllabus alignment."
+    },
+    {
+      "id": "S6",
+      "title": "Current Hose Reel Holder guided course data",
+      "authority_domain": "existing five-module learning sequence and project fact boundaries",
+      "location": "guided/data.js",
+      "revision": "git 074d10c plus scoped local v3.0 pacing change",
+      "pre_change_sha256": "e5187fd31ef328acf655b3a84ff81127f0acf11f2c059080b6689fa11064226d",
+      "candidate_sha256": "b919469f6185846f884dfa5fa636df05e1838ab31113890654b2ebea262b97dc"
+    },
+    {
+      "id": "S7",
+      "title": "Year 8 Metal – elective source folder",
+      "authority_domain": "private teacher source collection",
+      "location": "private-google-drive://folder/1meuc2-dZUf94W_jqF6Om1yYROqpMMlHV",
+      "boundary": "Student contract records and personal information are excluded from the public build."
+    },
+    {
+      "id": "S8",
+      "title": "Steve's standing 2027 early-adoption decision",
+      "authority_domain": "local syllabus implementation decision",
+      "location": "plugin://new-tas-course-site-builder@personal/14-tas-build-program/references/program-standard.md",
+      "revision": "plugin 0.2.0+codex.20260829193501",
+      "use": "Use the latest syllabus through approved early adoption in 2027 where official advice permits."
+    },
+    {
+      "id": "S9",
+      "title": "Footstool Year 8 elective alignment manifest v2.0",
+      "authority_domain": "current network Year 8 elective delivery pattern",
+      "location": "../Year-8-Intro-Timber-Technology/resources/teacher/Footstool-50-Period-Alignment-Manifest-v2.0.json",
+      "sha256": "eb337228f14d530259fd86d9aa8cc841b96c2dc6c518e36f9aace9dcbed99a2f",
+      "use": "20 weeks, 50 × 60-minute periods and 5 periods per fortnight; subject facts remain Metal-specific."
+    },
+    {
+      "id": "Q1",
+      "title": "The Riv Burger",
+      "authority_domain": "structural and rendered quality reference only",
+      "location": "https://stevencowell.github.io/Year-8-The-Riv-Burger/",
+      "verified_date": "2026-09-01",
+      "boundary": "Not authority for Metal facts, syllabus content, practical methods or assessment."
+    }
+  ],
+  "outcomes_scope": "Full official INT5 outcome register for source control; the v3.0 program manifest and 50-period sequence select only outcomes supported by this unit.",
+  "outcomes": [
+    { "code": "INT5-SAF-01", "statement": "applies risk management and safe work practices in industrial technology contexts", "source_id": "S2" },
+    { "code": "INT5-COM-01", "statement": "communicates ideas and processes in industrial technology contexts", "source_id": "S2" },
+    { "code": "INT5-ENV-01", "statement": "assesses the impact of industrial activities and practices on society and the environment", "source_id": "S2" },
+    { "code": "INT5-DES-01", "statement": "selects and applies design, project management and technical skills in project production", "source_id": "S2" },
+    { "code": "INT5-USE-01", "statement": "selects and justifies the use of materials, tools and equipment to undertake projects", "source_id": "S2" },
+    { "code": "INT5-EVL-01", "statement": "evaluates the functional, aesthetic, economic and environmental qualities of products", "source_id": "S2" },
+    { "code": "INT5-INP-01", "statement": "analyses and applies a range of industrial processes in production contexts", "source_id": "S2" },
+    { "code": "INT5-PRO-01", "statement": "demonstrates practical skills in the production of projects", "source_id": "S2" },
+    { "code": "INT5-IND-01", "statement": "investigates and explains a range of industry careers, enterprise opportunities and practices", "source_id": "S2" }
+  ],
+  "content_domains": [
+    "Project development: work health and safety and risk management",
+    "Project development: project design",
+    "Project development: project management",
+    "Project development: project communication",
+    "Metal industry: materials and resources",
+    "Metal industry: tools and equipment",
+    "Metal industry: processes, techniques and applications",
+    "Metal industry in context"
+  ],
+  "module_structure": [
+    {
+      "module_id": "m01",
+      "weeks": "1–4",
+      "title": "Project purpose and workshop readiness",
+      "route": "module.html?module=1",
+      "sections": [
+        { "section_id": "m01-s01", "title": "Meet the project: function, users and constraints", "site_anchor": "theory-1-1" },
+        { "section_id": "m01-s02", "title": "Workshop entry and machine permission", "site_anchor": "theory-1-2" },
+        { "section_id": "m01-s03", "title": "Learn from the unsafe scenario", "site_anchor": "theory-1-3" }
+      ]
+    },
+    {
+      "module_id": "m02",
+      "weeks": "5–8",
+      "title": "Design, plans and accurate marking",
+      "route": "module.html?module=2",
+      "sections": [
+        { "section_id": "m02-s01", "title": "From drawing to marked metal: planning the work", "site_anchor": "theory-2-1" },
+        { "section_id": "m02-s02", "title": "Use the design process deliberately", "site_anchor": "theory-2-2" },
+        { "section_id": "m02-s03", "title": "Marking-out evidence", "site_anchor": "theory-2-3" }
+      ]
+    },
+    {
+      "module_id": "m03",
+      "weeks": "9–12",
+      "title": "Cut, shape and drill under control",
+      "route": "module.html?module=3",
+      "sections": [
+        { "section_id": "m03-s01", "title": "Control the workpiece before the tool", "site_anchor": "theory-3-1" },
+        { "section_id": "m03-s02", "title": "Cutting and edge preparation", "site_anchor": "theory-3-2" },
+        { "section_id": "m03-s03", "title": "Forming with a planned sequence", "site_anchor": "theory-3-3" }
+      ]
+    },
+    {
+      "module_id": "m04",
+      "weeks": "13–16",
+      "title": "Join, assemble and protect",
+      "route": "module.html?module=4",
+      "sections": [
+        { "section_id": "m04-s01", "title": "Assembly quality: fit, alignment and finish", "site_anchor": "theory-4-1" },
+        { "section_id": "m04-s02", "title": "Choose and complete the approved joint", "site_anchor": "theory-4-2" },
+        { "section_id": "m04-s03", "title": "Prepare for corrosion protection", "site_anchor": "theory-4-3" }
+      ]
+    },
+    {
+      "module_id": "m05",
+      "weeks": "17–20",
+      "title": "Test, evaluate and present evidence",
+      "route": "module.html?module=5",
+      "sections": [
+        { "section_id": "m05-s01", "title": "Evidence proves the process", "site_anchor": "theory-5-1" },
+        { "section_id": "m05-s02", "title": "Organise the folio", "site_anchor": "theory-5-2" },
+        { "section_id": "m05-s03", "title": "Evaluate with evidence", "site_anchor": "theory-5-3" }
+      ]
+    }
+  ],
+  "expected_routes": [
+    "index.html",
+    "module.html?module=1",
+    "module.html?module=2",
+    "module.html?module=3",
+    "module.html?module=4",
+    "module.html?module=5",
+    "folio.html",
+    "youtube-library/video-library.html",
+    "project-resource.html",
+    "teacher-resources.html"
+  ],
+  "visual_coverage": {
+    "working_target": 30,
+    "target_basis": "Typical 20-week course working range, scaled to the existing five-module unit.",
+    "current_state": "gap-recorded",
+    "boundary": "Do not count duplicate crops, decorative marks or unauthorised plan-like images as distinct teaching visuals."
+  },
+  "assessment_status": "No current formal assessment notification is authorised in the repository. Existing digital class test remains informal practice only; all formal use is Teacher to confirm.",
+  "teacher_resources": {
+    "route": "teacher-resources.html",
+    "expected_program_links": [
+      "resources/teacher/Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.pdf",
+      "resources/teacher/Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.docx"
+    ],
+    "alignment_manifest": "resources/teacher/Hose-Reel-Holder-50-Period-Alignment-Manifest-v3.0.json"
+  },
+  "fact_boundary": {
+    "permitted_authoring": "Syllabus-grounded age-appropriate theory, examples, learning checks, feedback and folio prompts within the confirmed Metal domain.",
+    "prohibited_inference": [
+      "dimensions or tolerances",
+      "exact components or material specifications",
+      "machine settings or practical method",
+      "joining or finishing method",
+      "test method",
+      "risk controls or supervision arrangements",
+      "assessment dates, marks, weighting, conditions or submission process"
+    ]
+  },
+  "unresolved_items": [
+    { "id": "TTC-01", "item": "Current authentic Hose Reel Holder working drawing", "owner": "Teacher / faculty", "blocks": "exact practical delivery only" },
+    { "id": "TTC-02", "item": "Current practical procedures, induction, SOPs, tools, PPE, supervision and risk controls", "owner": "Teacher / faculty", "blocks": "each affected practical stage only" },
+    { "id": "TTC-03", "item": "Formal assessment authority and requirements", "owner": "Teacher / faculty", "blocks": "formal assessment use only" },
+    { "id": "TTC-04", "item": "Additional study completing the named 100-hour elective", "owner": "Program coordinator", "blocks": "whole-course completion claim only" },
+    { "id": "GAP-01", "item": "Inherited learning checks do not yet satisfy the current section-package quantity and placement contract", "owner": "Stage 06 specialist", "blocks": "full initial-build acceptance only" },
+    { "id": "GAP-02", "item": "Purposeful visual coverage target not yet demonstrated", "owner": "Stage 08 / Stage 16", "blocks": "full initial-build visual acceptance only" }
+  ],
+  "dependencies": [
+    "Stage 03 core artefact verification",
+    "Stage 06 learning-package gap resolution",
+    "Stage 07 presentation integrity confirmation",
+    "Stage 08 visual coverage gap resolution",
+    "Stage 11 folio verification",
+    "Stage 12 assessment boundary verification",
+    "Stage 13 integration",
+    "Stage 14 program family production",
+    "Stages 15–17 independent audits and acceptance",
+    "Stage 91 central registration only when authorised",
+    "Stage 18 release only when explicitly authorised"
+  ]
+}

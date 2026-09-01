@@ -1,12 +1,25 @@
-YEAR 8 METALWORK - LOCAL BUILD VALIDATION
+YEAR 8 METAL TECHNOLOGY - LOCAL REALIGNMENT VALIDATION
 
-- Landing page renders with direct course access; the former forced login is not loaded by the new pathway.
-- Five two-week modules render through the shared module shell.
-- Each module contains three theory sections, two knowledge checks, written evidence, model feedback, student identity, local autosave, progress and Print / Save PDF.
-- The folio contains exactly 12 editable evidence cards with matching course-specific infographic crops, local autosave and Print / Save PDF.
-- Module answers, identity and written evidence persist after reload.
-- All local links and assets from index.html, module 1, module 5 and folio.html returned successfully.
-- JavaScript syntax checks passed and the rendered browser console contained no errors or warnings.
-- Desktop rendering was visually checked in the in-app browser.
-- Landing, module and folio pages were rendered and visually checked at a genuine 500 px narrow viewport; the navigation stacks or scrolls cleanly, content remains readable and the folio becomes one column.
-- Folio visual assets were inspected as a 4-by-3 sequence and all 12 accessible visual prompts are present in the rendered document.
+- Course identity is Year 8 Stage 4, introductory unit contributing to a 100-hour Industrial Technology - Metal elective.
+- Delivery is 20 weeks, 50 x 60-minute periods, 5 periods per fortnight and an average 2.5 hours per week.
+- Five four-week modules render through the existing shared module shell; the established theory and project boundaries are preserved.
+- Landing, syllabus, program summary, assessment boundary, project resource and Teacher Resources use the Industrial Technology 7-10 Syllabus (2025), approved early adoption for 2027, with INT5 outcomes adjusted for Stage 4 under INT4-ADJ-01.
+- No current student- or teacher-facing HTML/JavaScript page contains Technology Mandatory, Technology 7-8, TE4, 10-week or 25-period alignment claims.
+- Teacher Resources contains one prominent pair of links: Teaching program PDF and Editable teaching program. No technical alignment-record button is visible.
+- The authentic working drawing remains Teacher to confirm. Existing blueprint-style images are explicitly non-authoritative, and no dimensions, processes, safety controls or assessment conditions were invented.
+- Stage 01 source-map, build-scope, benchmark and core-artefact contracts are present. The deterministic family benchmark validator passed its initial phase.
+- JSON parsing and focused JavaScript syntax checks passed.
+- A focused link/asset scan checked 79 candidate-relative references across the current route family with no missing targets.
+- Laptop and exact 390 x 844 browser checks returned HTTP 200 for the landing, Modules 1 and 5, Teacher Resources, program, syllabus, assessment boundary and project resource routes.
+- At exactly 390 px, the shared navigation has no clipped links, document scroll width equals the 390 px viewport, and teacher/assessment tables scroll inside their own labelled containers.
+- Modules 1 and 5 rendered at exactly 390 px with no console errors after the duplicate navigation load was removed.
+
+RETAINED ACCEPTANCE GAPS
+
+- The inherited module-level checks do not yet meet the newer fixed initial-build contract of 10 MCQs and one long response immediately after each of the three sections.
+- The inherited visual set does not yet demonstrate the current 30-asset working target for a typical 20-week course.
+- These gaps affect full new-build acceptance, not the correctness of this syllabus, course-identity and timetable realignment.
+
+STATE
+
+- Local candidate only. Not committed, pushed, deployed or rendered live-verified.

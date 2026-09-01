@@ -5,7 +5,7 @@
 
   const script = document.currentScript;
   const root = new URL("../", script && script.src ? script.src : location.href);
-  const stylesheetUrl = new URL("course-family-navigation.css?v=20260814", root).href;
+  const stylesheetUrl = new URL("course-family-navigation.css?v=20260901", root).href;
 
   if (!document.querySelector("link[data-course-family-nav-styles]")) {
     const stylesheet = document.createElement("link");

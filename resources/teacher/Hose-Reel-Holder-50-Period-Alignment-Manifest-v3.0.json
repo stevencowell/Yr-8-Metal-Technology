@@ -1,0 +1,2095 @@
+{
+  "schema_version": "1.0",
+  "program_id": "year-8-hose-reel-holder-elective-program",
+  "version": "v3.0",
+  "course": {
+    "title": "Hose Reel Holder",
+    "classification": "Introductory unit contributing to a 100-hour Industrial Technology – Metal industry elective",
+    "stage_or_year": "Stage 4 | Year 8",
+    "delivery_year": 2027,
+    "project": "Produce and document the teacher-approved Hose Reel Holder project",
+    "course_requirement": "This 50-period unit requires additional study, another project and a collaborative activity before the 100-hour elective requirements can be claimed.",
+    "stage4_adjustment_advice": "Stage 5 outcomes adjusted for Year 8 under INT4-ADJ-01; the adjustment advice is not an outcome code."
+  },
+  "site": {
+    "name": "Hose Reel Holder",
+    "reference": "https://stevencowell.github.io/Yr-8-Metal-Technology/",
+    "inspection_date": "2026-09-01",
+    "state": "mixed"
+  },
+  "syllabus": {
+    "title": "Industrial Technology 7–10 Syllabus (2025)",
+    "version": "2025",
+    "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course",
+    "verified_date": "2026-09-01",
+    "mandatory_from": "2028",
+    "early_implementation": "permitted",
+    "steve_decision": "use-new-early",
+    "implementation_status": "early-adoption-confirmed"
+  },
+  "timetable": {
+    "weeks": 20,
+    "period_minutes": 60,
+    "periods_per_fortnight": 5,
+    "total_periods": 50
+  },
+  "outcomes": [
+    {
+      "code": "INT5-SAF-01",
+      "statement": "applies risk management and safe work practices in industrial technology contexts",
+      "source_id": "S2",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes"
+    },
+    {
+      "code": "INT5-COM-01",
+      "statement": "communicates ideas and processes in industrial technology contexts",
+      "source_id": "S2",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes"
+    },
+    {
+      "code": "INT5-ENV-01",
+      "statement": "assesses the impact of industrial activities and practices on society and the environment",
+      "source_id": "S2",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes"
+    },
+    {
+      "code": "INT5-DES-01",
+      "statement": "selects and applies design, project management and technical skills in project production",
+      "source_id": "S2",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes"
+    },
+    {
+      "code": "INT5-USE-01",
+      "statement": "selects and justifies the use of materials, tools and equipment to undertake projects",
+      "source_id": "S2",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes"
+    },
+    {
+      "code": "INT5-EVL-01",
+      "statement": "evaluates the functional, aesthetic, economic and environmental qualities of products",
+      "source_id": "S2",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes"
+    },
+    {
+      "code": "INT5-INP-01",
+      "statement": "analyses and applies a range of industrial processes in production contexts",
+      "source_id": "S2",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes"
+    },
+    {
+      "code": "INT5-PRO-01",
+      "statement": "demonstrates practical skills in the production of projects",
+      "source_id": "S2",
+      "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes"
+    }
+  ],
+  "source_register": [
+    {
+      "id": "S1",
+      "title": "Industrial Technology 7–10 Syllabus (2025) – course overview",
+      "authority": "official-syllabus",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course",
+      "revision": "verified 2026-09-01",
+      "use": "course identity and implementation basis"
+    },
+    {
+      "id": "S2",
+      "title": "Industrial Technology 7–10 Syllabus (2025) – outcomes",
+      "authority": "official-syllabus",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes",
+      "revision": "verified 2026-09-01",
+      "use": "exact outcome wording"
+    },
+    {
+      "id": "S3",
+      "title": "Project development content",
+      "authority": "official-syllabus",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/content/stage-5/fadd3860da",
+      "revision": "verified 2026-09-01",
+      "use": "WHS, design, management and communication focus"
+    },
+    {
+      "id": "S4",
+      "title": "Metal industry content",
+      "authority": "official-syllabus",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/content/stage-5/fac72af895",
+      "revision": "verified 2026-09-01",
+      "use": "Metal materials, tools, processes and industry context"
+    },
+    {
+      "id": "S5",
+      "title": "Hose Holder Program Theory Package",
+      "authority": "teacher-technical",
+      "location": "Private Drive file ID 1wSOBCITgjLWcsafzKPymxlxhp6uqEiBy3SQP9WkLmq4",
+      "revision": "modified 2023-03-20",
+      "use": "unit identity and theory sequence only; current plans and procedures remain teacher controlled"
+    },
+    {
+      "id": "S6",
+      "title": "Hose Reel Holder guided course",
+      "authority": "website",
+      "location": "candidate root",
+      "revision": "local baseline 074d10cae6c5",
+      "use": "five-module learning sequence and evidence routes"
+    },
+    {
+      "id": "S7",
+      "title": "Year 8 Footstool elective program comparator",
+      "authority": "quality-reference",
+      "location": "../Year-8-Intro-Timber-Technology/resources/teacher/Footstool-50-Period-Alignment-Manifest-v2.0.json",
+      "revision": "verified 2026-09-01",
+      "use": "20-week, 50-period, five-per-fortnight Year 8 elective pattern only"
+    }
+  ],
+  "periods": [
+    {
+      "number": 1,
+      "type": "Site/theory",
+      "focus": "Meet the project: function, users and constraints",
+      "student_work": "Teach Meet the project: function, users and constraints; students read, discuss and use the existing module check.",
+      "evidence": "Discussion notes and available knowledge-check feedback.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-COM-01",
+        "INT5-ENV-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=1#theory-1-1",
+        "module.html?module=1"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 2,
+      "type": "Project/folio",
+      "focus": "Meet the project: function, users and constraints",
+      "student_work": "Students record the source-backed need, constraints, decision or process evidence in the folio.",
+      "evidence": "Saved folio entry and scaffolded module response.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-COM-01",
+        "INT5-ENV-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html",
+        "module.html?module=1"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 3,
+      "type": "Site/theory",
+      "focus": "Workshop entry and machine permission",
+      "student_work": "Teach Workshop entry and machine permission; connect the idea to the approved project and current workshop boundary.",
+      "evidence": "Annotated notes and teacher questioning.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-ENV-01",
+        "INT5-DES-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=1#theory-1-2",
+        "module.html?module=1"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 4,
+      "type": "Project/folio",
+      "focus": "Learn from the unsafe scenario",
+      "student_work": "Teach and apply Learn from the unsafe scenario; students prepare evidence for the next approved project stage.",
+      "evidence": "Prepared evidence, decision and next-step record.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-USE-01",
+        "INT5-SAF-01",
+        "INT5-COM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=1#theory-1-3",
+        "folio.html",
+        "module.html?module=1"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 5,
+      "type": "Practical",
+      "focus": "Module 1: confirm the issued plan and workshop readiness",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students confirm the issued plan and workshop readiness; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 6,
+      "type": "Practical",
+      "focus": "Module 1: prepare and organise approved materials",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students prepare and organise approved materials; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 7,
+      "type": "Practical",
+      "focus": "Module 1: rehearse the authorised setup",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students rehearse the authorised setup; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 8,
+      "type": "Practical",
+      "focus": "Module 1: complete the teacher-approved project stage",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students complete the teacher-approved project stage; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 9,
+      "type": "Practical",
+      "focus": "Module 1: check one quality point",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students check one quality point; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 10,
+      "type": "Practical",
+      "focus": "Module 1: record progress and the next safe step",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students record progress and the next safe step; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Identify design factors and develop project specifications",
+        "S3 — Outline risk-management principles and implement risk-reduction procedures"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 11,
+      "type": "Site/theory",
+      "focus": "From drawing to marked metal: planning the work",
+      "student_work": "Teach From drawing to marked metal: planning the work; students read, discuss and use the existing module check.",
+      "evidence": "Discussion notes and available knowledge-check feedback.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-COM-01",
+        "INT5-DES-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=2#theory-2-1",
+        "module.html?module=2"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 12,
+      "type": "Project/folio",
+      "focus": "From drawing to marked metal: planning the work",
+      "student_work": "Students record the source-backed need, constraints, decision or process evidence in the folio.",
+      "evidence": "Saved folio entry and scaffolded module response.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-COM-01",
+        "INT5-DES-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html",
+        "module.html?module=2"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 13,
+      "type": "Site/theory",
+      "focus": "Use the design process deliberately",
+      "student_work": "Teach Use the design process deliberately; connect the idea to the approved project and current workshop boundary.",
+      "evidence": "Annotated notes and teacher questioning.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-USE-01",
+        "INT5-INP-01",
+        "INT5-COM-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=2#theory-2-2",
+        "module.html?module=2"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 14,
+      "type": "Project/folio",
+      "focus": "Marking-out evidence",
+      "student_work": "Teach and apply Marking-out evidence; students prepare evidence for the next approved project stage.",
+      "evidence": "Prepared evidence, decision and next-step record.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-COM-01",
+        "INT5-DES-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=2#theory-2-3",
+        "folio.html",
+        "module.html?module=2"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 15,
+      "type": "Practical",
+      "focus": "Module 2: confirm the issued plan and datum",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students confirm the issued plan and datum; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 16,
+      "type": "Practical",
+      "focus": "Module 2: measure and mark from the approved reference",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students measure and mark from the approved reference; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 17,
+      "type": "Practical",
+      "focus": "Module 2: complete the pre-cut check",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students complete the pre-cut check; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 18,
+      "type": "Practical",
+      "focus": "Module 2: complete the teacher-approved project stage",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students complete the teacher-approved project stage; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 19,
+      "type": "Practical",
+      "focus": "Module 2: check accuracy before the next irreversible step",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students check accuracy before the next irreversible step; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 20,
+      "type": "Practical",
+      "focus": "Module 2: record progress and the next safe step",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students record progress and the next safe step; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Apply graphical communication during project development",
+        "S4 — Use approved drawings, jigs or templates to manufacture components",
+        "S4 — Select and use marking-out tools and processes accurately"
+      ],
+      "outcome_codes": [
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 21,
+      "type": "Site/theory",
+      "focus": "Control the workpiece before the tool",
+      "student_work": "Teach Control the workpiece before the tool; students read, discuss and use the existing module check.",
+      "evidence": "Discussion notes and available knowledge-check feedback.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=3#theory-3-1",
+        "module.html?module=3"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 22,
+      "type": "Project/folio",
+      "focus": "Control the workpiece before the tool",
+      "student_work": "Students record the source-backed need, constraints, decision or process evidence in the folio.",
+      "evidence": "Saved folio entry and scaffolded module response.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html",
+        "module.html?module=3"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 23,
+      "type": "Site/theory",
+      "focus": "Cutting and edge preparation",
+      "student_work": "Teach Cutting and edge preparation; connect the idea to the approved project and current workshop boundary.",
+      "evidence": "Annotated notes and teacher questioning.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-INP-01",
+        "INT5-PRO-01",
+        "INT5-SAF-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=3#theory-3-2",
+        "module.html?module=3"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 24,
+      "type": "Project/folio",
+      "focus": "Forming with a planned sequence",
+      "student_work": "Teach and apply Forming with a planned sequence; students prepare evidence for the next approved project stage.",
+      "evidence": "Prepared evidence, decision and next-step record.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=3#theory-3-3",
+        "folio.html",
+        "module.html?module=3"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 25,
+      "type": "Practical",
+      "focus": "Module 3: secure the work using the demonstrated setup",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students secure the work using the demonstrated setup; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 26,
+      "type": "Practical",
+      "focus": "Module 3: complete the teacher-approved cutting stage",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students complete the teacher-approved cutting stage; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 27,
+      "type": "Practical",
+      "focus": "Module 3: make edges safe using the approved process",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students make edges safe using the approved process; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 28,
+      "type": "Practical",
+      "focus": "Module 3: complete the teacher-approved drilling or forming stage",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students complete the teacher-approved drilling or forming stage; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 29,
+      "type": "Practical",
+      "focus": "Module 3: check alignment and condition",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students check alignment and condition; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 30,
+      "type": "Practical",
+      "focus": "Module 3: record progress and the next safe step",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students record progress and the next safe step; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+        "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+        "S4 — Apply quality checks before, during and after production"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 31,
+      "type": "Site/theory",
+      "focus": "Assembly quality: fit, alignment and finish",
+      "student_work": "Teach Assembly quality: fit, alignment and finish; students read, discuss and use the existing module check.",
+      "evidence": "Discussion notes and available knowledge-check feedback.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-ENV-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=4#theory-4-1",
+        "module.html?module=4"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 32,
+      "type": "Project/folio",
+      "focus": "Assembly quality: fit, alignment and finish",
+      "student_work": "Students record the source-backed need, constraints, decision or process evidence in the folio.",
+      "evidence": "Saved folio entry and scaffolded module response.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-ENV-01",
+        "INT5-USE-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html",
+        "module.html?module=4"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 33,
+      "type": "Site/theory",
+      "focus": "Choose and complete the approved joint",
+      "student_work": "Teach Choose and complete the approved joint; connect the idea to the approved project and current workshop boundary.",
+      "evidence": "Annotated notes and teacher questioning.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-USE-01",
+        "INT5-INP-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=4#theory-4-2",
+        "module.html?module=4"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 34,
+      "type": "Project/folio",
+      "focus": "Prepare for corrosion protection",
+      "student_work": "Teach and apply Prepare for corrosion protection; students prepare evidence for the next approved project stage.",
+      "evidence": "Prepared evidence, decision and next-step record.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-PRO-01",
+        "INT5-SAF-01",
+        "INT5-ENV-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=4#theory-4-3",
+        "folio.html",
+        "module.html?module=4"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 35,
+      "type": "Practical",
+      "focus": "Module 4: dry check fit and alignment",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students dry check fit and alignment; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 36,
+      "type": "Practical",
+      "focus": "Module 4: prepare contact surfaces using the approved process",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students prepare contact surfaces using the approved process; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 37,
+      "type": "Practical",
+      "focus": "Module 4: complete the teacher-approved joining stage",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students complete the teacher-approved joining stage; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 38,
+      "type": "Practical",
+      "focus": "Module 4: prepare the surface safely",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students prepare the surface safely; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 39,
+      "type": "Practical",
+      "focus": "Module 4: apply the teacher-approved corrosion-protection process",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students apply the teacher-approved corrosion-protection process; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 40,
+      "type": "Practical",
+      "focus": "Module 4: record quality and the next safe step",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students record quality and the next safe step; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S4 — Compare and use suitable joining and fabrication techniques",
+        "S4 — Assemble components with suitable tools, equipment and processes",
+        "S4 — Prepare surfaces and apply an appropriate protective finish"
+      ],
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-PRO-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 41,
+      "type": "Site/theory",
+      "focus": "Evidence proves the process",
+      "student_work": "Teach Evidence proves the process; students read, discuss and use the existing module check.",
+      "evidence": "Discussion notes and available knowledge-check feedback.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-COM-01",
+        "INT5-DES-01",
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=5#theory-5-1",
+        "module.html?module=5"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 42,
+      "type": "Project/folio",
+      "focus": "Evidence proves the process",
+      "student_work": "Students record the source-backed need, constraints, decision or process evidence in the folio.",
+      "evidence": "Saved folio entry and scaffolded module response.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-COM-01",
+        "INT5-DES-01",
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "folio.html",
+        "module.html?module=5"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 43,
+      "type": "Site/theory",
+      "focus": "Organise the folio",
+      "student_work": "Teach Organise the folio; connect the idea to the approved project and current workshop boundary.",
+      "evidence": "Annotated notes and teacher questioning.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-COM-01",
+        "INT5-DES-01",
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=5#theory-5-2",
+        "module.html?module=5"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 44,
+      "type": "Project/folio",
+      "focus": "Evaluate with evidence",
+      "student_work": "Teach and apply Evaluate with evidence; students prepare evidence for the next approved project stage.",
+      "evidence": "Prepared evidence, decision and next-step record.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-COM-01",
+        "INT5-DES-01",
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "mapped",
+      "site_destinations": [
+        "module.html?module=5#theory-5-3",
+        "folio.html",
+        "module.html?module=5"
+      ],
+      "practical_authority": "not-applicable",
+      "teacher_to_confirm_ids": []
+    },
+    {
+      "number": 45,
+      "type": "Practical",
+      "focus": "Module 5: complete the teacher-approved functional check",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students complete the teacher-approved functional check; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 46,
+      "type": "Practical",
+      "focus": "Module 5: compare the result with the approved criteria",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students compare the result with the approved criteria; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 47,
+      "type": "Practical",
+      "focus": "Module 5: correct an authorised quality issue",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students correct an authorised quality issue; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 48,
+      "type": "Practical",
+      "focus": "Module 5: finish process evidence",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students finish process evidence; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 49,
+      "type": "Practical",
+      "focus": "Module 5: complete the evaluation",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students complete the evaluation; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    },
+    {
+      "number": 50,
+      "type": "Practical",
+      "focus": "Module 5: present the final folio and identify one improvement",
+      "student_work": "Teacher demonstrates and authorises the local project stage. Students present the final folio and identify one improvement; pause when the setup, plan or condition differs from the demonstration.",
+      "evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+      "syllabus_content": [
+        "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+        "S3 — Create written texts that document, reflect on and evaluate production",
+        "S4 — Apply quality checks to finished metal components and products"
+      ],
+      "outcome_codes": [
+        "INT5-EVL-01"
+      ],
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "site_alignment": "not-required",
+      "site_destinations": [],
+      "practical_authority": "teacher-to-confirm",
+      "teacher_to_confirm_ids": [
+        "TTC-01",
+        "TTC-02"
+      ]
+    }
+  ],
+  "site_route_map": [
+    {
+      "destination": "module.html?module=1#theory-1-1",
+      "purpose": "Meet the project: function, users and constraints",
+      "audience": "student",
+      "period_numbers": [
+        1
+      ]
+    },
+    {
+      "destination": "module.html?module=1",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "audience": "student",
+      "period_numbers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "destination": "folio.html",
+      "purpose": "Module 1 folio evidence",
+      "audience": "student",
+      "period_numbers": [
+        2,
+        4,
+        12,
+        14,
+        22,
+        24,
+        32,
+        34,
+        42,
+        44
+      ]
+    },
+    {
+      "destination": "module.html?module=1#theory-1-2",
+      "purpose": "Workshop entry and machine permission",
+      "audience": "student",
+      "period_numbers": [
+        3
+      ]
+    },
+    {
+      "destination": "module.html?module=1#theory-1-3",
+      "purpose": "Learn from the unsafe scenario",
+      "audience": "student",
+      "period_numbers": [
+        4
+      ]
+    },
+    {
+      "destination": "module.html?module=2#theory-2-1",
+      "purpose": "From drawing to marked metal: planning the work",
+      "audience": "student",
+      "period_numbers": [
+        11
+      ]
+    },
+    {
+      "destination": "module.html?module=2",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "audience": "student",
+      "period_numbers": [
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "destination": "module.html?module=2#theory-2-2",
+      "purpose": "Use the design process deliberately",
+      "audience": "student",
+      "period_numbers": [
+        13
+      ]
+    },
+    {
+      "destination": "module.html?module=2#theory-2-3",
+      "purpose": "Marking-out evidence",
+      "audience": "student",
+      "period_numbers": [
+        14
+      ]
+    },
+    {
+      "destination": "module.html?module=3#theory-3-1",
+      "purpose": "Control the workpiece before the tool",
+      "audience": "student",
+      "period_numbers": [
+        21
+      ]
+    },
+    {
+      "destination": "module.html?module=3",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "audience": "student",
+      "period_numbers": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "destination": "module.html?module=3#theory-3-2",
+      "purpose": "Cutting and edge preparation",
+      "audience": "student",
+      "period_numbers": [
+        23
+      ]
+    },
+    {
+      "destination": "module.html?module=3#theory-3-3",
+      "purpose": "Forming with a planned sequence",
+      "audience": "student",
+      "period_numbers": [
+        24
+      ]
+    },
+    {
+      "destination": "module.html?module=4#theory-4-1",
+      "purpose": "Assembly quality: fit, alignment and finish",
+      "audience": "student",
+      "period_numbers": [
+        31
+      ]
+    },
+    {
+      "destination": "module.html?module=4",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "audience": "student",
+      "period_numbers": [
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "destination": "module.html?module=4#theory-4-2",
+      "purpose": "Choose and complete the approved joint",
+      "audience": "student",
+      "period_numbers": [
+        33
+      ]
+    },
+    {
+      "destination": "module.html?module=4#theory-4-3",
+      "purpose": "Prepare for corrosion protection",
+      "audience": "student",
+      "period_numbers": [
+        34
+      ]
+    },
+    {
+      "destination": "module.html?module=5#theory-5-1",
+      "purpose": "Evidence proves the process",
+      "audience": "student",
+      "period_numbers": [
+        41
+      ]
+    },
+    {
+      "destination": "module.html?module=5",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "audience": "student",
+      "period_numbers": [
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "destination": "module.html?module=5#theory-5-2",
+      "purpose": "Organise the folio",
+      "audience": "student",
+      "period_numbers": [
+        43
+      ]
+    },
+    {
+      "destination": "module.html?module=5#theory-5-3",
+      "purpose": "Evaluate with evidence",
+      "audience": "student",
+      "period_numbers": [
+        44
+      ]
+    }
+  ],
+  "teacher_to_confirm": [
+    {
+      "id": "TTC-01",
+      "item": "Current authentic Hose Reel Holder working drawing, dimensions and component specifications",
+      "owner": "Course teacher",
+      "affected_periods": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "due_before": "Before students begin marking out"
+    },
+    {
+      "id": "TTC-02",
+      "item": "Exact practical sequence, equipment, local SOPs, risk controls, PPE and supervision",
+      "owner": "Course teacher",
+      "affected_periods": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "due_before": "Before each practical period"
+    },
+    {
+      "id": "TTC-03",
+      "item": "Formal assessment notification, weighting, due date and submission process",
+      "owner": "Course teacher",
+      "affected_periods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "due_before": "Before any formal assessment is issued"
+    },
+    {
+      "id": "TTC-04",
+      "item": "The additional unit(s) that complete the 100-hour Industrial Technology – Metal elective",
+      "owner": "Course teacher",
+      "affected_periods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "due_before": "Before the whole-course scope and sequence is approved"
+    }
+  ],
+  "files": [
+    {
+      "path": "Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.docx",
+      "purpose": "editable-program",
+      "version": "v3.0",
+      "sha256": "470ee311e810db4db5668ce88fe0196118c93b22d0040c921acc011183fb5496"
+    },
+    {
+      "path": "Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.pdf",
+      "purpose": "rendered-program",
+      "version": "v3.0",
+      "sha256": "92fd6caa135cabbbf26176ebcf724f0e78de04a717fe2c810a18188f6d95b0da"
+    },
+    {
+      "path": "Hose-Reel-Holder-50-Period-Alignment-Manifest-v3.0.json",
+      "purpose": "alignment-manifest",
+      "version": "v3.0"
+    }
+  ],
+  "release_state": "Local candidate only; not committed, pushed or deployed."
+}

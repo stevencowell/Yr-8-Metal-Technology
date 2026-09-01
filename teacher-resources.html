@@ -3,166 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Teacher resources and source boundaries for the Hose Reel Holder course.">
+  <meta name="description" content="Teacher program, syllabus alignment and source boundaries for the Year 8 Hose Reel Holder Metal elective unit.">
   <meta name="robots" content="noindex">
   <title>Teacher Resources | Hose Reel Holder</title>
   <link rel="stylesheet" href="guided/course.css">
   <link rel="stylesheet" href="shared/sister-site.css" data-sister-site-styles>
-  <link rel="stylesheet" href="course-family-navigation.css?v=20260814" data-course-family-nav-styles>
-  <script src="shared/hub-navigation.js?v=20260814" defer></script>
+  <link rel="stylesheet" href="course-family-navigation.css?v=20260901" data-course-family-nav-styles>
+  <script src="shared/hub-navigation.js?v=20260901" defer></script>
   <style>
     .teacher-main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 46px 0 80px; }
-    .teacher-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
-    @media (max-width: 600px) { .teacher-main { width: calc(100% - 22px); padding-top: 28px; } .teacher-actions .btn { width: 100%; text-align: center; } }
-    @media print { .teacher-actions, footer { display: none !important; } .teacher-main { width: 100%; padding: 0; } .card { break-inside: avoid; box-shadow: none !important; } }
+    .program-hero { border: 1px solid #cbd8c7; border-radius: 18px; background: #fff; padding: clamp(1.15rem, 3vw, 2rem); box-shadow: 0 12px 34px rgba(23, 72, 41, .08); }
+    .program-hero h1 { margin-bottom: .55rem; }
+    .program-lede { color: #4d5b54; max-width: 78ch; }
+    .teacher-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0; }
+    .teacher-actions a { font-weight: 850; }
+    .teacher-actions .btn.secondary { background: #e7efe9; border: 1px solid #b8cabd; color: #174829; }
+    .delivery-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 22px; }
+    .delivery-grid div { border: 1px solid #d8e2d5; border-radius: 12px; padding: 14px; background: #f5f8f3; }
+    .delivery-grid strong { display: block; color: #174829; font-size: 1.12rem; }
+    .table-scroll { max-width: 100%; overflow-x: auto; border: 1px solid #d8e2d5; border-radius: 12px; -webkit-overflow-scrolling: touch; }
+    .teacher-table { width: 100%; min-width: 720px; border-collapse: collapse; }
+    .teacher-table th, .teacher-table td { padding: .7rem .75rem; border-bottom: 1px solid #d8e2d5; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+    .teacher-table thead th { background: #174829; color: #fff; }
+    .teacher-table tbody tr:nth-child(even) { background: #f5f8f3; }
+    .teacher-table tbody th { color: #174829; white-space: nowrap; }
+    .boundary { border-left: 5px solid #bd472f; background: #fff3cf; padding: 1rem 1.1rem; }
+    .source-link { font-weight: 750; }
+    @media (max-width: 760px) {
+      .delivery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 600px) {
+      .teacher-main { width: calc(100% - 22px); padding-top: 28px; }
+      .teacher-actions { display: grid; }
+      .teacher-actions .btn { width: 100%; text-align: center; }
+      .delivery-grid { grid-template-columns: 1fr; }
+      .table-scroll { margin-inline: 0; }
+    }
+    @media print {
+      .teacher-actions, footer { display: none !important; }
+      .teacher-main { width: 100%; padding: 0; }
+      .program-hero, .card { break-inside: avoid; box-shadow: none !important; }
+      .table-scroll { overflow: visible; }
+      .teacher-table { min-width: 0; font-size: 8.5pt; }
+    }
   </style>
-  <!-- NETWORK-PROGRAM-CSS-START -->
-<style id="network-program-front-styles">
-  #network-program-front{box-sizing:border-box;max-width:1180px;margin:2rem auto;padding:clamp(1rem,2.5vw,2rem);border:1px solid #cbd8c7;border-radius:18px;background:#fff;color:#243024;font-family:Aptos,"Segoe UI",sans-serif;box-shadow:0 12px 34px rgba(23,72,41,.08)}
-  #network-program-front *{box-sizing:border-box}#network-program-front .np-eyebrow{margin:0 0 .35rem;color:#bd472f;font-size:.82rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-  #network-program-front h1{margin:.1rem 0 .4rem;color:#174829;font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.08}#network-program-front h2{margin:1.45rem 0 .45rem;color:#174829;font-size:1.28rem}
-  #network-program-front .np-lede,#network-program-front .np-intro,#network-program-front .np-background{color:#55635a}#network-program-front .np-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin:1rem 0}
-  #network-program-front .np-actions a{display:inline-flex;align-items:center;min-height:42px;padding:.65rem .85rem;border-radius:9px;background:#174829;color:#fff;font-weight:750;text-decoration:none}#network-program-front .np-actions a:nth-child(2){background:#bd472f}
-  #network-program-front .np-table-wrap{overflow-x:auto;border:1px solid #d8e2d5;border-radius:10px}#network-program-front table{width:100%;border-collapse:collapse;min-width:680px;font-size:.95rem}
-  #network-program-front th,#network-program-front td{padding:.55rem .65rem;border-bottom:1px solid #d8e2d5;text-align:left;vertical-align:top}#network-program-front thead th{background:#174829;color:#fff}#network-program-front tbody tr:nth-child(odd){background:#eaf1e7}#network-program-front tbody th{color:#174829;font-weight:800}
-  #network-program-front .np-note,#network-program-front .np-confirm{margin:1rem 0;padding:.85rem 1rem;border-left:5px solid #bd472f;background:#fff3cf}#network-program-front .np-source{margin:.55rem 0}#network-program-front .np-source a{color:#174829;font-weight:750}
-  .outcome-codes{display:block;margin-top:.2rem;color:#174829;font-size:.92em;font-weight:800}
-  @media(max-width:700px){#network-program-front{margin:1rem .65rem;padding:1rem}#network-program-front .np-actions{display:grid}#network-program-front .np-actions a{width:100%}}
-</style>
-<!-- NETWORK-PROGRAM-CSS-END -->
   <link rel="icon" href="data:,">
 </head>
 <body>
   <main class="teacher-main">
-<!-- NETWORK-PROGRAM-FRONT-START -->
-<section id="network-program-front" aria-labelledby="network-program-title">
-  <p class="np-eyebrow">Stage 4 Technology</p>
-  <h1 id="network-program-title">Hose Reel Holder | 25-period teaching program</h1>
-  <p class="np-lede">Materials and production processes | Common network review copy v2.0</p>
-  <div class="np-actions">
-    <a href="resources/teacher/Hose-Reel-Holder-25-Period-Teaching-Program-v2.0-Network-Benchmark.docx" download>Download editable Word program</a>
-    <a href="resources/teacher/Hose-Reel-Holder-25-Period-Teaching-Program-v2.0-Network-Benchmark.pdf" target="_blank" rel="noopener">Open print-ready PDF</a>
-    <a href="resources/teacher/Hose-Reel-Holder-25-Period-Alignment-Manifest-v2.0.json" target="_blank" rel="noopener">Open alignment record</a>
-    <a href="https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/overview/course" target="_blank" rel="noopener">Open official syllabus ↗</a>
-  </div>
-  <div class="np-table-wrap"><table><thead><tr><th>Course</th><th>Stage 4 Technology</th><th>Syllabus</th><th>Technology 7–8 Syllabus (2023)</th></tr></thead><tbody>
-    <tr><th>Delivery</th><td>10 weeks | 25 × 60-minute periods</td><th>Pattern</th><td>5 periods per fortnight</td></tr>
-    <tr><th>Status</th><td>Matching Word, PDF and schema 1.1 manifest | v2.0</td><th>Focus</th><td>Materials and production processes</td></tr>
-  </tbody></table></div>
-  <div class="np-note"><strong>Program use:</strong> The complete outcome family is shown below. Lesson rows in the downloadable program use plain English first, with only the directly supported outcome codes beneath it.</div>
-  <h2>Official Stage 4 outcomes</h2>
-  <p class="np-intro">Complete current outcome set for the mainstream Stage 4 Technology pathway. Exact wording verified against the official NSW Curriculum outcomes page on 28 August 2026.</p>
-  <div class="np-table-wrap"><table><thead><tr><th>Outcome</th><th>Exact official wording</th></tr></thead><tbody><tr><th scope="row">TE4-SDP-01</th><td>explains relationships between sustainability, design and production</td></tr><tr><th scope="row">TE4-PDP-01</th><td>describes the practices and processes of designers and producers</td></tr><tr><th scope="row">TE4-MSC-01</th><td>explains how materials, systems and components contribute to solutions</td></tr><tr><th scope="row">TE4-PPM-01</th><td>applies processes in the planning, management and production of projects</td></tr><tr><th scope="row">TE4-DES-01</th><td>communicates and evaluates design ideas and solutions</td></tr><tr><th scope="row">TE4-SAF-01</th><td>selects and safely uses tools, materials, technologies and processes</td></tr><tr><th scope="row">TE4-DIG-01</th><td>demonstrates technological literacy to safely interact in digital environments</td></tr><tr><th scope="row">TE4-DIG-02</th><td>uses data and digital systems to code, design and produce projects</td></tr></tbody></table></div>
-  <p class="np-source"><a href="https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes" target="_blank" rel="noopener">Check these outcomes on the official NSW Curriculum site ↗</a></p>
-  <h2>What students are learning</h2>
-  <div class="np-table-wrap"><table><thead><tr><th>Learning focus</th><th>In plain English</th></tr></thead><tbody><tr><th scope="row">Sustainability, design and production</th><td>Explain how design and production choices affect sustainability.</td></tr><tr><th scope="row">Designers and producers</th><td>Describe how people investigate, plan, make and improve solutions.</td></tr><tr><th scope="row">Materials, systems and components</th><td>Explain how parts, materials and systems affect how a solution works.</td></tr><tr><th scope="row">Project planning and production</th><td>Plan, manage and produce the project in a clear sequence.</td></tr><tr><th scope="row">Design communication and evaluation</th><td>Communicate ideas and judge solutions against criteria.</td></tr><tr><th scope="row">Safe practical work</th><td>Choose and use approved tools, materials, technologies and processes safely.</td></tr><tr><th scope="row">Safe digital literacy</th><td>Work safely and responsibly in digital environments.</td></tr><tr><th scope="row">Data, coding and digital systems</th><td>Use data or digital systems where they support the unit&#x27;s design and production.</td></tr></tbody></table></div>
-  <div class="np-confirm"><strong>Teacher to confirm before delivery:</strong> timetable and sequence; class adjustments; each practical activity, materials, equipment, supervision and current risk controls; and any formal assessment dates, marks, conditions or submission process.</div>
-  <p class="np-background">The aligned program files above are the current common network version. Detailed source, audit and planning material elsewhere on this page remains supporting background.</p>
-</section>
-<!-- NETWORK-PROGRAM-FRONT-END -->
-    <p class="eyebrow">Teacher resources · Hose Reel Holder</p>
-    <h1>Hose reel holder course controls</h1>
-    <p class="section-intro">This page keeps the student pathway, local authority and staff change process together. It does not replace the approved school program, assessment notification, teacher-issued project plan or current workshop procedures.</p>
-
-    <section id="program" class="card program-section" style="margin-top:24px">
-  <p class="eyebrow">Complete teaching program</p>
-  <h2>Hose Reel Holder | 25-period teaching program</h2>
-  <p>STAGE 4 TECHNOLOGY</p>
-  <p>Website-complete teacher review copy | Technology 7–8 Syllabus (2023)</p>
-  <div class="teacher-actions"><a class="btn" href="resources/teacher/Hose-Reel-Holder-25-Period-Teaching-Program-v2.0-Network-Benchmark.docx" download>Download Word program</a><a class="btn secondary" href="resources/teacher/Hose-Reel-Holder-25-Period-Teaching-Program-v2.0-Network-Benchmark.pdf" target="_blank" rel="noopener">Open PDF program</a></div>
-  <div class="program-table-wrap"><table class="program-table">
-    <tbody>
-      <tr><th scope="col">Course</th><th scope="col">Stage 4 Technology – Materials and production processes</th><th scope="col">Delivery</th><th scope="col">2027 | 10 weeks</th></tr>
-      <tr><td>Timetable</td><td>25 x 60-minute periods</td><td>Pattern</td><td>5 periods per fortnight</td></tr>
-      <tr><td>Lesson balance</td><td>5 theory | 5 project/folio | 15 practical</td><td>Syllabus</td><td>Technology 7–8 Syllabus (2023) | current from 2026</td></tr>
-      <tr><td>Status</td><td>Local teacher review only</td><td>Project</td><td>Produce the approved mild-steel hose reel holder project</td></tr>
-    </tbody>
-  </table></div>
-  <p class="program-note">Website coverage: 15 named theory sections, 7 quiz/check sets (10 questions) and 5 scaffolded responses are scheduled. Practical lessons remain the majority. The inline sequence is a supporting view of the current Stage 4 Technology program.</p>
-  <h3>Stage 4 Technology outcomes</h3>
-<div class="program-table-wrap"><table class="program-table"><tbody><tr><th scope="col">Outcome</th><th scope="col">Exact official wording</th></tr><tr><td>TE4-SDP-01</td><td>explains relationships between sustainability, design and production</td></tr><tr><td>TE4-PDP-01</td><td>describes the practices and processes of designers and producers</td></tr><tr><td>TE4-MSC-01</td><td>explains how materials, systems and components contribute to solutions</td></tr><tr><td>TE4-PPM-01</td><td>applies processes in the planning, management and production of projects</td></tr><tr><td>TE4-DES-01</td><td>communicates and evaluates design ideas and solutions</td></tr><tr><td>TE4-SAF-01</td><td>selects and safely uses tools, materials, technologies and processes</td></tr><tr><td>TE4-DIG-01</td><td>demonstrates technological literacy to safely interact in digital environments</td></tr><tr><td>TE4-DIG-02</td><td>uses data and digital systems to code, design and produce projects</td></tr></tbody></table></div>
-  <h3>Teacher to confirm before use</h3>
-  <div class="program-table-wrap"><table class="program-table">
-    <tbody>
-      <tr><th scope="col">When</th><th scope="col">Confirm</th><th scope="col">Owner</th></tr>
-      <tr><td>Before Period 1</td><td>Assessment dates, submission method, class supports and adjustments</td><td>Teacher / faculty</td></tr>
-      <tr><td>Before practical work</td><td>Current plan revision, permitted variations, induction, SOPs, tools, PPE, supervision and risk controls</td><td>Teacher / faculty</td></tr>
-      <tr><td>Before finishing</td><td>Approved finish, SDS/product instructions, area, drying and storage arrangements</td><td>Teacher / faculty</td></tr>
-    </tbody>
-  </table></div>
-  <h3>Teaching program | Periods 1-10</h3>
-  <div class="program-table-wrap"><table class="program-table">
-    <tbody>
-      <tr><th scope="col">P</th><th scope="col">Type</th><th scope="col">Focus</th><th scope="col">Teaching and learning</th><th scope="col">Syllabus alignment</th><th scope="col">What the teacher checks</th></tr>
-      <tr><td>1</td><td>Site/theory</td><td>Module 1: website</td><td>Read and discuss: Meet the project: function, users and constraints; Meet the project: function, users and constraints knowledge check (2 questions); written response. Save or show the completed website evidence.</td><td>Design factors and project specifications<span class="outcome-codes">Outcomes: TE4-DES-01</span></td><td>Website evidence checked</td></tr>
-      <tr><td>2</td><td>Project/folio</td><td>Module 1: folio</td><td>Read and complete: Workshop entry and machine permission. Update the folio with the current decision, process evidence and next step.</td><td>Risk management and risk-reduction procedures<span class="outcome-codes">Outcomes: TE4-SAF-01, TE4-PPM-01</span></td><td>Folio + website evidence</td></tr>
-      <tr><td>3</td><td>Practical</td><td>Module 1: site + practical</td><td>First 20 min: Learn from the unsafe scenario. Then complete the teacher-approved project stage; check the plan, setup and one quality point.</td><td>Risk management and risk-reduction procedures<span class="outcome-codes">Outcomes: TE4-SAF-01</span></td><td>Website + practical check</td></tr>
-      <tr><td>4</td><td>Practical</td><td>Module 1: production</td><td>Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.</td><td>Risk management and risk-reduction procedures<span class="outcome-codes">Outcomes: TE4-SAF-01</span></td><td>Practical quality check</td></tr>
-      <tr><td>5</td><td>Practical</td><td>Module 1: evidence</td><td>Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.</td><td>Risk management and risk-reduction procedures<span class="outcome-codes">Outcomes: TE4-SAF-01</span></td><td>Photo + quality note</td></tr>
-      <tr><td>6</td><td>Site/theory</td><td>Module 2: website</td><td>Read and discuss: From drawing to marked metal: planning the work; From drawing to marked metal: planning the work knowledge check (2 questions); written response. Save or show the completed website evidence.</td><td>Accurately measure and mark out metal<span class="outcome-codes">Outcomes: TE4-MSC-01, TE4-PPM-01</span></td><td>Website evidence checked</td></tr>
-      <tr><td>7</td><td>Project/folio</td><td>Module 2: folio</td><td>Read and complete: Use the design process deliberately. Update the folio with the current decision, process evidence and next step.</td><td>Design factors and project specifications<span class="outcome-codes">Outcomes: TE4-DES-01</span></td><td>Folio + website evidence</td></tr>
-      <tr><td>8</td><td>Practical</td><td>Module 2: site + practical</td><td>First 20 min: Marking-out evidence. Then complete the teacher-approved project stage; check the plan, setup and one quality point.</td><td>Accurately measure and mark out metal<span class="outcome-codes">Outcomes: TE4-MSC-01, TE4-PPM-01</span></td><td>Website + practical check</td></tr>
-      <tr><td>9</td><td>Practical</td><td>Module 2: production</td><td>Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.</td><td>Accurately measure and mark out metal<span class="outcome-codes">Outcomes: TE4-MSC-01, TE4-PPM-01</span></td><td>Practical quality check</td></tr>
-      <tr><td>10</td><td>Practical</td><td>Module 2: evidence</td><td>Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.</td><td>Accurately measure and mark out metal<span class="outcome-codes">Outcomes: TE4-MSC-01, TE4-PPM-01</span></td><td>Photo + quality note</td></tr>
-    </tbody>
-  </table></div>
-  <h3>Teaching program | Periods 11-20</h3>
-  <div class="program-table-wrap"><table class="program-table">
-    <tbody>
-      <tr><th scope="col">P</th><th scope="col">Type</th><th scope="col">Focus</th><th scope="col">Teaching and learning</th><th scope="col">Syllabus alignment</th><th scope="col">What the teacher checks</th></tr>
-      <tr><td>11</td><td>Site/theory</td><td>Module 3: website</td><td>Read and discuss: Control the workpiece before the tool; Control the workpiece before the tool knowledge check (2 questions); written response. Save or show the completed website evidence.</td><td>Risk management and risk-reduction procedures<span class="outcome-codes">Outcomes: TE4-SAF-01</span></td><td>Website evidence checked</td></tr>
-      <tr><td>12</td><td>Project/folio</td><td>Module 3: folio</td><td>Read and complete: Cutting and edge preparation. Update the folio with the current decision, process evidence and next step.</td><td>Cut, shape and form sheet metal and metal sections<span class="outcome-codes">Outcomes: TE4-PPM-01</span></td><td>Folio + website evidence</td></tr>
-      <tr><td>13</td><td>Practical</td><td>Module 3: site + practical</td><td>First 20 min: Forming with a planned sequence. Then complete the teacher-approved project stage; check the plan, setup and one quality point.</td><td>Accurately measure and mark out metal<span class="outcome-codes">Outcomes: TE4-MSC-01, TE4-PPM-01</span></td><td>Website + practical check</td></tr>
-      <tr><td>14</td><td>Practical</td><td>Module 3: production</td><td>Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.</td><td>Cut, shape and form sheet metal and metal sections<span class="outcome-codes">Outcomes: TE4-PPM-01</span></td><td>Practical quality check</td></tr>
-      <tr><td>15</td><td>Practical</td><td>Module 3: evidence</td><td>Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.</td><td>Cut, shape and form sheet metal and metal sections<span class="outcome-codes">Outcomes: TE4-PPM-01</span></td><td>Photo + quality note</td></tr>
-      <tr><td>16</td><td>Site/theory</td><td>Module 4: website</td><td>Read and discuss: Assembly quality: fit, alignment and finish; Assembly quality: fit, alignment and finish knowledge check (1 question); written response. Save or show the completed website evidence.</td><td>Prepare metal surfaces for finishes<span class="outcome-codes">Outcomes: TE4-PPM-01</span></td><td>Website evidence checked</td></tr>
-      <tr><td>17</td><td>Project/folio</td><td>Module 4: folio</td><td>Read and complete: Choose and complete the approved joint. Update the folio with the current decision, process evidence and next step.</td><td>Metal joining and fabrication techniques<span class="outcome-codes">Outcomes: TE4-PPM-01</span></td><td>Folio + website evidence</td></tr>
-      <tr><td>18</td><td>Practical</td><td>Module 4: site + practical</td><td>First 20 min: Prepare for corrosion protection; Prepare for corrosion protection knowledge check (1 question). Then complete the teacher-approved project stage; check the plan, setup and one quality point.</td><td>Prepare metal surfaces for finishes<span class="outcome-codes">Outcomes: TE4-PPM-01</span></td><td>Website + practical check</td></tr>
-      <tr><td>19</td><td>Practical</td><td>Module 4: production</td><td>Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.</td><td>Metal joining and fabrication techniques<span class="outcome-codes">Outcomes: TE4-PPM-01</span></td><td>Practical quality check</td></tr>
-      <tr><td>20</td><td>Practical</td><td>Module 4: evidence</td><td>Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.</td><td>Metal joining and fabrication techniques<span class="outcome-codes">Outcomes: TE4-PPM-01</span></td><td>Photo + quality note</td></tr>
-    </tbody>
-  </table></div>
-  <h3>Teaching program | Periods 21-25</h3>
-  <div class="program-table-wrap"><table class="program-table">
-    <tbody>
-      <tr><th scope="col">P</th><th scope="col">Type</th><th scope="col">Focus</th><th scope="col">Teaching and learning</th><th scope="col">Syllabus alignment</th><th scope="col">What the teacher checks</th></tr>
-      <tr><td>21</td><td>Site/theory</td><td>Module 5: website</td><td>Read and discuss: Evidence proves the process; Evidence proves the process knowledge check (1 question); written response. Save or show the completed website evidence.</td><td>Document, reflect on and evaluate project development<span class="outcome-codes">Outcomes: TE4-DES-01</span></td><td>Website evidence checked</td></tr>
-      <tr><td>22</td><td>Project/folio</td><td>Module 5: folio</td><td>Read and complete: Organise the folio. Update the folio with the current decision, process evidence and next step.</td><td>Document, reflect on and evaluate project development<span class="outcome-codes">Outcomes: TE4-DES-01</span></td><td>Folio + website evidence</td></tr>
-      <tr><td>23</td><td>Practical</td><td>Module 5: site + practical</td><td>First 20 min: Evaluate with evidence; Evaluate with evidence knowledge check (1 question). Then complete the teacher-approved project stage; check the plan, setup and one quality point.</td><td>Quality checks for metals and components<span class="outcome-codes">Outcomes: TE4-DES-01, TE4-PPM-01</span></td><td>Website + practical check</td></tr>
-      <tr><td>24</td><td>Practical</td><td>Module 5: production</td><td>Continue the approved project stage; follow the current plan and SOP; check accuracy, fit or surface quality.</td><td>Quality checks for metals and components<span class="outcome-codes">Outcomes: TE4-DES-01, TE4-PPM-01</span></td><td>Practical quality check</td></tr>
-      <tr><td>25</td><td>Practical</td><td>Module 5: evidence</td><td>Complete the current stage; photograph a checkpoint; record the problem and response if needed; clean down.</td><td>Quality checks for metals and components<span class="outcome-codes">Outcomes: TE4-DES-01, TE4-PPM-01</span></td><td>Photo + quality note</td></tr>
-    </tbody>
-  </table></div>
-  <h3>Evidence, feedback and practical controls</h3>
-  <div class="program-table-wrap"><table class="program-table">
-    <tbody>
-      <tr><th scope="col">Check</th><th scope="col">Look for</th><th scope="col">Respond</th></tr>
-      <tr><td>Website</td><td>Named theory, checks and responses completed</td><td>Revisit feedback and correct missed ideas</td></tr>
-      <tr><td>Folio</td><td>Decisions and process evidence tied to the project</td><td>Set one clear next step</td></tr>
-      <tr><td>Practical</td><td>Safe method, accuracy, quality and clean-down</td><td>Pause, demonstrate, practise and recheck</td></tr>
-    </tbody>
-  </table></div>
-  <p>Use the current approved plan, local induction, SOPs, PPE, supervision, risk controls and product instructions for every practical lesson.</p>
-</section>
-<section class="card pending" style="margin-top:24px">
-      <h2>Teacher-controlled project detail</h2>
-      <p>The website supports the hose reel holder project through five guided modules. Exact dimensions, components, materials, machinery settings, practical methods, permission points, assessment conditions and submission requirements remain controlled by the teacher and approved local sources.</p>
+    <section class="program-hero" aria-labelledby="teacher-program-title">
+      <p class="eyebrow">Teacher Resources · Year 8 Metal Technology</p>
+      <h1 id="teacher-program-title">Hose Reel Holder | 50-period teaching program</h1>
+      <p class="program-lede">Introductory unit contributing to a 100-hour Industrial Technology – Metal elective. Use the matching PDF and editable Word copy below.</p>
+      <div class="teacher-actions" aria-label="Teaching program downloads">
+        <a class="btn" href="resources/teacher/Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.pdf" target="_blank" rel="noopener"><strong>Teaching program PDF</strong></a>
+        <a class="btn secondary" href="resources/teacher/Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.docx" download><strong>Editable teaching program</strong></a>
+      </div>
+      <div class="delivery-grid" aria-label="Delivery pattern">
+        <div><strong>20 weeks</strong><span>Year 8 elective delivery</span></div>
+        <div><strong>50 periods</strong><span>60 minutes each</span></div>
+        <div><strong>5 per fortnight</strong><span>average 2.5 hours per week</span></div>
+        <div><strong>2027</strong><span>approved early adoption</span></div>
+      </div>
+      <p class="boundary"><strong>Course boundary:</strong> this 50-hour unit requires sufficient additional study to complete the school's named 100-hour Industrial Technology – Metal elective. It does not claim whole-course syllabus coverage.</p>
     </section>
 
     <section class="card" style="margin-top:24px">
-      <h2>Student evidence</h2>
-      <p>Module checks, written explanations and folio work are stored in the student’s browser. Students should keep a PDF backup and follow the teacher-approved submission process. Nothing is submitted automatically.</p>
-      <div class="teacher-actions"><a class="btn" href="index.html">Course home</a><a class="btn secondary" href="project-resource.html">Project resource</a><a class="btn secondary" href="assessment-pathway-2026.html">Assessment pathway</a></div>
+      <p class="eyebrow">Current curriculum pathway</p>
+      <h2>Industrial Technology 7–10 Syllabus (2025)</h2>
+      <p>The program uses approved early adoption for 2027. Stage 5 outcomes are adjusted for Stage 4 under <strong>INT4-ADJ-01</strong>. The complete outcome family is shown for program control; individual period rows map only the outcomes supported by the actual unit.</p>
+      <p><a class="source-link" href="https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course" target="_blank" rel="noopener">Open the official NSW Curriculum course overview ↗</a></p>
+      <div class="table-scroll" role="region" aria-label="Industrial Technology outcomes; scroll horizontally on a narrow screen" tabindex="0">
+        <table class="teacher-table">
+          <thead><tr><th scope="col">Outcome</th><th scope="col">Exact official wording</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">INT5-SAF-01</th><td>applies risk management and safe work practices in industrial technology contexts</td></tr>
+            <tr><th scope="row">INT5-COM-01</th><td>communicates ideas and processes in industrial technology contexts</td></tr>
+            <tr><th scope="row">INT5-ENV-01</th><td>assesses the impact of industrial activities and practices on society and the environment</td></tr>
+            <tr><th scope="row">INT5-DES-01</th><td>selects and applies design, project management and technical skills in project production</td></tr>
+            <tr><th scope="row">INT5-USE-01</th><td>selects and justifies the use of materials, tools and equipment to undertake projects</td></tr>
+            <tr><th scope="row">INT5-EVL-01</th><td>evaluates the functional, aesthetic, economic and environmental qualities of products</td></tr>
+            <tr><th scope="row">INT5-INP-01</th><td>analyses and applies a range of industrial processes in production contexts</td></tr>
+            <tr><th scope="row">INT5-PRO-01</th><td>demonstrates practical skills in the production of projects</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="card" style="margin-top:24px">
-      <p class="eyebrow">Staff change request</p>
-      <h2>Suggest a change</h2>
-      <p>Report the affected page, the proposed correction and the approved source supporting it.</p>
-      <div class="teacher-actions"><a class="btn" href="https://github.com/stevencowell/Yr-8-Metal-Technology/issues/new?title=Year%208%20Metalwork%20course%20change%20request&body=Page%20or%20module%3A%0A%0ASuggested%20change%3A%0A%0AApproved%20source%3A%0A" target="_blank" rel="noopener">Suggest a Change</a></div>
+      <p class="eyebrow">Program controls</p>
+      <h2>What the teacher confirms before use</h2>
+      <div class="table-scroll" role="region" aria-label="Teacher confirmation controls; scroll horizontally on a narrow screen" tabindex="0">
+        <table class="teacher-table">
+          <thead><tr><th scope="col">When</th><th scope="col">Confirm</th><th scope="col">Owner</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Before delivery</th><td>The additional study that completes the school's named 100-hour elective, class sequence, supports and adjustments.</td><td>Head Teacher TAS / program coordinator</td></tr>
+            <tr><th scope="row">Before practical work</th><td>Current authentic plan, material specifications, permitted variations, induction, SOPs, tools, PPE, supervision and risk controls.</td><td>Teacher / faculty</td></tr>
+            <tr><th scope="row">Before joining or finishing</th><td>Approved joining method and finish, product instructions, work area, ventilation, curing and storage arrangements.</td><td>Teacher / faculty</td></tr>
+            <tr><th scope="row">Before formal assessment use</th><td>Task authority, outcome subset, marks, dates, conditions, adjustments and submission process.</td><td>Teacher / faculty</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card pending" style="margin-top:24px">
+      <p class="eyebrow">Source boundary</p>
+      <h2>No substitute working drawing</h2>
+      <p>No authentic working drawing is present in this repository. Blueprint-style images on historical pages are illustrations only. Teacher-issued plans control exact form, dimensions, components, tolerances, materials and production sequence. The website does not replace teacher demonstrations, current school risk controls or an issued assessment notification.</p>
+      <div class="teacher-actions"><a class="btn" href="project-resource.html">Open project source boundary</a><a class="btn secondary" href="index.html">Open course pathway</a></div>
     </section>
   </main>
-  <footer>Hose Reel Holder · Teacher resources · local authority remains with the school.</footer>
+  <footer>Hose Reel Holder · Year 8 Industrial Technology – Metal · Teacher Resources.</footer>
   <script src="vendor/html2canvas.min.js"></script>
-  </body>
+</body>
 </html>

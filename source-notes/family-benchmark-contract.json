@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "course_id": "year-8-hose-reel-holder-metal-elective",
+  "source_map_id": "hose-reel-holder-source-map-v3.0",
+  "benchmark": {
+    "name": "The Riv Burger",
+    "location": "https://stevencowell.github.io/Year-8-The-Riv-Burger/",
+    "selection_basis": "junior-riv-burger-default",
+    "verified_at": "2026-09-01",
+    "rendered_evidence": {
+      "laptop": "Rendered at 1440 x 900 on 2026-09-01; evidence record ../../benchmark-evidence/network-render-report.json.",
+      "exact_390": "Rendered at exactly 390 x 844 on 2026-09-01; evidence record ../../benchmark-evidence/network-render-report.json."
+    }
+  },
+  "facts_authority": {
+    "course_source_map": "source-notes/source-map-v3.0.json",
+    "benchmark_role": "structure-and-rendering-only"
+  },
+  "dimensions": [
+    {
+      "id": "navigation-language-order",
+      "benchmark_observation": "Course; Modules; Activities; Puzzles; My folio; Assessment; Teacher resources; Main Menu.",
+      "target_contract": "Course; Modules; Video learning; Puzzles; My folio; Project resource; Teacher resources; Main Menu.",
+      "disposition": "course-appropriate-difference",
+      "difference_reason": "The existing Metal unit has verified video-learning and project-resource routes, while no separate Activities route or authorised formal Assessment route is established. Common family labels and order are retained."
+    },
+    {
+      "id": "route-section-order",
+      "benchmark_observation": "Course landing leads to a sequenced module pathway, student evidence routes, Teacher Resources and Main Menu; equivalent module routes use a consistent hero-to-learning-to-review order.",
+      "target_contract": "Course landing; five source-backed guided modules in order; video learning; puzzles; folio; project resource; Teacher Resources; Main Menu. Each module retains presentation, progress, three named theory sections, checks, written evidence and completion navigation.",
+      "disposition": "course-appropriate-difference",
+      "difference_reason": "The authorised Hose Reel Holder course has five established modules rendered through a shared shell rather than the benchmark's different subject sequence and module count."
+    },
+    {
+      "id": "family-shell",
+      "benchmark_observation": "Full-width course hero, direct course entry, clear content containers, shared navigation, visible Main Menu return and footer treatment.",
+      "target_contract": "Retain the full-width Hose Reel Holder hero, direct course entry, shared family navigation, readable content containers, explicit Teacher Resources separation, Main Menu return and footer.",
+      "disposition": "align",
+      "difference_reason": ""
+    },
+    {
+      "id": "responsive-presentation",
+      "benchmark_observation": "Cards reflow at narrow width, but the current benchmark navigation remains a single horizontal row and can clip at exactly 390 px.",
+      "target_contract": "Cards grow and reflow without document overflow; navigation wraps into two readable columns at exactly 390 px; wide teacher tables remain inside labelled horizontal-scroll containers.",
+      "disposition": "course-appropriate-difference",
+      "difference_reason": "This recorded accessibility improvement prevents the benchmark's narrow-screen navigation clipping while preserving its labels and family role."
+    }
+  ],
+  "initial_gate": "PASS"
+}

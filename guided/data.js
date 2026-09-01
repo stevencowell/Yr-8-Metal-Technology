@@ -3,7 +3,7 @@ window.COURSE_DATA = {
   storagePrefix: "yr8-metal-guided",
   modules: [
     {
-      weeks: "1–2",
+      weeks: "1–4",
       title: "Project purpose and workshop readiness",
       summary: "Understand the hose-reel-holder brief, identify constraints and build the safety habits required before practical work.",
       sections: [
@@ -44,7 +44,7 @@ window.COURSE_DATA = {
       modelFeedback: "One user need is stable, convenient hose storage. Outdoor exposure is one constraint, so the steel needs the teacher-approved protective finish. Available workshop time and tools are another constraint, so I must follow the issued plan and approved processes."
     },
     {
-      weeks: "3–4",
+      weeks: "5–8",
       title: "Design, plans and accurate marking",
       summary: "Move from a teacher-issued drawing to clear, checked marks using a datum edge and a planned production sequence.",
       sections: [
@@ -85,7 +85,7 @@ window.COURSE_DATA = {
       modelFeedback: "I measure each position from the same reference edge so the measurements have one reliable starting point. I then check them against the issued plan before cutting. This can catch a wrong position, an unclear mark or use of the wrong edge."
     },
     {
-      weeks: "5–6",
+      weeks: "9–12",
       title: "Cut, shape and drill under control",
       summary: "Secure the work, follow the demonstrated setup and recognise the warning signs that mean practical work must stop.",
       sections: [
@@ -126,7 +126,7 @@ window.COURSE_DATA = {
       modelFeedback: "I secure and support the metal so it cannot slip, spin, vibrate or fall. I use a balanced position and keep my body away from the tool’s likely path. If the sound or movement changes, I stop safely and tell the teacher before continuing."
     },
     {
-      weeks: "7–8",
+      weeks: "13–16",
       title: "Join, assemble and protect",
       summary: "Trial fit components, complete the teacher-approved joining process and prepare the outdoor project for a durable finish.",
       sections: [
@@ -167,7 +167,7 @@ window.COURSE_DATA = {
       modelFeedback: "I dry check the parts first so I can correct fit or alignment before the joint becomes permanent. I remove burrs and contamination using the approved process so the teacher-approved finish can cover and protect the steel properly."
     },
     {
-      weeks: "9–10",
+      weeks: "17–20",
       title: "Test, evaluate and present evidence",
       summary: "Use teacher-approved tests, organised folio evidence and a specific evaluation to show both the result and the learning process.",
       sections: [

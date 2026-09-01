@@ -1,39 +1,40 @@
-# Year 8 Metalwork course contract
+# Year 8 Metal Technology course contract
 
-## Course and authority
+## Course identity and authority
 
-- Course: Year 8 Metalwork — hose reel holder context.
-- Year/stage: Year 8, Stage 4.
-- Current authority: NSW Technology 7–8 Syllabus (2023), implemented from 2026.
-- Source evidence: the repository’s existing ten-week course material and hose reel holder imagery.
+- Course: Hose Reel Holder, an introductory unit contributing to a 100-hour Industrial Technology – Metal elective.
+- Cohort: Year 8, Stage 4.
+- Delivery: 2027; 20 weeks; 50 × 60-minute periods; 5 periods per fortnight; average 2.5 hours per week.
+- Course boundary: this unit is 50 hours. It requires sufficient additional study to complete the school's named 100-hour Industrial Technology – Metal elective.
+- Syllabus: NSW Industrial Technology 7–10 Syllabus (2025), used through approved early adoption for 2027. Mandatory implementation begins in 2028.
+- Outcome family: Stage 5 `INT5` outcomes adjusted for Stage 4 under syllabus advice `INT4-ADJ-01`.
+- Official course overview: <https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course>
 
 ## Learning and evidence contract
 
-- The student pathway is five two-week modules covering workshop systems and risk management; brief, users and constraints; materials, research and ideas; planning and production; and testing, evaluation and folio completion.
-- Every module includes three concise theory sections, two checked responses with feedback, a written evidence response, model feedback, identity fields, independent browser autosave, completion progress and Print / Save PDF.
-- The project folio contains exactly twelve editable evidence cards, each with a matching course-specific visual prompt, autosave and Print / Save PDF.
-- Current syllabus outcome wording and links remain identifiable on the landing page. Project-specific dimensions, assessment conditions and submission instructions come only from teacher-issued material.
+- The student pathway preserves five modules covering project purpose and workshop readiness; design, plans and marking; controlled cutting, shaping and drilling; joining, assembly and protection; and testing, evaluation and folio evidence.
+- Each module spans four weeks in the 20-week delivery pattern. The teacher program allocates ten 60-minute periods to each module.
+- The existing module theory, checks, written response, browser autosave, completion progress and Print / Save PDF pathways remain intact.
+- The project folio contains twelve editable evidence cards with autosave and Print / Save PDF.
+- The unit may provide evidence towards selected `INT5` outcomes. It does not claim whole-course syllabus coverage or completion of the 100-hour elective.
 
 ## Project and safety boundaries
 
-- The new hero and folio visuals are process-led illustrations, not authentic plans or claims about final geometry.
-- No dimensions, due dates, weightings, classroom codes or submission destinations are inferred.
-- Machine processes, heat processes, joining and testing remain teacher-demonstrated and teacher-approved.
+- No authentic working drawing is available in this repository. Existing blueprint-style images are illustrative only and are not technical authority.
+- Teacher-issued plans control dimensions, exact components, tolerances, material specifications and production sequence.
+- Teacher demonstrations and current school documents control machine processes, heat processes, joining, finishing, testing, PPE, supervision and risk controls.
+- The teacher's assessment notification controls dates, weighting, criteria, conditions and submission requirements.
+- Missing local facts remain `Teacher to confirm`; the website does not fill those gaps by inference.
 
-## Sister-site and release standard
+## Network and release standard
 
-- Direct, student-friendly landing page with no forced login.
-- Clear module pathway, evidence-ready interactions, purposeful workshop imagery, responsive layout and printable student output.
-- Legacy weekly pages remain available as source/reference material; the new pathway does not silently rewrite them.
-- Release requires link and asset integrity, JavaScript checks, desktop and narrow-screen rendered QA, live GitHub Pages verification, and exact downstream link updates only after the canonical site is live.
-
-## Exclusions
-
-- Authentic working drawings, detailed assessment notification, dates, weightings and submission destinations were not present and are not invented.
-- The site does not replace teacher demonstrations, risk assessment, supervision or issued task requirements.
+- Keep direct student access, the shared TAS course navigation, Main Menu return, responsive family shell and clear student/teacher separation.
+- The Riv Burger course is a structural and rendered benchmark only. It is not authority for Metal subject facts.
+- Legacy weekly pages remain available as historical teaching references, but the guided five-module pathway is the current student route.
+- Local preparation, program generation, library registration, commit, push, deployment and rendered live verification are separate states.
 
 ## Change record
 
-| Date | Source/reason | Outcome | Evidence/test | Result |
-| --- | --- | --- | --- | --- |
-| 2026-08-02 | Rebuild requested to match Steve’s guided-course sister-site standard | Added a five-module guided pathway, twelve-part folio and process-led visual evidence set while preserving legacy material | Local interaction, persistence, link, asset, JavaScript, desktop and narrow-screen checks; live verification required after push | Local release candidate ready for publication |
+| Date | Source/reason | Outcome | State |
+| --- | --- | --- | --- |
+| 2026-09-01 | Steve corrected the network classification and Year 8 elective delivery pattern | Realigned the course contract to Industrial Technology – Metal, the 2025 syllabus early-adoption pathway and 50 periods across 20 weeks | Local candidate; not committed, pushed or deployed |

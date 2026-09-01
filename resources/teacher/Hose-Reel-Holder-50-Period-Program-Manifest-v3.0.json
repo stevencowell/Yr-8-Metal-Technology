@@ -1,0 +1,2007 @@
+{
+  "schema_version": "2.0",
+  "artifact_id": "year-8-hose-reel-holder-elective-program-manifest",
+  "version": "v3.0",
+  "build_id": "year-8-hose-reel-holder-elective-program-local-20260901",
+  "course": "Hose Reel Holder - introductory unit contributing to a 100-hour Industrial Technology – Metal elective",
+  "cohort": "Year 8 | Stage 4",
+  "delivery_year": 2027,
+  "source_contract": {
+    "artifact_id": "hose-reel-holder-source-map-v3.0",
+    "version": "v3.0",
+    "sha256": "e8324f5069ebbc7b08b6d70c19bdeda1c3ac88c4f0561a6a755297f4a5a3f961"
+  },
+  "integration_baseline": {
+    "artifact_id": "year-8-hose-reel-holder-elective-program-guided-data",
+    "sha256": "b919469f6185846f884dfa5fa636df05e1838ab31113890654b2ebea262b97dc"
+  },
+  "syllabus_basis": {
+    "title": "Industrial Technology 7–10 Syllabus (2025)",
+    "version": "2025",
+    "outcome_code_family": "INT5",
+    "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course",
+    "verified_date": "2026-09-01",
+    "mandatory_from": 2028,
+    "implementation_status": "Approved early adoption for 2027; mandatory from 2028",
+    "delivery_year": 2027,
+    "stage_adjustment": "Stage 5 outcomes adjusted for Year 8 under INT4-ADJ-01; the adjustment advice is not an outcome code."
+  },
+  "authority_state": "Authorised curriculum and course-source boundaries verified; local practical and assessment details remain Teacher to confirm.",
+  "release_state": "Local candidate only; not committed, pushed or deployed.",
+  "document_format": {
+    "page_size": "A4 landscape",
+    "teaching_periods_per_full_page": 8,
+    "visible_page_numbers": true,
+    "canonical_target": "8-10 numbered periods per full teaching page",
+    "page_count_reason": "Eight periods per full teaching page retain the exact six-column teaching, syllabus and evidence record at 9.5 pt without row splits or clipping; this produces eight total pages rather than the near-six-page ideal."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Industrial Technology 7–10 Syllabus (2025) – course overview",
+      "authority": "official-syllabus",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course",
+      "revision": "verified 2026-09-01",
+      "use": "course identity and implementation basis"
+    },
+    {
+      "id": "S2",
+      "title": "Industrial Technology 7–10 Syllabus (2025) – outcomes",
+      "authority": "official-syllabus",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/outcomes",
+      "revision": "verified 2026-09-01",
+      "use": "exact outcome wording"
+    },
+    {
+      "id": "S3",
+      "title": "Project development content",
+      "authority": "official-syllabus",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/content/stage-5/fadd3860da",
+      "revision": "verified 2026-09-01",
+      "use": "WHS, design, management and communication focus"
+    },
+    {
+      "id": "S4",
+      "title": "Metal industry content",
+      "authority": "official-syllabus",
+      "location": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/content/stage-5/fac72af895",
+      "revision": "verified 2026-09-01",
+      "use": "Metal materials, tools, processes and industry context"
+    },
+    {
+      "id": "S5",
+      "title": "Hose Holder Program Theory Package",
+      "authority": "teacher-technical",
+      "location": "Private Drive file ID 1wSOBCITgjLWcsafzKPymxlxhp6uqEiBy3SQP9WkLmq4",
+      "revision": "modified 2023-03-20",
+      "use": "unit identity and theory sequence only; current plans and procedures remain teacher controlled"
+    },
+    {
+      "id": "S6",
+      "title": "Hose Reel Holder guided course",
+      "authority": "website",
+      "location": "candidate root",
+      "revision": "local baseline 074d10cae6c5",
+      "use": "five-module learning sequence and evidence routes"
+    },
+    {
+      "id": "S7",
+      "title": "Year 8 Footstool elective program comparator",
+      "authority": "quality-reference",
+      "location": "../Year-8-Intro-Timber-Technology/resources/teacher/Footstool-50-Period-Alignment-Manifest-v2.0.json",
+      "revision": "verified 2026-09-01",
+      "use": "20-week, 50-period, five-per-fortnight Year 8 elective pattern only"
+    }
+  ],
+  "outcomes": [
+    {
+      "code": "INT5-SAF-01",
+      "statement": "applies risk management and safe work practices in industrial technology contexts",
+      "source_id": "S2",
+      "module_ids": [
+        "m01",
+        "m03",
+        "m04"
+      ]
+    },
+    {
+      "code": "INT5-COM-01",
+      "statement": "communicates ideas and processes in industrial technology contexts",
+      "source_id": "S2",
+      "module_ids": [
+        "m01",
+        "m02",
+        "m05"
+      ]
+    },
+    {
+      "code": "INT5-ENV-01",
+      "statement": "assesses the impact of industrial activities and practices on society and the environment",
+      "source_id": "S2",
+      "module_ids": [
+        "m01",
+        "m04"
+      ]
+    },
+    {
+      "code": "INT5-DES-01",
+      "statement": "selects and applies design, project management and technical skills in project production",
+      "source_id": "S2",
+      "module_ids": [
+        "m01",
+        "m02",
+        "m05"
+      ]
+    },
+    {
+      "code": "INT5-USE-01",
+      "statement": "selects and justifies the use of materials, tools and equipment to undertake projects",
+      "source_id": "S2",
+      "module_ids": [
+        "m01",
+        "m02",
+        "m03",
+        "m04"
+      ]
+    },
+    {
+      "code": "INT5-EVL-01",
+      "statement": "evaluates the functional, aesthetic, economic and environmental qualities of products",
+      "source_id": "S2",
+      "module_ids": [
+        "m05"
+      ]
+    },
+    {
+      "code": "INT5-INP-01",
+      "statement": "analyses and applies a range of industrial processes in production contexts",
+      "source_id": "S2",
+      "module_ids": [
+        "m02",
+        "m03",
+        "m04"
+      ]
+    },
+    {
+      "code": "INT5-PRO-01",
+      "statement": "demonstrates practical skills in the production of projects",
+      "source_id": "S2",
+      "module_ids": [
+        "m03",
+        "m04"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "module_id": "m01",
+      "title": "Project purpose and workshop readiness",
+      "timing": "Periods 1-10 | Weeks 1-4",
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-COM-01",
+        "INT5-ENV-01",
+        "INT5-DES-01",
+        "INT5-USE-01"
+      ],
+      "sections": [
+        {
+          "section_id": "m01s01",
+          "title": "Meet the project: function, users and constraints",
+          "content_descriptors": [
+            "S3 — Identify design factors and develop project specifications",
+            "S3 — Outline risk-management principles and implement risk-reduction procedures"
+          ],
+          "source_ids": [
+            "S2",
+            "S3",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Meet the project: function, users and constraints.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m01s01-theory",
+            "knowledge_check": "m01-module-check",
+            "evidence": "m01-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m01-presentation",
+              "m01s01-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m01s02",
+          "title": "Workshop entry and machine permission",
+          "content_descriptors": [
+            "S3 — Identify design factors and develop project specifications",
+            "S3 — Outline risk-management principles and implement risk-reduction procedures"
+          ],
+          "source_ids": [
+            "S2",
+            "S3",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Workshop entry and machine permission.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m01s02-theory",
+            "knowledge_check": "m01-module-check",
+            "evidence": "m01-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m01-presentation",
+              "m01s02-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m01s03",
+          "title": "Learn from the unsafe scenario",
+          "content_descriptors": [
+            "S3 — Identify design factors and develop project specifications",
+            "S3 — Outline risk-management principles and implement risk-reduction procedures"
+          ],
+          "source_ids": [
+            "S2",
+            "S3",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Learn from the unsafe scenario.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m01s03-theory",
+            "knowledge_check": "m01-module-check",
+            "evidence": "m01-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m01-presentation",
+              "m01s03-media"
+            ]
+          },
+          "substantial_sequence": true
+        }
+      ]
+    },
+    {
+      "module_id": "m02",
+      "title": "Design, plans and accurate marking",
+      "timing": "Periods 11-20 | Weeks 5-8",
+      "outcome_codes": [
+        "INT5-COM-01",
+        "INT5-DES-01",
+        "INT5-USE-01",
+        "INT5-INP-01"
+      ],
+      "sections": [
+        {
+          "section_id": "m02s01",
+          "title": "From drawing to marked metal: planning the work",
+          "content_descriptors": [
+            "S3 — Apply graphical communication during project development",
+            "S4 — Use approved drawings, jigs or templates to manufacture components",
+            "S4 — Select and use marking-out tools and processes accurately"
+          ],
+          "source_ids": [
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in From drawing to marked metal: planning the work.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m02s01-theory",
+            "knowledge_check": "m02-module-check",
+            "evidence": "m02-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m02-presentation",
+              "m02s01-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m02s02",
+          "title": "Use the design process deliberately",
+          "content_descriptors": [
+            "S3 — Apply graphical communication during project development",
+            "S4 — Use approved drawings, jigs or templates to manufacture components",
+            "S4 — Select and use marking-out tools and processes accurately"
+          ],
+          "source_ids": [
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Use the design process deliberately.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m02s02-theory",
+            "knowledge_check": "m02-module-check",
+            "evidence": "m02-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m02-presentation",
+              "m02s02-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m02s03",
+          "title": "Marking-out evidence",
+          "content_descriptors": [
+            "S3 — Apply graphical communication during project development",
+            "S4 — Use approved drawings, jigs or templates to manufacture components",
+            "S4 — Select and use marking-out tools and processes accurately"
+          ],
+          "source_ids": [
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Marking-out evidence.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m02s03-theory",
+            "knowledge_check": "m02-module-check",
+            "evidence": "m02-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m02-presentation",
+              "m02s03-media"
+            ]
+          },
+          "substantial_sequence": true
+        }
+      ]
+    },
+    {
+      "module_id": "m03",
+      "title": "Cut, shape and drill under control",
+      "timing": "Periods 21-30 | Weeks 9-12",
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-USE-01",
+        "INT5-INP-01",
+        "INT5-PRO-01"
+      ],
+      "sections": [
+        {
+          "section_id": "m03s01",
+          "title": "Control the workpiece before the tool",
+          "content_descriptors": [
+            "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+            "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+            "S4 — Apply quality checks before, during and after production"
+          ],
+          "source_ids": [
+            "S2",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Control the workpiece before the tool.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m03s01-theory",
+            "knowledge_check": "m03-module-check",
+            "evidence": "m03-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m03-presentation",
+              "m03s01-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m03s02",
+          "title": "Cutting and edge preparation",
+          "content_descriptors": [
+            "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+            "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+            "S4 — Apply quality checks before, during and after production"
+          ],
+          "source_ids": [
+            "S2",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Cutting and edge preparation.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m03s02-theory",
+            "knowledge_check": "m03-module-check",
+            "evidence": "m03-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m03-presentation",
+              "m03s02-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m03s03",
+          "title": "Forming with a planned sequence",
+          "content_descriptors": [
+            "S4 — Demonstrate safe workshop practices with metal materials, tools and equipment",
+            "S4 — Use appropriate tools or machines for cutting, shaping and forming",
+            "S4 — Apply quality checks before, during and after production"
+          ],
+          "source_ids": [
+            "S2",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Forming with a planned sequence.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m03s03-theory",
+            "knowledge_check": "m03-module-check",
+            "evidence": "m03-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m03-presentation",
+              "m03s03-media"
+            ]
+          },
+          "substantial_sequence": true
+        }
+      ]
+    },
+    {
+      "module_id": "m04",
+      "title": "Join, assemble and protect",
+      "timing": "Periods 31-40 | Weeks 13-16",
+      "outcome_codes": [
+        "INT5-SAF-01",
+        "INT5-ENV-01",
+        "INT5-USE-01",
+        "INT5-INP-01",
+        "INT5-PRO-01"
+      ],
+      "sections": [
+        {
+          "section_id": "m04s01",
+          "title": "Assembly quality: fit, alignment and finish",
+          "content_descriptors": [
+            "S4 — Compare and use suitable joining and fabrication techniques",
+            "S4 — Assemble components with suitable tools, equipment and processes",
+            "S4 — Prepare surfaces and apply an appropriate protective finish"
+          ],
+          "source_ids": [
+            "S2",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Assembly quality: fit, alignment and finish.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m04s01-theory",
+            "knowledge_check": "m04-module-check",
+            "evidence": "m04-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m04-presentation",
+              "m04s01-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m04s02",
+          "title": "Choose and complete the approved joint",
+          "content_descriptors": [
+            "S4 — Compare and use suitable joining and fabrication techniques",
+            "S4 — Assemble components with suitable tools, equipment and processes",
+            "S4 — Prepare surfaces and apply an appropriate protective finish"
+          ],
+          "source_ids": [
+            "S2",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Choose and complete the approved joint.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m04s02-theory",
+            "knowledge_check": "m04-module-check",
+            "evidence": "m04-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m04-presentation",
+              "m04s02-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m04s03",
+          "title": "Prepare for corrosion protection",
+          "content_descriptors": [
+            "S4 — Compare and use suitable joining and fabrication techniques",
+            "S4 — Assemble components with suitable tools, equipment and processes",
+            "S4 — Prepare surfaces and apply an appropriate protective finish"
+          ],
+          "source_ids": [
+            "S2",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Prepare for corrosion protection.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m04s03-theory",
+            "knowledge_check": "m04-module-check",
+            "evidence": "m04-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m04-presentation",
+              "m04s03-media"
+            ]
+          },
+          "substantial_sequence": true
+        }
+      ]
+    },
+    {
+      "module_id": "m05",
+      "title": "Test, evaluate and present evidence",
+      "timing": "Periods 41-50 | Weeks 17-20",
+      "outcome_codes": [
+        "INT5-COM-01",
+        "INT5-DES-01",
+        "INT5-EVL-01"
+      ],
+      "sections": [
+        {
+          "section_id": "m05s01",
+          "title": "Evidence proves the process",
+          "content_descriptors": [
+            "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+            "S3 — Create written texts that document, reflect on and evaluate production",
+            "S4 — Apply quality checks to finished metal components and products"
+          ],
+          "source_ids": [
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Evidence proves the process.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m05s01-theory",
+            "knowledge_check": "m05-module-check",
+            "evidence": "m05-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m05-presentation",
+              "m05s01-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m05s02",
+          "title": "Organise the folio",
+          "content_descriptors": [
+            "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+            "S3 — Create written texts that document, reflect on and evaluate production",
+            "S4 — Apply quality checks to finished metal components and products"
+          ],
+          "source_ids": [
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Organise the folio.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m05s02-theory",
+            "knowledge_check": "m05-module-check",
+            "evidence": "m05-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m05-presentation",
+              "m05s02-media"
+            ]
+          },
+          "substantial_sequence": true
+        },
+        {
+          "section_id": "m05s03",
+          "title": "Evaluate with evidence",
+          "content_descriptors": [
+            "S3 — Evaluate design effectiveness for quality, function and aesthetics",
+            "S3 — Create written texts that document, reflect on and evaluate production",
+            "S4 — Apply quality checks to finished metal components and products"
+          ],
+          "source_ids": [
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "learning_intention": "Understand and apply the source-grounded ideas in Evaluate with evidence.",
+          "learning_sequence": [
+            "Read and discuss the named theory",
+            "Use the teaching visual and source boundary",
+            "Complete the available check and saved evidence"
+          ],
+          "evidence": "Existing module-level scaffolded response and relevant folio record.",
+          "formative_checks": "Existing module-level bank: 2 MCQs in total; section-complete ten-question packages remain rework outside this alignment correction.",
+          "adjustments": "Use visible takeaways, hints and scaffolded response support; teacher adjusts the pace and local task demand.",
+          "literacy_numeracy_digital": "Use subject vocabulary, interpret evidence and communicate a justified response using the course site.",
+          "safety_workplace": "Follow current teacher directions and local procedures; stop and ask when a condition or task is not authorised.",
+          "resources": [
+            "Named guided-course section",
+            "Authorised source links shown on the course site"
+          ],
+          "site_destinations": {
+            "theory": "m05s03-theory",
+            "knowledge_check": "m05-module-check",
+            "evidence": "m05-module-evidence",
+            "activity": {
+              "state": "not-applicable",
+              "reason": "No distinct applied-learning activity route exists in the inherited unit; this scoped realignment does not claim a complete new-build activity package."
+            },
+            "media": [
+              "m05-presentation",
+              "m05s03-media"
+            ]
+          },
+          "substantial_sequence": true
+        }
+      ]
+    }
+  ],
+  "teacher_to_confirm": [
+    {
+      "id": "TTC-01",
+      "status": "Teacher to confirm",
+      "owner": "Course teacher",
+      "affected_scope": "Current authentic Hose Reel Holder working drawing, dimensions and component specifications",
+      "due_before": "Before students begin marking out",
+      "smallest_action": "Confirm and insert: Current authentic Hose Reel Holder working drawing, dimensions and component specifications."
+    },
+    {
+      "id": "TTC-02",
+      "status": "Teacher to confirm",
+      "owner": "Course teacher",
+      "affected_scope": "Exact practical sequence, equipment, local SOPs, risk controls, PPE and supervision",
+      "due_before": "Before each practical period",
+      "smallest_action": "Confirm and insert: Exact practical sequence, equipment, local SOPs, risk controls, PPE and supervision."
+    },
+    {
+      "id": "TTC-03",
+      "status": "Teacher to confirm",
+      "owner": "Course teacher",
+      "affected_scope": "Formal assessment notification, weighting, due date and submission process",
+      "due_before": "Before any formal assessment is issued",
+      "smallest_action": "Confirm and insert: Formal assessment notification, weighting, due date and submission process."
+    },
+    {
+      "id": "TTC-04",
+      "status": "Teacher to confirm",
+      "owner": "Course teacher",
+      "affected_scope": "The additional unit(s) that complete the 100-hour Industrial Technology – Metal elective",
+      "due_before": "Before the whole-course scope and sequence is approved",
+      "smallest_action": "Confirm and insert: The additional unit(s) that complete the 100-hour Industrial Technology – Metal elective."
+    }
+  ],
+  "site_mapping": [
+    {
+      "site_id": "m01-presentation",
+      "route": "module.html?module=1",
+      "audience": "student",
+      "purpose": "Module 1 PowerPoint access and overview",
+      "module_id": "m01"
+    },
+    {
+      "site_id": "m01-module-check",
+      "route": "module.html?module=1",
+      "audience": "student",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "module_id": "m01"
+    },
+    {
+      "site_id": "m01-module-evidence",
+      "route": "module.html?module=1",
+      "audience": "student",
+      "purpose": "Existing module-level saved written response; not a complete section-by-section package",
+      "module_id": "m01"
+    },
+    {
+      "site_id": "m01-folio",
+      "route": "folio.html",
+      "audience": "student",
+      "purpose": "Module 1 folio evidence",
+      "module_id": "m01"
+    },
+    {
+      "site_id": "m01s01-theory",
+      "route": "module.html?module=1#theory-1-1",
+      "audience": "student",
+      "purpose": "Meet the project: function, users and constraints",
+      "module_id": "m01",
+      "section_id": "m01s01"
+    },
+    {
+      "site_id": "m01s01-media",
+      "route": "module.html?module=1#theory-1-1",
+      "audience": "student",
+      "purpose": "Teaching visual for Meet the project: function, users and constraints",
+      "module_id": "m01",
+      "section_id": "m01s01"
+    },
+    {
+      "site_id": "m01s02-theory",
+      "route": "module.html?module=1#theory-1-2",
+      "audience": "student",
+      "purpose": "Workshop entry and machine permission",
+      "module_id": "m01",
+      "section_id": "m01s02"
+    },
+    {
+      "site_id": "m01s02-media",
+      "route": "module.html?module=1#theory-1-2",
+      "audience": "student",
+      "purpose": "Teaching visual for Workshop entry and machine permission",
+      "module_id": "m01",
+      "section_id": "m01s02"
+    },
+    {
+      "site_id": "m01s03-theory",
+      "route": "module.html?module=1#theory-1-3",
+      "audience": "student",
+      "purpose": "Learn from the unsafe scenario",
+      "module_id": "m01",
+      "section_id": "m01s03"
+    },
+    {
+      "site_id": "m01s03-media",
+      "route": "module.html?module=1#theory-1-3",
+      "audience": "student",
+      "purpose": "Teaching visual for Learn from the unsafe scenario",
+      "module_id": "m01",
+      "section_id": "m01s03"
+    },
+    {
+      "site_id": "m02-presentation",
+      "route": "module.html?module=2",
+      "audience": "student",
+      "purpose": "Module 2 PowerPoint access and overview",
+      "module_id": "m02"
+    },
+    {
+      "site_id": "m02-module-check",
+      "route": "module.html?module=2",
+      "audience": "student",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "module_id": "m02"
+    },
+    {
+      "site_id": "m02-module-evidence",
+      "route": "module.html?module=2",
+      "audience": "student",
+      "purpose": "Existing module-level saved written response; not a complete section-by-section package",
+      "module_id": "m02"
+    },
+    {
+      "site_id": "m02-folio",
+      "route": "folio.html",
+      "audience": "student",
+      "purpose": "Module 2 folio evidence",
+      "module_id": "m02"
+    },
+    {
+      "site_id": "m02s01-theory",
+      "route": "module.html?module=2#theory-2-1",
+      "audience": "student",
+      "purpose": "From drawing to marked metal: planning the work",
+      "module_id": "m02",
+      "section_id": "m02s01"
+    },
+    {
+      "site_id": "m02s01-media",
+      "route": "module.html?module=2#theory-2-1",
+      "audience": "student",
+      "purpose": "Teaching visual for From drawing to marked metal: planning the work",
+      "module_id": "m02",
+      "section_id": "m02s01"
+    },
+    {
+      "site_id": "m02s02-theory",
+      "route": "module.html?module=2#theory-2-2",
+      "audience": "student",
+      "purpose": "Use the design process deliberately",
+      "module_id": "m02",
+      "section_id": "m02s02"
+    },
+    {
+      "site_id": "m02s02-media",
+      "route": "module.html?module=2#theory-2-2",
+      "audience": "student",
+      "purpose": "Teaching visual for Use the design process deliberately",
+      "module_id": "m02",
+      "section_id": "m02s02"
+    },
+    {
+      "site_id": "m02s03-theory",
+      "route": "module.html?module=2#theory-2-3",
+      "audience": "student",
+      "purpose": "Marking-out evidence",
+      "module_id": "m02",
+      "section_id": "m02s03"
+    },
+    {
+      "site_id": "m02s03-media",
+      "route": "module.html?module=2#theory-2-3",
+      "audience": "student",
+      "purpose": "Teaching visual for Marking-out evidence",
+      "module_id": "m02",
+      "section_id": "m02s03"
+    },
+    {
+      "site_id": "m03-presentation",
+      "route": "module.html?module=3",
+      "audience": "student",
+      "purpose": "Module 3 PowerPoint access and overview",
+      "module_id": "m03"
+    },
+    {
+      "site_id": "m03-module-check",
+      "route": "module.html?module=3",
+      "audience": "student",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "module_id": "m03"
+    },
+    {
+      "site_id": "m03-module-evidence",
+      "route": "module.html?module=3",
+      "audience": "student",
+      "purpose": "Existing module-level saved written response; not a complete section-by-section package",
+      "module_id": "m03"
+    },
+    {
+      "site_id": "m03-folio",
+      "route": "folio.html",
+      "audience": "student",
+      "purpose": "Module 3 folio evidence",
+      "module_id": "m03"
+    },
+    {
+      "site_id": "m03s01-theory",
+      "route": "module.html?module=3#theory-3-1",
+      "audience": "student",
+      "purpose": "Control the workpiece before the tool",
+      "module_id": "m03",
+      "section_id": "m03s01"
+    },
+    {
+      "site_id": "m03s01-media",
+      "route": "module.html?module=3#theory-3-1",
+      "audience": "student",
+      "purpose": "Teaching visual for Control the workpiece before the tool",
+      "module_id": "m03",
+      "section_id": "m03s01"
+    },
+    {
+      "site_id": "m03s02-theory",
+      "route": "module.html?module=3#theory-3-2",
+      "audience": "student",
+      "purpose": "Cutting and edge preparation",
+      "module_id": "m03",
+      "section_id": "m03s02"
+    },
+    {
+      "site_id": "m03s02-media",
+      "route": "module.html?module=3#theory-3-2",
+      "audience": "student",
+      "purpose": "Teaching visual for Cutting and edge preparation",
+      "module_id": "m03",
+      "section_id": "m03s02"
+    },
+    {
+      "site_id": "m03s03-theory",
+      "route": "module.html?module=3#theory-3-3",
+      "audience": "student",
+      "purpose": "Forming with a planned sequence",
+      "module_id": "m03",
+      "section_id": "m03s03"
+    },
+    {
+      "site_id": "m03s03-media",
+      "route": "module.html?module=3#theory-3-3",
+      "audience": "student",
+      "purpose": "Teaching visual for Forming with a planned sequence",
+      "module_id": "m03",
+      "section_id": "m03s03"
+    },
+    {
+      "site_id": "m04-presentation",
+      "route": "module.html?module=4",
+      "audience": "student",
+      "purpose": "Module 4 PowerPoint access and overview",
+      "module_id": "m04"
+    },
+    {
+      "site_id": "m04-module-check",
+      "route": "module.html?module=4",
+      "audience": "student",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "module_id": "m04"
+    },
+    {
+      "site_id": "m04-module-evidence",
+      "route": "module.html?module=4",
+      "audience": "student",
+      "purpose": "Existing module-level saved written response; not a complete section-by-section package",
+      "module_id": "m04"
+    },
+    {
+      "site_id": "m04-folio",
+      "route": "folio.html",
+      "audience": "student",
+      "purpose": "Module 4 folio evidence",
+      "module_id": "m04"
+    },
+    {
+      "site_id": "m04s01-theory",
+      "route": "module.html?module=4#theory-4-1",
+      "audience": "student",
+      "purpose": "Assembly quality: fit, alignment and finish",
+      "module_id": "m04",
+      "section_id": "m04s01"
+    },
+    {
+      "site_id": "m04s01-media",
+      "route": "module.html?module=4#theory-4-1",
+      "audience": "student",
+      "purpose": "Teaching visual for Assembly quality: fit, alignment and finish",
+      "module_id": "m04",
+      "section_id": "m04s01"
+    },
+    {
+      "site_id": "m04s02-theory",
+      "route": "module.html?module=4#theory-4-2",
+      "audience": "student",
+      "purpose": "Choose and complete the approved joint",
+      "module_id": "m04",
+      "section_id": "m04s02"
+    },
+    {
+      "site_id": "m04s02-media",
+      "route": "module.html?module=4#theory-4-2",
+      "audience": "student",
+      "purpose": "Teaching visual for Choose and complete the approved joint",
+      "module_id": "m04",
+      "section_id": "m04s02"
+    },
+    {
+      "site_id": "m04s03-theory",
+      "route": "module.html?module=4#theory-4-3",
+      "audience": "student",
+      "purpose": "Prepare for corrosion protection",
+      "module_id": "m04",
+      "section_id": "m04s03"
+    },
+    {
+      "site_id": "m04s03-media",
+      "route": "module.html?module=4#theory-4-3",
+      "audience": "student",
+      "purpose": "Teaching visual for Prepare for corrosion protection",
+      "module_id": "m04",
+      "section_id": "m04s03"
+    },
+    {
+      "site_id": "m05-presentation",
+      "route": "module.html?module=5",
+      "audience": "student",
+      "purpose": "Module 5 PowerPoint access and overview",
+      "module_id": "m05"
+    },
+    {
+      "site_id": "m05-module-check",
+      "route": "module.html?module=5",
+      "audience": "student",
+      "purpose": "Existing module-level knowledge check; not a complete section-by-section package",
+      "module_id": "m05"
+    },
+    {
+      "site_id": "m05-module-evidence",
+      "route": "module.html?module=5",
+      "audience": "student",
+      "purpose": "Existing module-level saved written response; not a complete section-by-section package",
+      "module_id": "m05"
+    },
+    {
+      "site_id": "m05-folio",
+      "route": "folio.html",
+      "audience": "student",
+      "purpose": "Module 5 folio evidence",
+      "module_id": "m05"
+    },
+    {
+      "site_id": "m05s01-theory",
+      "route": "module.html?module=5#theory-5-1",
+      "audience": "student",
+      "purpose": "Evidence proves the process",
+      "module_id": "m05",
+      "section_id": "m05s01"
+    },
+    {
+      "site_id": "m05s01-media",
+      "route": "module.html?module=5#theory-5-1",
+      "audience": "student",
+      "purpose": "Teaching visual for Evidence proves the process",
+      "module_id": "m05",
+      "section_id": "m05s01"
+    },
+    {
+      "site_id": "m05s02-theory",
+      "route": "module.html?module=5#theory-5-2",
+      "audience": "student",
+      "purpose": "Organise the folio",
+      "module_id": "m05",
+      "section_id": "m05s02"
+    },
+    {
+      "site_id": "m05s02-media",
+      "route": "module.html?module=5#theory-5-2",
+      "audience": "student",
+      "purpose": "Teaching visual for Organise the folio",
+      "module_id": "m05",
+      "section_id": "m05s02"
+    },
+    {
+      "site_id": "m05s03-theory",
+      "route": "module.html?module=5#theory-5-3",
+      "audience": "student",
+      "purpose": "Evaluate with evidence",
+      "module_id": "m05",
+      "section_id": "m05s03"
+    },
+    {
+      "site_id": "m05s03-media",
+      "route": "module.html?module=5#theory-5-3",
+      "audience": "student",
+      "purpose": "Teaching visual for Evaluate with evidence",
+      "module_id": "m05",
+      "section_id": "m05s03"
+    }
+  ],
+  "delivery_register": {
+    "status": "Teacher completes during delivery",
+    "entries": [
+      {
+        "period": "1",
+        "planned_focus": "Meet the project: function, users and constraints",
+        "site_ids": [
+          "m01s01-theory",
+          "m01-module-check"
+        ],
+        "planned_evidence": "Discussion notes and available knowledge-check feedback.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "2",
+        "planned_focus": "Meet the project: function, users and constraints",
+        "site_ids": [
+          "m01-folio",
+          "m01-module-evidence"
+        ],
+        "planned_evidence": "Saved folio entry and scaffolded module response.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "3",
+        "planned_focus": "Workshop entry and machine permission",
+        "site_ids": [
+          "m01s02-theory",
+          "m01-module-check"
+        ],
+        "planned_evidence": "Annotated notes and teacher questioning.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "4",
+        "planned_focus": "Learn from the unsafe scenario",
+        "site_ids": [
+          "m01s03-theory",
+          "m01-folio",
+          "m01-module-evidence"
+        ],
+        "planned_evidence": "Prepared evidence, decision and next-step record.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "5",
+        "planned_focus": "Module 1: confirm the issued plan and workshop readiness",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "6",
+        "planned_focus": "Module 1: prepare and organise approved materials",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "7",
+        "planned_focus": "Module 1: rehearse the authorised setup",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "8",
+        "planned_focus": "Module 1: complete the teacher-approved project stage",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "9",
+        "planned_focus": "Module 1: check one quality point",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "10",
+        "planned_focus": "Module 1: record progress and the next safe step",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "11",
+        "planned_focus": "From drawing to marked metal: planning the work",
+        "site_ids": [
+          "m02s01-theory",
+          "m02-module-check"
+        ],
+        "planned_evidence": "Discussion notes and available knowledge-check feedback.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "12",
+        "planned_focus": "From drawing to marked metal: planning the work",
+        "site_ids": [
+          "m02-folio",
+          "m02-module-evidence"
+        ],
+        "planned_evidence": "Saved folio entry and scaffolded module response.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "13",
+        "planned_focus": "Use the design process deliberately",
+        "site_ids": [
+          "m02s02-theory",
+          "m02-module-check"
+        ],
+        "planned_evidence": "Annotated notes and teacher questioning.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "14",
+        "planned_focus": "Marking-out evidence",
+        "site_ids": [
+          "m02s03-theory",
+          "m02-folio",
+          "m02-module-evidence"
+        ],
+        "planned_evidence": "Prepared evidence, decision and next-step record.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "15",
+        "planned_focus": "Module 2: confirm the issued plan and datum",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "16",
+        "planned_focus": "Module 2: measure and mark from the approved reference",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "17",
+        "planned_focus": "Module 2: complete the pre-cut check",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "18",
+        "planned_focus": "Module 2: complete the teacher-approved project stage",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "19",
+        "planned_focus": "Module 2: check accuracy before the next irreversible step",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "20",
+        "planned_focus": "Module 2: record progress and the next safe step",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "21",
+        "planned_focus": "Control the workpiece before the tool",
+        "site_ids": [
+          "m03s01-theory",
+          "m03-module-check"
+        ],
+        "planned_evidence": "Discussion notes and available knowledge-check feedback.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "22",
+        "planned_focus": "Control the workpiece before the tool",
+        "site_ids": [
+          "m03-folio",
+          "m03-module-evidence"
+        ],
+        "planned_evidence": "Saved folio entry and scaffolded module response.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "23",
+        "planned_focus": "Cutting and edge preparation",
+        "site_ids": [
+          "m03s02-theory",
+          "m03-module-check"
+        ],
+        "planned_evidence": "Annotated notes and teacher questioning.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "24",
+        "planned_focus": "Forming with a planned sequence",
+        "site_ids": [
+          "m03s03-theory",
+          "m03-folio",
+          "m03-module-evidence"
+        ],
+        "planned_evidence": "Prepared evidence, decision and next-step record.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "25",
+        "planned_focus": "Module 3: secure the work using the demonstrated setup",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "26",
+        "planned_focus": "Module 3: complete the teacher-approved cutting stage",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "27",
+        "planned_focus": "Module 3: make edges safe using the approved process",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "28",
+        "planned_focus": "Module 3: complete the teacher-approved drilling or forming stage",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "29",
+        "planned_focus": "Module 3: check alignment and condition",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "30",
+        "planned_focus": "Module 3: record progress and the next safe step",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "31",
+        "planned_focus": "Assembly quality: fit, alignment and finish",
+        "site_ids": [
+          "m04s01-theory",
+          "m04-module-check"
+        ],
+        "planned_evidence": "Discussion notes and available knowledge-check feedback.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "32",
+        "planned_focus": "Assembly quality: fit, alignment and finish",
+        "site_ids": [
+          "m04-folio",
+          "m04-module-evidence"
+        ],
+        "planned_evidence": "Saved folio entry and scaffolded module response.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "33",
+        "planned_focus": "Choose and complete the approved joint",
+        "site_ids": [
+          "m04s02-theory",
+          "m04-module-check"
+        ],
+        "planned_evidence": "Annotated notes and teacher questioning.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "34",
+        "planned_focus": "Prepare for corrosion protection",
+        "site_ids": [
+          "m04s03-theory",
+          "m04-folio",
+          "m04-module-evidence"
+        ],
+        "planned_evidence": "Prepared evidence, decision and next-step record.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "35",
+        "planned_focus": "Module 4: dry check fit and alignment",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "36",
+        "planned_focus": "Module 4: prepare contact surfaces using the approved process",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "37",
+        "planned_focus": "Module 4: complete the teacher-approved joining stage",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "38",
+        "planned_focus": "Module 4: prepare the surface safely",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "39",
+        "planned_focus": "Module 4: apply the teacher-approved corrosion-protection process",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "40",
+        "planned_focus": "Module 4: record quality and the next safe step",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "41",
+        "planned_focus": "Evidence proves the process",
+        "site_ids": [
+          "m05s01-theory",
+          "m05-module-check"
+        ],
+        "planned_evidence": "Discussion notes and available knowledge-check feedback.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "42",
+        "planned_focus": "Evidence proves the process",
+        "site_ids": [
+          "m05-folio",
+          "m05-module-evidence"
+        ],
+        "planned_evidence": "Saved folio entry and scaffolded module response.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "43",
+        "planned_focus": "Organise the folio",
+        "site_ids": [
+          "m05s02-theory",
+          "m05-module-check"
+        ],
+        "planned_evidence": "Annotated notes and teacher questioning.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "44",
+        "planned_focus": "Evaluate with evidence",
+        "site_ids": [
+          "m05s03-theory",
+          "m05-folio",
+          "m05-module-evidence"
+        ],
+        "planned_evidence": "Prepared evidence, decision and next-step record.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "45",
+        "planned_focus": "Module 5: complete the teacher-approved functional check",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "46",
+        "planned_focus": "Module 5: compare the result with the approved criteria",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "47",
+        "planned_focus": "Module 5: correct an authorised quality issue",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "48",
+        "planned_focus": "Module 5: finish process evidence",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "49",
+        "planned_focus": "Module 5: complete the evaluation",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      },
+      {
+        "period": "50",
+        "planned_focus": "Module 5: present the final folio and identify one improvement",
+        "site_ids": [],
+        "planned_evidence": "Teacher observation plus a genuine process or quality record. Exact task, dimensions, equipment and controls: Teacher to confirm.",
+        "date_taught": "",
+        "teacher_initials": "",
+        "completion_or_variance": "",
+        "evidence_checked": "",
+        "adjustments": "",
+        "follow_up": ""
+      }
+    ]
+  },
+  "course_specific_compliance": [],
+  "files": [
+    {
+      "path": "Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.docx",
+      "sha256": "470ee311e810db4db5668ce88fe0196118c93b22d0040c921acc011183fb5496"
+    },
+    {
+      "path": "Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.pdf",
+      "sha256": "92fd6caa135cabbbf26176ebcf724f0e78de04a717fe2c810a18188f6d95b0da"
+    },
+    {
+      "path": "Hose-Reel-Holder-50-Period-Site-Map-v3.0.json",
+      "sha256": "503172ce3291b500f37f60c2087eb0194fef752b454aad7efd2bd858bdcf3946"
+    }
+  ]
+}

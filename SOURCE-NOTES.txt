@@ -1,19 +1,28 @@
-YEAR 8 METALWORK - SOURCE NOTES
+YEAR 8 METAL TECHNOLOGY - SOURCE NOTES
 
-Primary local course source
-- Existing ten-week Year 8 Metal Technology repository content.
-- Existing repository imagery identifies the hose reel holder context.
+Course identity
+- Hose Reel Holder is a Year 8 Stage 4 introductory unit contributing to a 100-hour Industrial Technology – Metal elective.
+- Delivery pattern: 20 weeks, 50 x 60-minute periods, 5 periods per fortnight, average 2.5 hours per week.
+- Sufficient additional study is required to complete the school's named 100-hour elective.
 
 Current syllabus authority
-- NSW Technology 7-8 Syllabus (2023), implemented from 2026.
-- Official outcomes: https://curriculum.nsw.edu.au/learning-areas/tas/technology-7-8-2023/outcomes
+- NSW Industrial Technology 7-10 Syllabus (2025).
+- Approved early adoption for 2027; mandatory implementation begins in 2028.
+- Stage 5 INT5 outcomes are adjusted for Stage 4 under INT4-ADJ-01.
+- Official course overview: https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course
+
+Authorised local source
+- Private Drive folder: Year 8 Metal - elective.
+- Canonical teacher theory document: Hose Holder Program Theory Package (provider file ID 1wSOBCITgjLWcsafzKPymxlxhp6uqEiBy3SQP9WkLmq4; modified 2023-03-20).
+- This older teacher document confirms the Hose Reel Holder context and broad theory sequence. It does not override the current syllabus, current risk controls, teacher-issued plan or current assessment requirements.
 
 Source boundary
-- No authentic project working drawing, detailed assessment notification, due date, weighting or submission destination was present in the repository.
-- The guided course therefore defers all dimensions, exact components, production specifications, assessment details and submission directions to teacher-issued material.
-- The original weekly pages are retained as teacher-reference source material.
+- No authentic project working drawing, detailed assessment notification, due date, weighting or submission destination is present in this repository.
+- Dimensions, exact components, tolerances, materials, production methods, machine settings, joining, finishing and testing remain controlled by current teacher-issued plans, demonstrations and school documents.
+- Existing blueprint-style images are illustrations, not authoritative plans.
+- Student contract records are excluded from the public build because they may contain personal information.
 
-New authored material
-- Each new integrative theory section was authored individually with ChatGPT in the in-app browser, using the source boundary above.
-- The new hero is a process-led workshop scene created with ChatGPT. It does not claim to show the finished project or plan geometry.
-- The folio uses one matching 12-panel ChatGPT-created visual sequence, cropped into twelve accessible evidence prompts. It contains no measurements or authentic plan claims.
+Current learning material
+- The existing five-module pathway and twelve-part folio are preserved.
+- Module pacing is extended across the approved 20-week, 50-period Year 8 elective pattern without adding invented practical steps.
+- Detailed provenance, gaps and invalidation rules are recorded in source-notes/source-map-v3.0.json and source-notes/core-artefact-manifest-v3.0.json.

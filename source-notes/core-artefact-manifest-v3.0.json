@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "hose-reel-holder-core-artefacts-v3.0",
+  "source_map_id": "hose-reel-holder-source-map-v3.0",
+  "source_map_sha256": "e8324f5069ebbc7b08b6d70c19bdeda1c3ac88c4f0561a6a755297f4a5a3f961",
+  "verified_date": "2026-09-01",
+  "course_id": "year-8-hose-reel-holder-metal-elective",
+  "overall_status": "PASS_WITH_TEACHER_CONFIRM",
+  "artefacts": [
+    {
+      "id": "CA-01",
+      "type": "working-drawing",
+      "title": "Current authentic Hose Reel Holder working drawing",
+      "applicability": "required-for-exact-practical-delivery",
+      "authority": "teacher-issued plan",
+      "state": "not-provided-to-repository",
+      "digest": null,
+      "permitted_facts": [],
+      "student_route": "project-resource.html",
+      "student_presentation": "A visible source-boundary notice directs students to the teacher-issued plan; no substitute drawing is presented.",
+      "teacher_to_confirm": [
+        "Supply or identify the current plan revision before practical delivery.",
+        "Confirm dimensions, components, tolerances, materials and production sequence from that plan."
+      ],
+      "invalidates_if_changed": [
+        "practical sequence",
+        "project-resource wording",
+        "project-linked theory examples",
+        "folio evidence prompts",
+        "teacher program practical rows"
+      ]
+    },
+    {
+      "id": "CA-02",
+      "type": "teacher-theory-package",
+      "title": "Hose Holder Program Theory Package",
+      "applicability": "unit identity and broad theory context",
+      "authority": "teacher-issued private Drive source",
+      "state": "verified-provider-identity",
+      "location": "private-google-drive://file/1wSOBCITgjLWcsafzKPymxlxhp6uqEiBy3SQP9WkLmq4",
+      "provider_modified": "2023-03-20",
+      "digest": null,
+      "permitted_facts": [
+        "Hose Reel Holder project context",
+        "outdoor holder purpose",
+        "broad metal theory topic sequence"
+      ],
+      "prohibited_uses": [
+        "current syllabus alignment",
+        "dimensions or working-drawing authority",
+        "current practical methods or risk controls",
+        "current assessment authority"
+      ],
+      "student_route": "index.html and module.html",
+      "student_presentation": "Source-bounded theory is integrated into the guided pathway; the private teacher document is not republished.",
+      "teacher_to_confirm": [
+        "Confirm any older direction against the current plan, school procedures and risk controls before use."
+      ],
+      "invalidates_if_changed": [
+        "project identity",
+        "module topic sequence",
+        "theory provenance"
+      ]
+    },
+    {
+      "id": "CA-03",
+      "type": "illustrative-image",
+      "title": "Legacy blueprint-style images",
+      "applicability": "illustration-only",
+      "authority": "non-authoritative repository artwork",
+      "state": "verified-not-a-plan",
+      "files": [
+        { "path": "img/blueprint.png", "sha256": "dacbbc388a58f36d0f8a8a03fd2f3e6c37da37ccd05de4e264fff89c4a5a0eb6" },
+        { "path": "img/parts_blueprint.png", "sha256": "0065aade3233e490c9e8453f6f08ef9732344c0103fa41d0ad2024f2d8fc1c77" }
+      ],
+      "permitted_facts": [],
+      "student_route": "legacy weekly pages only",
+      "student_presentation": "Must never be labelled or used as the authentic working drawing.",
+      "teacher_to_confirm": [],
+      "invalidates_if_changed": []
+    },
+    {
+      "id": "CA-04",
+      "type": "project-context-image",
+      "title": "Hose reel context image",
+      "applicability": "project-context-only",
+      "authority": "repository course context",
+      "state": "verified",
+      "path": "img/hose_reel.png",
+      "sha256": "1d2162346387c420530d74e96bac5d27bcfb38a8e889b51afabaa90aceaa87d",
+      "permitted_facts": [
+        "garden hose reel context"
+      ],
+      "prohibited_uses": [
+        "project geometry",
+        "dimensions",
+        "technical specifications"
+      ],
+      "student_route": "legacy weekly pages",
+      "student_presentation": "Context image only, with no plan or dimension claim.",
+      "teacher_to_confirm": [],
+      "invalidates_if_changed": [
+        "image caption or context claim"
+      ]
+    }
+  ],
+  "privacy_exclusions": [
+    {
+      "type": "student contract records",
+      "reason": "May contain student names, signatures or other personal information.",
+      "public_build_state": "excluded"
+    }
+  ],
+  "gate_note": "Core source identity and fact boundaries are verified. The missing authentic working drawing remains Teacher to confirm and blocks exact practical delivery, not the curriculum realignment or source-safe theory pathway."
+}

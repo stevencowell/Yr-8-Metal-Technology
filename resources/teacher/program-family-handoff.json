@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "program_id": "year-8-hose-reel-holder-elective-program",
+  "program_kind": "unit",
+  "source_binding": {
+    "source_map_id": "hose-reel-holder-source-map-v3.0",
+    "source_map_sha256": "e8324f5069ebbc7b08b6d70c19bdeda1c3ac88c4f0561a6a755297f4a5a3f961",
+    "integration_baseline_id": "year-8-hose-reel-holder-elective-program-guided-data",
+    "integration_baseline_path": "guided/data.js",
+    "integration_baseline_sha256": "b919469f6185846f884dfa5fa636df05e1838ab31113890654b2ebea262b97dc",
+    "stage13_integration_manifest": "Scoped realignment: site integration recorded in source-notes/build-scope-v3.0.md"
+  },
+  "course": {
+    "title": "Hose Reel Holder",
+    "family": "Metalwork",
+    "stage": "Stage 4",
+    "course": "Industrial Technology – Metal",
+    "version": "v3.0",
+    "duration": {
+      "value": 50,
+      "unit": "periods"
+    },
+    "source_duration": "20 weeks | 50 x 60-minute periods | 5 periods per fortnight | average 2.5 hours per week",
+    "timetable_placement": "Year 8 elective pattern; exact calendar dates remain teacher controlled",
+    "site_state": "confirmed-public",
+    "site_url": "https://stevencowell.github.io/Yr-8-Metal-Technology/",
+    "release_authority": "Existing public site confirmed; this corrected candidate has no commit, push or deployment authority."
+  },
+  "syllabus": {
+    "family_key": "industrial-technology-7-10-2025",
+    "title": "Industrial Technology 7–10 Syllabus (2025)",
+    "version": "2025",
+    "official_url": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course",
+    "status": "Approved early adoption for 2027; mandatory from 2028",
+    "verified_date": "2026-09-01",
+    "implementation_basis": "Approved early adoption for 2027; mandatory from 2028",
+    "outcome_code_family": "INT5"
+  },
+  "palette": {
+    "mode": "existing-content-area",
+    "syllabus_tone": "industrial-technology-7-10-2025",
+    "content_area_key": "metalwork"
+  },
+  "master_relationship": {
+    "state": "master-not-established",
+    "coverage_state": "gap-recorded",
+    "note": "No Stage 4 Metal master program is established in the current library. This unit records 50 periods; the remaining study needed for the 100-hour elective is a visible gap."
+  },
+  "teacher_resources": {
+    "route": "teacher-resources.html",
+    "links": [
+      {
+        "label": "Teaching program PDF",
+        "artifact_role": "rendered-program"
+      },
+      {
+        "label": "Editable teaching program",
+        "artifact_role": "editable-program"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "role": "editable-program",
+      "path": "Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.docx",
+      "sha256": "470ee311e810db4db5668ce88fe0196118c93b22d0040c921acc011183fb5496"
+    },
+    {
+      "role": "rendered-program",
+      "path": "Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.pdf",
+      "sha256": "92fd6caa135cabbbf26176ebcf724f0e78de04a717fe2c810a18188f6d95b0da"
+    },
+    {
+      "role": "alignment-manifest",
+      "path": "Hose-Reel-Holder-50-Period-Alignment-Manifest-v3.0.json",
+      "sha256": "985dbfba165e75eb134da3dee3d1f811e5d9bd6354b01aabe48bccd263cb95d7"
+    },
+    {
+      "role": "site-map",
+      "path": "Hose-Reel-Holder-50-Period-Site-Map-v3.0.json",
+      "sha256": "503172ce3291b500f37f60c2087eb0194fef752b454aad7efd2bd858bdcf3946"
+    },
+    {
+      "role": "delivery-register",
+      "path": "Hose-Reel-Holder-50-Period-Delivery-Register-v3.0.docx",
+      "sha256": "53dd93fd77f5fb5a2582eaaf9fd9db3cc3100f6ca3f605c1771e0c7b73e180f3"
+    },
+    {
+      "role": "program-manifest",
+      "path": "Hose-Reel-Holder-50-Period-Program-Manifest-v3.0.json",
+      "sha256": "e536f1e83db7213ac5b2d55908e73ec89c2c5ed84f0366821337dcf6eecfe0ea"
+    }
+  ],
+  "library_card": {
+    "title": "Hose Reel Holder",
+    "family": "Metalwork",
+    "stage": "Stage 4",
+    "course": "Industrial Technology – Metal",
+    "periods": 50,
+    "version": "v3.0",
+    "introUnit": true,
+    "syllabusAligned": true,
+    "pdf": "programs/Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.pdf",
+    "docx": "programs/Hose-Reel-Holder-50-Period-Teaching-Program-v3.0-2027-Elective.docx",
+    "manifest": "programs/Hose-Reel-Holder-50-Period-Alignment-Manifest-v3.0.json",
+    "syllabusTitle": "Industrial Technology 7–10 Syllabus (2025)",
+    "syllabusUrl": "https://curriculum.nsw.edu.au/learning-areas/tas/industrial-technology-7-10-2025/overview/course",
+    "syllabusStatus": "Approved early adoption for 2027; mandatory from 2028",
+    "syllabusVerified": "1 September 2026",
+    "site": "https://stevencowell.github.io/Yr-8-Metal-Technology/"
+  },
+  "registration": {
+    "state": "handoff-ready",
+    "canonical_library_url": "https://stevencowell.github.io/Main-Page/subject-program-library/"
+  }
+}
